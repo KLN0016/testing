@@ -1,0 +1,33 @@
+#!SPYGLASS_PROJECT_FILE
+#!VERSION 3.0
+#  -------------------------------------------------------------------
+#  This is a software generated project file. Manual edits to this file could be lost during the next save operation
+#  Copyright Synopsys Inc.
+#  Last Updated By: SpyGlass SpyGlass_vW-2024.09-SP2
+#  Last Updated On Thu Jul 24 10:30:09 2025
+#
+#  -------------------------------------------------------------------
+
+##Data Import Section
+
+read_file -type verilog /home/user16/work/klngan/hdl_labs/lab1/design/mux2to1.v
+#BackRefFile:../scripts/run_lint.tcl #LineNumber:12
+read_file -type verilog /home/user16/work/klngan/hdl_labs/lab1/design/mux2to1_tb.v
+#BackRefFile:../scripts/run_lint.tcl #LineNumber:12
+
+##Common Options Section
+
+set_option projectwdir /home/user16/work/klngan/hdl_labs/lab1/lint/sg_both
+set_option language_mode mixed
+set_option designread_enable_synthesis no
+set_option designread_disable_flatten no
+set_option top mux2to1
+set_option auto_save yes
+set_option enableSV yes
+set_option active_methodology $SPYGLASS_HOME/GuideWare/latest/block/rtl_handoff
+
+
+##Goal Setup Section
+
+current_methodology $SPYGLASS_HOME/GuideWare/latest/block/rtl_handoff
+

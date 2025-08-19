@@ -1,0 +1,9 @@
+# For csh
+#setenv ROOT `pwd`
+
+# For bash
+export ROOT=`pwd`
+export TYPE="v"
+export MODULE="mux3to1"
+export MODULE_TB="mux3to1_tb"
+export FLIST=0

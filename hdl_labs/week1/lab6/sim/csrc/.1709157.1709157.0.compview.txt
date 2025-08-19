@@ -1,0 +1,9 @@
+{"vcs1":{"timestamp_begin":1753339650.303921586, "rt":0.21, "ut":0.12, "st":0.12}}
+{"vcselab":{"timestamp_begin":1753339650.584642309, "rt":0.14, "ut":0.11, "st":0.02}}
+{"link":{"timestamp_begin":1753339650.776843984, "rt":0.21, "ut":0.14, "st":0.08}}
+{"SNPS_VCS_INTERNAL_ROOT_START_TIME": 1753339649.827119891}
+{"VCS_COMP_START_TIME": 1753339649.827119891}
+{"VCS_COMP_END_TIME": 1753339651.108517200}
+{"VCS_USER_OPTIONS": "-l mux2to1_seed_comp.log -sverilog -debug_access+all -kdb -debug_report -top mux2to1_seed_tb -o mux2to1_seed_simv /home/user16/work/klngan/hdl_labs/lab6/design/mux2to1_seed.sv /home/user16/work/klngan/hdl_labs/lab6/design/mux2to1_seed_tb.sv"}
+{"vcs1": {"peak_mem": 477616}}
+{"vcselab": {"peak_mem": 162436}}

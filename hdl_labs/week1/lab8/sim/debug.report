@@ -1,0 +1,34 @@
+Here is the union of all individual -debug_access options:  -debug_access+all+class+line+drivers+r+w+wn+f+fn+cbk+cbkd+cbks+thread+dmpt+dmpf+idents_db
+
+Global                                         Source                      FileID
+-------------------------------------------    ------------------------    ------
+debug_access+all                               vcs compile command
++vcsd                                          -debug_access
+acc+=s:*                                       tab file                    1
+acc+=s:*                                       tab file                    2
+acc+=r,rw,wn,frcr,frcn,cbk:*                   -debug_access
+acc+=s:*                                       applyOnDesign               1
+acc+=s:*                                       applyOnDesign               2
+acc+=r,rw,cbk,frcr,frcn,wn:*                   applyOnDesign
+
+
+Module                                         Source
+-------------------------------------------    ------------------------
+acc+=vcsd:std                                  from Design Caps
+acc+=vcsd:top_tb                               from Design Caps
+acc+=vcsd:top                                  from Design Caps
+acc+=vcsd:controller                           from Design Caps
+acc+=vcsd:counter                              from Design Caps
+acc=r,rw,cbk,s,frcr,frcn,wn,vcsd:std           update due to needs caps
+acc=r,rw,cbk,s,frcr,frcn,wn,vcsd:top_tb        update due to needs caps
+acc=r,rw,cbk,s,frcr,frcn,wn,vcsd:top           update due to needs caps
+acc=r,rw,cbk,s,frcr,frcn,wn,vcsd:controller    update due to needs caps
+acc=r,rw,cbk,s,frcr,frcn,wn,vcsd:counter       update due to needs caps
+
+
+FileID                                         FileName
+-------------------------------------------    ------------------------
+1                                              /home/synopsys/vcs/W-2024.09-SP2/linux64/lib/vcsdp_lite.tab
+2                                              /home/synopsys/verdi/W-2024.09-SP2/share/PLI/VCS/LINUX64/verdi.tab
+
+Modules with -debug_access caps disabled due to cell module debug caps turned off by default:

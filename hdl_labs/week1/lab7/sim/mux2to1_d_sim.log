@@ -1,0 +1,55 @@
+Command: /home/user16/work/klngan/hdl_labs/lab7/sim/./mux2to1_d_simv -l mux2to1_d_sim.log
+Chronologic VCS simulator copyright 1991-2024
+Contains Synopsys proprietary information.
+Compiler version W-2024.09-SP2_Full64; Runtime version W-2024.09-SP2_Full64;  Jul 24 15:05 2025
+----------[$display] Hello, SystemVerilog!
+----------[$write] Part 1 ----------[$write] Part 2
+*Verdi* Loading libsscore_vcs202409.so
+FSDB Dumper for VCS, Release Verdi_W-2024.09-SP2, Linux x86_64/64bit, 03/03/2025
+(C) 1996 - 2025 by Synopsys, Inc.
+*Verdi* : Create FSDB file 'mux2to1_d_sim.fsdb'
+*Verdi* : Begin traversing the scope (mux2to1_d_tb), layer (0).
+*Verdi* : End of traversing.
+Error: "/home/user16/work/klngan/hdl_labs/lab7/design/mux2to1_d_tb.sv", 25: mux2to1_d_tb: at time 1000 ps
+----------[$error] There is an error.
+Warning: "/home/user16/work/klngan/hdl_labs/lab7/design/mux2to1_d_tb.sv", 26: mux2to1_d_tb: at time 1000 ps
+----------[$warning] Warning, please take note.
+----------[$strobe] e = 0, f = 1
+Test 0 PASSED
+Test 1 PASSED
+Test 2 PASSED
+Test 3 PASSED
+Test 4 PASSED
+Test 5 PASSED
+Test 6 PASSED
+Test 7 PASSED
+Test 8 PASSED
+Test 9 PASSED
+Test 10 PASSED
+Test 11 PASSED
+Test 12 PASSED
+Test 13 PASSED
+Test 14 PASSED
+Test 15 PASSED
+Test 16 PASSED
+Test 17 PASSED
+Test 18 PASSED
+Test 19 PASSED
+Test 20 PASSED
+Test 21 PASSED
+Test 22 PASSED
+Test 23 PASSED
+Test 24 PASSED
+Test 25 PASSED
+Test 26 PASSED
+Test 27 PASSED
+Test 28 PASSED
+Test 29 PASSED
+Total test failed:           0
+Testing complete. Results saved to mux2to1_d_sim.rpt
+$finish called from file "/home/user16/work/klngan/hdl_labs/lab7/design/mux2to1_d_tb.sv", line 70.
+$finish at simulation time               301000
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 301000 ps
+CPU Time:      0.170 seconds;       Data structure size:   0.0Mb
+Thu Jul 24 15:05:04 2025

@@ -1,0 +1,53 @@
+% make dv
+Observe STDOUT
+
+% more mux3to1_sim.vcd
+No such file or directory
+
+% vim ../design/mux3to1_tb.v
+Add in fsdb (instead of vcd) generation right before the 'endmodule' line, see below
+    initial begin
+        $fsdbDumpfile("mux3to1_sim.fsdb");
+        $fsdbDumpvars(0, mux3to1_tb);
+    end
+
+% make dv
+Observe STDOUT
+
+% more mux3to1_sim.log
+View log file
+Note that the table shows the default y value when sel_tb == 2'b11
+
+% vim mux3to1_sim.fsdb
+The binary format Fast-Signal-Database waveform was created
+
+% verdi &
+Launch verdi at the background
+File > Open Waveform File
+Signal > Get Signals
+
+In verdi
+Tools > New Waveform... (if the waveform window does not pop up)
+Signal > Get Signals
+Select the signals of mux3to1_tb
+Double click on sel_tb[1:0] to expand or collapse the bus
+[Shift z] to zoom in
+[z] to zoom out
+[f] to zoom full 
+Select sel_tb[1:0] and right click to select Set Radix > Binary
+View > Leading Zeroes
+File > Exit
+
+% mux3to1_simv -gui &
+Launch verdi at the background for interactive simulation
+Simulation > Restart > Yes
+Simulation > Step/Next > Next
+Simulation > Run/Continue
+Tools > New Schematic from Source > New Schematic
+Select each of the boxes to see the corresponding codes
+
+% more inter.fsdb
+The binary format Fast-Signal-Database waveform was created interactively
+
+In verdi
+Tools > New Waveform... (if the waveform window does not pop up)

@@ -1,0 +1,61 @@
+
+Warning-[UNKWN_OPTVSIM] Unknown option passed
+  Ignoring unknown option '-debug_acess+all' passed to 'vcs' and continuing 
+  compilation.
+
+Command: vcs -debug_acess+all -kdb -l adder_tb.log -R -sverilog +number_of_tests=100 \
++report_file=adder_tb.rpt +seed=300 ../design/adder.sv ../design/adder_tb.sv
+                         Chronologic VCS (TM)
+       Version W-2024.09-SP2_Full64 -- Fri Jul 25 10:32:09 2025
+
+                    Copyright (c) 1991 - 2025 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+
+Parsing design file '../design/adder.sv'
+Parsing design file '../design/adder_tb.sv'
+Top Level Modules:
+       adder_tb
+TimeScale is 1 ns / 1 ps
+Starting vcs inline pass...
+1 module and 0 UDP read.
+	However, due to incremental compilation, no re-compilation is necessary.
+make[1]: Entering directory '/home/user16/work/klngan/hdl_labs/lab9/sim/csrc'
+rm -f _cuarc*.so _csrc*.so pre_vcsobj_*.so share_vcsobj_*.so
+if [ -x ../simv ]; then chmod a-x ../simv; fi
+g++  -o ../simv      -rdynamic  -Wl,-rpath='$ORIGIN'/simv.daidir -Wl,-rpath=./simv.daidir \
+-Wl,-rpath=/home/synopsys/vcs/W-2024.09-SP2/linux64/lib -L/home/synopsys/vcs/W-2024.09-SP2/linux64/lib \
+-Wl,-rpath-link=./  /usr/lib64/libnuma.so.1   objs/amcQw_d.o   _2932581_archive_1.so \
+_prev_archive_1.so   SIM_l.o      rmapats_mop.o rmapats.o rmar.o rmar_nd.o  rmar_llvm_0_1.o \
+rmar_llvm_0_0.o            -lvirsim -lerrorinf -lsnpsmalloc -lvfs    -lvcsnew -lsimprofile \
+-luclinative /home/synopsys/vcs/W-2024.09-SP2/linux64/lib/vcs_tls.o   -Wl,-whole-archive \
+-lvcsucli    -Wl,-no-whole-archive          /home/synopsys/vcs/W-2024.09-SP2/linux64/lib/vcs_save_restore_new.o \
+-ldl  -lc -lm -lpthread -ldl 
+../simv up to date
+make[1]: Leaving directory '/home/user16/work/klngan/hdl_labs/lab9/sim/csrc'
+Command: /home/user16/work/klngan/hdl_labs/lab9/sim/./simv -a adder_tb.log +number_of_tests=100 +report_file=adder_tb.rpt +seed=300
+Chronologic VCS simulator copyright 1991-2024
+Contains Synopsys proprietary information.
+Compiler version W-2024.09-SP2_Full64; Runtime version W-2024.09-SP2_Full64;  Jul 25 10:32 2025
+[INFO] Testbench completed
+
+$finish called from file "../design/adder_tb.sv", line 92.
+$finish at simulation time              1010000
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 1010000 ps
+CPU Time:      0.140 seconds;       Data structure size:   0.0Mb
+Fri Jul 25 10:32:10 2025
+CPU time: .273 seconds to compile + .160 seconds to elab + .235 seconds to link + .175 seconds in simulation
+Verdi KDB elaboration done and the database successfully generated

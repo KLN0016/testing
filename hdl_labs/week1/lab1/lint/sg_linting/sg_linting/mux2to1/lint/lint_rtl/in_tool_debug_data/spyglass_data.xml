@@ -1,0 +1,2694 @@
+<CWD>/home/user16/work/klngan/hdl_labs/lab2/lint</CWD>
+<ENVVAR>
+	<env name="SPYGLASS_SPYAUTH_FILE">
+		<value>/tmp/spyAuthFileList13053921753324383</value>
+	</env>
+	<env name="LD_LIBRARY_PATH">
+		<value>/home/synopsys/spyglass/W-2024.09-SP2/SPYGLASS_HOME/auxi:/home/synopsys/spyglass/W-2024.09-SP2/SPYGLASS_HOME/lib:/home/synopsys/spyglass/W-2024.09-SP2/SPYGLASS_HOME/policies:/home/synopsys/spyglass/W-2024.09-SP2/SPYGLASS_HOME/auxi/tkgui-new:/home/synopsys/spyglass/W-2024.09-SP2/SPYGLASS_HOME/auxi/policy_data/spyglass/design_read:/home/synopsys/spyglass/W-2024.09-SP2/SPYGLASS_HOME/policies/Audits:/home/synopsys/spyglass/W-2024.09-SP2/SPYGLASS_HOME/policies/adv_lowpower:/home/synopsys/spyglass/W-2024.09-SP2/SPYGLASS_HOME/policies/area:/home/synopsys/spyglass/W-2024.09-SP2/SPYGLASS_HOME/policies/auto-verify:/home/synopsys/spyglass/W-2024.09-SP2/SPYGLASS_HOME/policies/clock:/home/synopsys/spyglass/W-2024.09-SP2/SPYGLASS_HOME/policies/constraints:/home/synopsys/spyglass/W-2024.09-SP2/SPYGLASS_HOME/policies/cubic_netlist:/home/synopsys/spyglass/W-2024.09-SP2/SPYGLASS_HOME/policies/dft:/home/synopsys/spyglass/W-2024.09-SP2/SPYGLASS_HOME/policies/dft_dsm:/home/synopsys/spyglass/W-2024.09-SP2/SPYGLASS_HOME/policies/erc:/home/synopsys/spyglass/W-2024.09-SP2/SPYGLASS_HOME/policies/latch:/home/synopsys/spyglass/W-2024.09-SP2/SPYGLASS_HOME/policies/lint:/home/synopsys/spyglass/W-2024.09-SP2/SPYGLASS_HOME/policies/lowpower:/home/synopsys/spyglass/W-2024.09-SP2/SPYGLASS_HOME/policies/mbist-dft:/home/synopsys/spyglass/W-2024.09-SP2/SPYGLASS_HOME/policies/miscellaneous:/home/synopsys/spyglass/W-2024.09-SP2/SPYGLASS_HOME/policies/morelint:/home/synopsys/spyglass/W-2024.09-SP2/SPYGLASS_HOME/policies/openmore:/home/synopsys/spyglass/W-2024.09-SP2/SPYGLASS_HOME/policies/power_est:/home/synopsys/spyglass/W-2024.09-SP2/SPYGLASS_HOME/policies/prof:/home/synopsys/spyglass/W-2024.09-SP2/SPYGLASS_HOME/policies/rtl2netlist:/home/synopsys/spyglass/W-2024.09-SP2/SPYGLASS_HOME/policies/sec:/home/synopsys/spyglass/W-2024.09-SP2/SPYGLASS_HOME/policies/simulation:/home/synopsys/spyglass/W-2024.09-SP2/SPYGLASS_HOME/policies/spyglass:/home/synopsys/spyglass/W-2024.09-SP2/SPYGLASS_HOME/policies/starc:/home/synopsys/spyglass/W-2024.09-SP2/SPYGLASS_HOME/policies/starc2002:/home/synopsys/spyglass/W-2024.09-SP2/SPYGLASS_HOME/policies/starc2005:/home/synopsys/spyglass/W-2024.09-SP2/SPYGLASS_HOME/policies/starcad-21:/home/synopsys/spyglass/W-2024.09-SP2/SPYGLASS_HOME/policies/timing:/home/synopsys/spyglass/W-2024.09-SP2/SPYGLASS_HOME/policies/txv:/home/synopsys/spyglass/W-2024.09-SP2/SPYGLASS_HOME/auxi/tkgui-new/Linux4:/home/synopsys/spyglass/W-2024.09-SP2/SPYGLASS_HOME/auxi/rme:/home/synopsys/spyglass/W-2024.09-SP2/SPYGLASS_HOME/auxi/rme/Parser:/home/synopsys/spyglass/W-2024.09-SP2/SPYGLASS_HOME/auxi/rme/Parser/Linux4:/home/synopsys/spyglass/W-2024.09-SP2/SPYGLASS_HOME/lib/multi-perl/lib/5.8.3:/home/synopsys/spyglass/W-2024.09-SP2/SPYGLASS_HOME/lib/multi-perl/lib/site_perl/5.8.3:/home/synopsys/spyglass/W-2024.09-SP2/SPYGLASS_HOME/auxi/tkgui-new/Linux4:/lib64/tls:/home/synopsys/spyglass/W-2024.09-SP2/SPYGLASS_HOME/lib/multi-tcl/lib/Linux4:/home/synopsys/spyglass/W-2024.09-SP2/SPYGLASS_HOME/lib/python/Linux4/lib:/home/synopsys/spyglass/W-2024.09-SP2/SPYGLASS_HOME/../dotty/lib/Linux4:/home/synopsys/spyglass/W-2024.09-SP2/SPYGLASS_HOME/auxi/tkgui-new/Linux4:/home/synopsys/spyglass/W-2024.09-SP2/SPYGLASS_HOME/lib/multi-tcl/lib/Linux4::/home/synopsys/spyglass/W-2024.09-SP2/SPYGLASS_HOME/lib/multi-qt/lib/Linux4:/home/synopsys/spyglass/W-2024.09-SP2/SPYGLASS_HOME/lib/multi-nlview/Linux4:/home/synopsys/spyglass/W-2024.09-SP2/SPYGLASS_HOME/lib/multi-boost/Linux4:/home/synopsys/spyglass/W-2024.09-SP2/SPYGLASS_HOME/lib/multi-thirdparty/Linux4:/depot/gcc-4.8.3-patch/lib64:/usr/lib64:/usr/X11R6/lib64:/usr/local/lib64:/home/synopsys/spyglass/W-2024.09-SP2/SPYGLASS_HOME/lib/multi-vcst/vcs-mx/linux64/lib:/home/synopsys/spyglass/W-2024.09-SP2/SPYGLASS_HOME/lib:/home/synopsys/spyglass/W-2024.09-SP2/SPYGLASS_HOME/lib/oa/Linux4:::/home/synopsys/spyglass/W-2024.09-SP2/SPYGLASS_HOME/../multi-qt/lib/Linux4:/home/synopsys/spyglass/W-2024.09-SP2/SPYGLASS_HOME/lib/oa/Linux4:/home/synopsys/tweaker/W-2024.09-SP4/linux64/tweaker/lib/:/home/synopsys/tweaker/W-2024.09-SP4/linux64/tweaker/lib_com:/home/synopsys/tweaker/W-2024.09-SP4/linux64/tweaker/lib_release:/home/synopsys/verdi/W-2024.09-SP2/share/PLI/VCS/linux64:/home/synopsys/xa/W-2024.09-SP2/GNU/linux64/gcc/lib64:/usr/lib64::/usr/lib:/lib:/home/synopsys/spyglass/W-2024.09-SP2/SPYGLASS_HOME/lib/zebulib</value>
+	</env>
+	<env name="VCS_TARGET_ARCH">
+		<value>amd64</value>
+	</env>
+	<env name="LC_ALL">
+		<value/>
+	</env>
+	<env name="LS_COLORS">
+		<value>rs=0:di=38;5;33:ln=38;5;51:mh=00:pi=40;38;5;11:so=38;5;13:do=38;5;5:bd=48;5;232;38;5;11:cd=48;5;232;38;5;3:or=48;5;232;38;5;9:mi=01;05;37;41:su=48;5;196;38;5;15:sg=48;5;11;38;5;16:ca=48;5;196;38;5;226:tw=48;5;10;38;5;16:ow=48;5;10;38;5;21:st=48;5;21;38;5;15:ex=38;5;40:*.tar=38;5;9:*.tgz=38;5;9:*.arc=38;5;9:*.arj=38;5;9:*.taz=38;5;9:*.lha=38;5;9:*.lz4=38;5;9:*.lzh=38;5;9:*.lzma=38;5;9:*.tlz=38;5;9:*.txz=38;5;9:*.tzo=38;5;9:*.t7z=38;5;9:*.zip=38;5;9:*.z=38;5;9:*.dz=38;5;9:*.gz=38;5;9:*.lrz=38;5;9:*.lz=38;5;9:*.lzo=38;5;9:*.xz=38;5;9:*.zst=38;5;9:*.tzst=38;5;9:*.bz2=38;5;9:*.bz=38;5;9:*.tbz=38;5;9:*.tbz2=38;5;9:*.tz=38;5;9:*.deb=38;5;9:*.rpm=38;5;9:*.jar=38;5;9:*.war=38;5;9:*.ear=38;5;9:*.sar=38;5;9:*.rar=38;5;9:*.alz=38;5;9:*.ace=38;5;9:*.zoo=38;5;9:*.cpio=38;5;9:*.7z=38;5;9:*.rz=38;5;9:*.cab=38;5;9:*.wim=38;5;9:*.swm=38;5;9:*.dwm=38;5;9:*.esd=38;5;9:*.jpg=38;5;13:*.jpeg=38;5;13:*.mjpg=38;5;13:*.mjpeg=38;5;13:*.gif=38;5;13:*.bmp=38;5;13:*.pbm=38;5;13:*.pgm=38;5;13:*.ppm=38;5;13:*.tga=38;5;13:*.xbm=38;5;13:*.xpm=38;5;13:*.tif=38;5;13:*.tiff=38;5;13:*.png=38;5;13:*.svg=38;5;13:*.svgz=38;5;13:*.mng=38;5;13:*.pcx=38;5;13:*.mov=38;5;13:*.mpg=38;5;13:*.mpeg=38;5;13:*.m2v=38;5;13:*.mkv=38;5;13:*.webm=38;5;13:*.ogm=38;5;13:*.mp4=38;5;13:*.m4v=38;5;13:*.mp4v=38;5;13:*.vob=38;5;13:*.qt=38;5;13:*.nuv=38;5;13:*.wmv=38;5;13:*.asf=38;5;13:*.rm=38;5;13:*.rmvb=38;5;13:*.flc=38;5;13:*.avi=38;5;13:*.fli=38;5;13:*.flv=38;5;13:*.gl=38;5;13:*.dl=38;5;13:*.xcf=38;5;13:*.xwd=38;5;13:*.yuv=38;5;13:*.cgm=38;5;13:*.emf=38;5;13:*.ogv=38;5;13:*.ogx=38;5;13:*.aac=38;5;45:*.au=38;5;45:*.flac=38;5;45:*.m4a=38;5;45:*.mid=38;5;45:*.midi=38;5;45:*.mka=38;5;45:*.mp3=38;5;45:*.mpc=38;5;45:*.ogg=38;5;45:*.ra=38;5;45:*.wav=38;5;45:*.oga=38;5;45:*.opus=38;5;45:*.spx=38;5;45:*.xspf=38;5;45:</value>
+	</env>
+	<env name="HOSTTYPE">
+		<value>x86_64-linux</value>
+	</env>
+	<env name="SYNOPSYS_CUSTOM_SITE">
+		<value>/home/synopsys/nt/W-2024.09-SP4/admin/setup</value>
+	</env>
+	<env name="XDG_MENU_PREFIX">
+		<value>gnome-</value>
+	</env>
+	<env name="PRIMEWAVE_HOME">
+		<value>/home/synopsys/primewave/W-2024.09-SP2</value>
+	</env>
+	<env name="MODULES_RUN_QUARANTINE">
+		<value>LD_LIBRARY_PATH LD_PRELOAD</value>
+	</env>
+	<env name="RH_HOME">
+		<value>/home/synopsys/rh_analysis_fusion/W-2024.09-SP3</value>
+	</env>
+	<env name="CMD_FILE_PATH">
+		<value>/tmp/cmdfile_1305392</value>
+	</env>
+	<env name="MW_HOME">
+		<value>/home/synopsys/mw/W-2024.09-SP2</value>
+	</env>
+	<env name="CF_HOME">
+		<value>/home/synopsys/cf/W-2024.09-SP2</value>
+	</env>
+	<env name="LANG">
+		<value/>
+	</env>
+	<env name="HISTCONTROL">
+		<value>ignoredups</value>
+	</env>
+	<env name="PRIMESIM_64">
+		<value>1</value>
+	</env>
+	<env name="DISPLAY">
+		<value>:12.0</value>
+	</env>
+	<env name="HOSTNAME">
+		<value>psdc-eda04.psdc.org.my</value>
+	</env>
+	<env name="OLDPWD">
+		<value>/home/user16/work/klngan/hdl_labs/lab2</value>
+	</env>
+	<env name="SYNOPSYS_SYSTYPE">
+		<value>LINUX.64</value>
+	</env>
+	<env name="SPG_CMD_PARSE_TO_GET_SCREEN_OUT_SETTING">
+		<value>no</value>
+	</env>
+	<env name="COLORTERM">
+		<value>truecolor</value>
+	</env>
+	<env name="MAKE_TERMOUT">
+		<value>/dev/pts/9</value>
+	</env>
+	<env name="SNPSLMD_LICENSE_FILE">
+		<value>27020@192.168.17.70</value>
+	</env>
+	<env name="SPYGLASS_PLATFORM">
+		<value>Linux4</value>
+	</env>
+	<env name="LIBGL_DRI3_DISABLE">
+		<value>1</value>
+	</env>
+	<env name="SPYGLASS_IPC_SERVER_APP_PID">
+		<value>1305611</value>
+	</env>
+	<env name="PRIMESIM_LIC">
+		<value>27020@192.168.17.70</value>
+	</env>
+	<env name="VENDOR">
+		<value>unknown</value>
+	</env>
+	<env name="MACHTYPE">
+		<value>x86_64</value>
+	</env>
+	<env name="SPYGLASS_ENABLE_SYS_IPC_SERVER">
+		<value>yes</value>
+	</env>
+	<env name="IDDQ_HOME">
+		<value>/home/synopsys/idq/W-2024.09-SP4</value>
+	</env>
+	<env name="MODULES_USE_COMPAT_VERSION">
+		<value>0</value>
+	</env>
+	<env name="SSH_AUTH_SOCK">
+		<value>/run/user/1001/keyring/ssh</value>
+	</env>
+	<env name="MFLAGS">
+		<value/>
+	</env>
+	<env name="SAVE_CATALOG">
+		<value>PATH</value>
+	</env>
+	<env name="SNPSLMD_DISABLE_DEBUG_LICENSE_CHECKS">
+		<value>1</value>
+	</env>
+	<env name="S_COLORS">
+		<value>auto</value>
+	</env>
+	<env name="which_declare">
+		<value>declare -f</value>
+	</env>
+	<env name="OSTYPE">
+		<value>linux</value>
+	</env>
+	<env name="POWERVIEW_64">
+		<value>1</value>
+	</env>
+	<env name="XDG_SESSION_ID">
+		<value>c5</value>
+	</env>
+	<env name="XRDP_SOCKET_PATH">
+		<value>/run/xrdp/1001</value>
+	</env>
+	<env name="SKIP_PLATFORM_CHECK">
+		<value>1</value>
+	</env>
+	<env name="MODULES_CMD">
+		<value>/usr/share/Modules/libexec/modulecmd.tcl</value>
+	</env>
+	<env name="SPYGLASS_DW_PATH">
+		<value>/home/synopsys/spyglass/W-2024.09-SP2/SPYGLASS_HOME/dw_support</value>
+	</env>
+	<env name="DORADO_HOME">
+		<value>/home/synopsys/tweaker/W-2024.09-SP4</value>
+	</env>
+	<env name="USER">
+		<value>user16</value>
+	</env>
+	<env name="SYNOPSYS_ROOT">
+		<value>/home/synopsys</value>
+	</env>
+	<env name="ROOT">
+		<value>/home/user16/work/klngan/hdl_labs/lab1</value>
+	</env>
+	<env name="XA_64">
+		<value>1</value>
+	</env>
+	<env name="SPYGLASS_TCL_SHELL">
+		<value>ok</value>
+	</env>
+	<env name="SYNOPSYS_LC_ROOT">
+		<value>/home/synopsys/lc/W-2024.09-SP3</value>
+	</env>
+	<env name="GNOME_TERMINAL_SCREEN">
+		<value>/org/gnome/Terminal/screen/1a994d86_295e_4daf_b4c6_e89e731392ae</value>
+	</env>
+	<env name="GROUP">
+		<value>user16</value>
+	</env>
+	<env name="XRDP_PULSE_SINK_SOCKET">
+		<value>xrdp_chansrv_audio_out_socket_12</value>
+	</env>
+	<env name="PULSE_SCRIPT">
+		<value>/etc/xrdp/pulse/default.pa</value>
+	</env>
+	<env name="PWD">
+		<value>/home/user16/work/klngan/hdl_labs/lab2/lint</value>
+	</env>
+	<env name="FM_HOME">
+		<value>/home/synopsys/fm/W-2024.09-SP4</value>
+	</env>
+	<env name="SSH_ASKPASS">
+		<value>/usr/libexec/openssh/gnome-ssh-askpass</value>
+	</env>
+	<env name="PRIMESIM_EMIR_HOME">
+		<value>/home/synopsys/primesim_emir/W-2024.09-SP2</value>
+	</env>
+	<env name="HOME">
+		<value>/home/user16</value>
+	</env>
+	<env name="UID">
+		<value>1001</value>
+	</env>
+	<env name="SPYGLASS_CHECKER_PID_FILE_VAR">
+		<value>/tmp/.SPYGLASS_CHECKER_PID_FILE@@1305392383</value>
+	</env>
+	<env name="SSH_AGENT_PID">
+		<value>1466999</value>
+	</env>
+	<env name="HOST">
+		<value>psdc-eda04.psdc.org.my</value>
+	</env>
+	<env name="TCL_LIBRARY">
+		<value>/home/synopsys/spyglass/W-2024.09-SP2/SPYGLASS_HOME/lib/multi-tcl/lib/tcl</value>
+	</env>
+	<env name="XDG_DATA_DIRS">
+		<value>/home/user16/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share</value>
+	</env>
+	<env name="SHLIB_PATH">
+		<value>/home/synopsys/spyglass/W-2024.09-SP2/SPYGLASS_HOME/lib:/home/synopsys/spyglass/W-2024.09-SP2/SPYGLASS_HOME/lib/oa/Linux4:::/home/synopsys/spyglass/W-2024.09-SP2/SPYGLASS_HOME/../multi-qt/lib/Linux4:/home/synopsys/spyglass/W-2024.09-SP2/SPYGLASS_HOME/lib/oa/Linux4:/home/synopsys/tweaker/W-2024.09-SP4/linux64/tweaker/lib/:/home/synopsys/tweaker/W-2024.09-SP4/linux64/tweaker/lib_com:/home/synopsys/tweaker/W-2024.09-SP4/linux64/tweaker/lib_release:/home/synopsys/verdi/W-2024.09-SP2/share/PLI/VCS/linux64:/home/synopsys/xa/W-2024.09-SP2/GNU/linux64/gcc/lib64:/usr/lib64::/usr/lib:/lib</value>
+	</env>
+	<env name="FC_HOME">
+		<value>/home/synopsys/fusioncompiler/W-2024.09-SP3</value>
+	</env>
+	<env name="PRIMELIB_HOME">
+		<value>/home/synopsys/primelib/W-2024.09-SP4</value>
+	</env>
+	<env name="SPYGLASS_USE_SNPSMEM">
+		<value>yes</value>
+	</env>
+	<env name="TMPDIR">
+		<value/>
+	</env>
+	<env name="GJS_DEBUG_OUTPUT">
+		<value>stderr</value>
+	</env>
+	<env name="PT_HOME">
+		<value>/home/synopsys/prime/W-2024.09-SP4</value>
+	</env>
+	<env name="XRDP_PULSE_SOURCE_SOCKET">
+		<value>xrdp_chansrv_audio_in_socket_12</value>
+	</env>
+	<env name="LOADEDMODULES">
+		<value/>
+	</env>
+	<env name="ICVWB_HOME">
+		<value>/home/synopsys/icv_workbench/W-2024.09-SP2</value>
+	</env>
+	<env name="ICV_INCLUDES">
+		<value>/home/synopsys/icvalidator/W-2024.09-SP4/include</value>
+	</env>
+	<env name="NOVAS_HOME">
+		<value>/home/synopsys/verdi/W-2024.09-SP2</value>
+	</env>
+	<env name="CC_HOME">
+		<value>/home/synopsys/customcompiler/W-2024.09-SP2</value>
+	</env>
+	<env name="SG_SPYGLASS_DW_PATH">
+		<value>1</value>
+	</env>
+	<env name="TWEAKER_HOME">
+		<value>/home/synopsys/tweaker/W-2024.09-SP4</value>
+	</env>
+	<env name="VC_STATIC_HOME">
+		<value>/home/synopsys/vc_static/W-2024.09-SP2</value>
+	</env>
+	<env name="MAIL">
+		<value>/var/spool/mail/user16</value>
+	</env>
+	<env name="SYNOPSYS">
+		<value>/home/synopsys/syn/W-2024.09-SP4</value>
+	</env>
+	<env name="VERDI_LIB">
+		<value>/home/synopsys/verdi/W-2024.09-SP2/share/PLI/VCS/linux64</value>
+	</env>
+	<env name="ICC2_HOME">
+		<value>/home/synopsys/icc2/W-2024.09-SP3</value>
+	</env>
+	<env name="HSPICE_HOME">
+		<value>/home/synopsys/hspice/W-2024.09-SP2</value>
+	</env>
+	<env name="SHELL">
+		<value>/bin/bash</value>
+	</env>
+	<env name="VTE_VERSION">
+		<value>5204</value>
+	</env>
+	<env name="TERM">
+		<value>xterm-256color</value>
+	</env>
+	<env name="SPYGLASS_TMPDIR">
+		<value>/tmp</value>
+	</env>
+	<env name="QT_IM_MODULE">
+		<value>ibus</value>
+	</env>
+	<env name="XMODIFIERS">
+		<value>@im=ibus</value>
+	</env>
+	<env name="ICV_HOME_DIR">
+		<value>/home/synopsys/icvalidator/W-2024.09-SP4</value>
+	</env>
+	<env name="RHSC_HOME">
+		<value>/home/synopsys/rhsc_analysis_fusion/W-2024.09-SP3</value>
+	</env>
+	<env name="XDG_CURRENT_DESKTOP">
+		<value>GNOME</value>
+	</env>
+	<env name="TESTMAX">
+		<value>/home/synopsys/testmax/W-2024.09-SP4</value>
+	</env>
+	<env name="GNOME_TERMINAL_SERVICE">
+		<value>:1.279</value>
+	</env>
+	<env name="MAKELEVEL">
+		<value>1</value>
+	</env>
+	<env name="VERDI_HOME">
+		<value>/home/synopsys/verdi/W-2024.09-SP2</value>
+	</env>
+	<env name="XRC_HOME">
+		<value>/home/synopsys/starrc/W-2024.09-SP4</value>
+	</env>
+	<env name="ICC_HOME">
+		<value>/home/synopsys/icc/W-2024.09-SP2</value>
+	</env>
+	<env name="SHLVL">
+		<value>7</value>
+	</env>
+	<env name="CCK_HOME">
+		<value>/home/synopsys/cck/W-2024.09-SP2</value>
+	</env>
+	<env name="MAKE_TERMERR">
+		<value>/dev/pts/9</value>
+	</env>
+	<env name="SPYGLASS_LD_PRELOAD">
+		<value>/home/synopsys/spyglass/W-2024.09-SP2/SPYGLASS_HOME/lib/libreplacemalloc.so</value>
+	</env>
+	<env name="MANPATH">
+		<value>/home/synopsys/spyglass/W-2024.09-SP2/SPYGLASS_HOME/policies/starc/sgtcl/man:/home/synopsys/spyglass/W-2024.09-SP2/SPYGLASS_HOME/policies/power_est/sgtcl/man:/home/synopsys/spyglass/W-2024.09-SP2/SPYGLASS_HOME/policies/morelint/sgtcl/man:/home/synopsys/spyglass/W-2024.09-SP2/SPYGLASS_HOME/policies/lowpower/sgtcl/man:/home/synopsys/spyglass/W-2024.09-SP2/SPYGLASS_HOME/policies/lint/sgtcl/man:/home/synopsys/spyglass/W-2024.09-SP2/SPYGLASS_HOME/policies/latch/sgtcl/man:/home/synopsys/spyglass/W-2024.09-SP2/SPYGLASS_HOME/policies/erc/sgtcl/man:/home/synopsys/spyglass/W-2024.09-SP2/SPYGLASS_HOME/policies/dft/sgtcl/man:/home/synopsys/spyglass/W-2024.09-SP2/SPYGLASS_HOME/policies/constraints/sgtcl/man:/home/synopsys/spyglass/W-2024.09-SP2/SPYGLASS_HOME/policies/clock/sgtcl/man:/home/synopsys/spyglass/W-2024.09-SP2/SPYGLASS_HOME/policies/auto-verify/sgtcl/man:/home/synopsys/spyglass/W-2024.09-SP2/SPYGLASS_HOME/lib/multi-tcl/man:/home/synopsys/spyglass/W-2024.09-SP2/SPYGLASS_HOME/auxi/help_doc/man:/usr/share/man:</value>
+	</env>
+	<env name="RTLA_HOME">
+		<value>/home/synopsys/rtla/W-2024.09-SP3</value>
+	</env>
+	<env name="SPYGLASS_IPC_SERVER_APP_INFO">
+		<value>/tmp/.SPYGLASS_IPC_SERVER_APP_INFO@@383</value>
+	</env>
+	<env name="NANOTIME_HOME">
+		<value>/home/synopsys/nt/W-2024.09-SP4</value>
+	</env>
+	<env name="PRIMESIM_HOME">
+		<value>/home/synopsys/primesim/W-2024.09-SP2</value>
+	</env>
+	<env name="MODULEPATH">
+		<value>/etc/scl/modulefiles:/etc/scl/modulefiles:/etc/scl/modulefiles:/etc/scl/modulefiles:/etc/scl/modulefiles:/usr/share/Modules/modulefiles:/etc/modulefiles:/usr/share/modulefiles</value>
+	</env>
+	<env name="SPG_INTRNL_INVCN">
+		<value>1</value>
+	</env>
+	<env name="GNOME_DESKTOP_SESSION_ID">
+		<value>this-is-deprecated</value>
+	</env>
+	<env name="LOGNAME">
+		<value>user16</value>
+	</env>
+	<env name="DBUS_SESSION_BUS_ADDRESS">
+		<value>unix:path=/run/user/1001/bus</value>
+	</env>
+	<env name="XDG_RUNTIME_DIR">
+		<value>/run/user/1001</value>
+	</env>
+	<env name="MODE">
+		<value>sg_linting</value>
+	</env>
+	<env name="MODULEPATH_modshare">
+		<value>/usr/share/Modules/modulefiles:2:/etc/modulefiles:2:/usr/share/modulefiles:2</value>
+	</env>
+	<env name="PRIMESIM_DR">
+		<value>/home/synopsys/primesim_dr/W-2024.09-SP2</value>
+	</env>
+	<env name="XA_HOME">
+		<value>/home/synopsys/xa/W-2024.09-SP2</value>
+	</env>
+	<env name="PRIMESIM_DI">
+		<value>/home/synopsys/primesim_di/W-2024.09-SP2</value>
+	</env>
+	<env name="PATH">
+		<value>/home/synopsys/spyglass/W-2024.09-SP2/SPYGLASS_HOME/../dotty/scripts:/home/synopsys/spyglass/W-2024.09-SP2/SPYGLASS_HOME/../dotty/bin/Linux4:/home/synopsys/spyglass/W-2024.09-SP2/SPYGLASS_HOME/obj:/home/synopsys/spyglass/W-2024.09-SP2/SPYGLASS_HOME/bin::/usr/local/bin:/usr/bin:/bin:/home/synopsys/spyglass/W-2024.09-SP2/SPYGLASS_HOME/obj:/home/synopsys/spyglass/W-2024.09-SP2/SPYGLASS_HOME/bin::/usr/local/bin:/usr/bin:/bin:/home/synopsys/spyglass/W-2024.09-SP2/SPYGLASS_HOME/obj:/home/synopsys/spyglass/W-2024.09-SP2/SPYGLASS_HOME/bin::/usr/local/bin:/usr/bin:/bin:/home/user16/.local/bin:/home/user16/bin:/usr/share/Modules/bin:/sbin:/bin:/usr/bin:/usr/local/bin:/usr/local/sbin:/usr/sbin:.:/home/synopsys/syn/W-2024.09-SP4/bin:/home/synopsys/rtla/W-2024.09-SP3/bin:/home/synopsys/icc/W-2024.09-SP2/bin:/home/synopsys/prime/W-2024.09-SP4/bin:/home/synopsys/prime/W-2024.09-SP4/linux64/syn/bin:/home/synopsys/lc/W-2024.09-SP3/bin:/home/synopsys/mw/W-2024.09-SP2/bin/linux64:/home/synopsys/vcs/W-2024.09-SP2/bin:/home/synopsys/fm/W-2024.09-SP4/bin:/home/synopsys/icc2/W-2024.09-SP3/bin:/home/synopsys/customcompiler/W-2024.09-SP2/bin:/home/synopsys/hspice/W-2024.09-SP2/hspice/bin:/home/synopsys/icvalidator/W-2024.09-SP4/bin/LINUX.64:/home/synopsys/starrc/W-2024.09-SP4/bin:/home/synopsys/wv/W-2024.09-SP2/bin:/home/synopsys/verdi/W-2024.09-SP2/bin:/home/synopsys/xa/W-2024.09-SP2/bin:/home/synopsys/primesim/W-2024.09-SP2/bin:/home/synopsys/primewave/W-2024.09-SP2/bin:/home/synopsys/primewave/W-2024.09-SP2/linux64/swv/bin:/home/synopsys/nt/W-2024.09-SP4/bin:/home/synopsys/primelib/W-2024.09-SP4/bin:/home/synopsys/spyglass/W-2024.09-SP2/SPYGLASS_HOME/bin:/home/synopsys/euclide/W-2024.09-SP2/linux.gtk.x86_64/eclipse:/home/synopsys/icv_workbench/W-2024.09-SP2/bin:/home/synopsys/vc_static/W-2024.09-SP2/bin:/home/synopsys/fusioncompiler/W-2024.09-SP3/bin:/home/synopsys/tweaker/W-2024.09-SP4/linux64/tweaker/bin:/home/synopsys/idq/W-2024.09-SP4/linux64/iddq/bin:/home/synopsys/rhsc_analysis_fusion/W-2024.09-SP3/linux_x86_64_rhel8_ece/bin:/home/synopsys/rh_analysis_fusion/W-2024.09-SP3/bin:/home/synopsys/testmax/W-2024.09-SP4/bin:/home/synopsys/cf/W-2024.09-SP2/bin:/home/synopsys/cck/W-2024.09-SP2/bin:/home/synopsys/primesim_emir/W-2024.09-SP2/bin:/home/synopsys/primesim_dr/W-2024.09-SP2/bin:/home/synopsys/primesim_di/W-2024.09-SP2/bin:/home/synopsys/pprtl/W-2024.09-SP4/bin</value>
+	</env>
+	<env name="VCS_HOME">
+		<value>/home/synopsys/vcs/W-2024.09-SP2</value>
+	</env>
+	<env name="DEBUGINFOD_URLS">
+		<value>https://debuginfod.centos.org/ </value>
+	</env>
+	<env name="EUCLIDE_HOME">
+		<value>/home/synopsys/euclide/W-2024.09-SP2</value>
+	</env>
+	<env name="MODULESHOME">
+		<value>/usr/share/Modules</value>
+	</env>
+	<env name="SPYGLASS_LICENSE_QUEUING_INTERVAL">
+		<value>24000 10</value>
+	</env>
+	<env name="SAVE_PATH">
+		<value>/home/synopsys/spyglass/W-2024.09-SP2/SPYGLASS_HOME/obj:/home/synopsys/spyglass/W-2024.09-SP2/SPYGLASS_HOME/bin::/usr/local/bin:/usr/bin:/bin:/home/synopsys/spyglass/W-2024.09-SP2/SPYGLASS_HOME/obj:/home/synopsys/spyglass/W-2024.09-SP2/SPYGLASS_HOME/bin::/usr/local/bin:/usr/bin:/bin:/home/user16/.local/bin:/home/user16/bin:/usr/share/Modules/bin:/sbin:/bin:/usr/bin:/usr/local/bin:/usr/local/sbin:/usr/sbin:.:/home/synopsys/syn/W-2024.09-SP4/bin:/home/synopsys/rtla/W-2024.09-SP3/bin:/home/synopsys/icc/W-2024.09-SP2/bin:/home/synopsys/prime/W-2024.09-SP4/bin:/home/synopsys/prime/W-2024.09-SP4/linux64/syn/bin:/home/synopsys/lc/W-2024.09-SP3/bin:/home/synopsys/mw/W-2024.09-SP2/bin/linux64:/home/synopsys/vcs/W-2024.09-SP2/bin:/home/synopsys/fm/W-2024.09-SP4/bin:/home/synopsys/icc2/W-2024.09-SP3/bin:/home/synopsys/customcompiler/W-2024.09-SP2/bin:/home/synopsys/hspice/W-2024.09-SP2/hspice/bin:/home/synopsys/icvalidator/W-2024.09-SP4/bin/LINUX.64:/home/synopsys/starrc/W-2024.09-SP4/bin:/home/synopsys/wv/W-2024.09-SP2/bin:/home/synopsys/verdi/W-2024.09-SP2/bin:/home/synopsys/xa/W-2024.09-SP2/bin:/home/synopsys/primesim/W-2024.09-SP2/bin:/home/synopsys/primewave/W-2024.09-SP2/bin:/home/synopsys/primewave/W-2024.09-SP2/linux64/swv/bin:/home/synopsys/nt/W-2024.09-SP4/bin:/home/synopsys/primelib/W-2024.09-SP4/bin:/home/synopsys/spyglass/W-2024.09-SP2/SPYGLASS_HOME/bin:/home/synopsys/euclide/W-2024.09-SP2/linux.gtk.x86_64/eclipse:/home/synopsys/icv_workbench/W-2024.09-SP2/bin:/home/synopsys/vc_static/W-2024.09-SP2/bin:/home/synopsys/fusioncompiler/W-2024.09-SP3/bin:/home/synopsys/tweaker/W-2024.09-SP4/linux64/tweaker/bin:/home/synopsys/idq/W-2024.09-SP4/linux64/iddq/bin:/home/synopsys/rhsc_analysis_fusion/W-2024.09-SP3/linux_x86_64_rhel8_ece/bin:/home/synopsys/rh_analysis_fusion/W-2024.09-SP3/bin:/home/synopsys/testmax/W-2024.09-SP4/bin:/home/synopsys/cf/W-2024.09-SP2/bin:/home/synopsys/cck/W-2024.09-SP2/bin:/home/synopsys/primesim_emir/W-2024.09-SP2/bin:/home/synopsys/primesim_dr/W-2024.09-SP2/bin:/home/synopsys/primesim_di/W-2024.09-SP2/bin:/home/synopsys/pprtl/W-2024.09-SP4/bin</value>
+	</env>
+	<env name="MAKEFLAGS">
+		<value/>
+	</env>
+	<env name="HISTSIZE">
+		<value>1000</value>
+	</env>
+	<env name="LD_PRELOAD">
+		<value/>
+	</env>
+	<env name="GJS_DEBUG_TOPICS">
+		<value>JS ERROR;JS LOG</value>
+	</env>
+	<env name="SESSION_MANAGER">
+		<value>local/unix:@/tmp/.ICE-unix/1466787,unix/unix:/tmp/.ICE-unix/1466787</value>
+	</env>
+	<env name="PPRTL_HOME">
+		<value>/home/synopsys/pprtl/W-2024.09-SP4</value>
+	</env>
+	<env name="XRDP_SESSION">
+		<value>1466715</value>
+	</env>
+	<env name="SPYGLASS_HOME">
+		<value>/home/synopsys/spyglass/W-2024.09-SP2/SPYGLASS_HOME</value>
+	</env>
+	<env name="LESSOPEN">
+		<value>||/usr/bin/lesspipe.sh %s</value>
+	</env>
+	<env name="WV_HOME">
+		<value>/home/synopsys/wv/W-2024.09-SP2</value>
+	</env>
+	<env name="BASH_FUNC_which%%">
+		<value>() {  ( alias;
+ eval ${which_declare} ) | /usr/bin/which --tty-only --read-alias --read-functions --show-tilde --show-dot $@
+}</value>
+	</env>
+	<env name="BASH_FUNC_module%%">
+		<value>() {  _module_raw &quot;$@&quot; 2&gt;&amp;1
+}</value>
+	</env>
+	<env name="BASH_FUNC__module_raw%%">
+		<value>() {  unset _mlshdbg;
+ if [ &quot;${MODULES_SILENT_SHELL_DEBUG:-0}&quot; = &apos;1&apos; ]; then
+ case &quot;$-&quot; in 
+ *v*x*)
+ set +vx;
+ _mlshdbg=&apos;vx&apos;
+ ;;
+ *v*)
+ set +v;
+ _mlshdbg=&apos;v&apos;
+ ;;
+ *x*)
+ set +x;
+ _mlshdbg=&apos;x&apos;
+ ;;
+ *)
+ _mlshdbg=&apos;&apos;
+ ;;
+ esac;
+ fi;
+ unset _mlre _mlIFS;
+ if [ -n &quot;${IFS+x}&quot; ]; then
+ _mlIFS=$IFS;
+ fi;
+ IFS=&apos; &apos;;
+ for _mlv in ${MODULES_RUN_QUARANTINE:-};
+ do
+ if [ &quot;${_mlv}&quot; = &quot;${_mlv##*[!A-Za-z0-9_]}&quot; -a &quot;${_mlv}&quot; = &quot;${_mlv#[0-9]}&quot; ]; then
+ if [ -n &quot;`eval &apos;echo ${&apos;$_mlv&apos;+x}&apos;`&quot; ]; then
+ _mlre=&quot;${_mlre:-}${_mlv}_modquar=&apos;`eval &apos;echo ${&apos;$_mlv&apos;}&apos;`&apos; &quot;;
+ fi;
+ _mlrv=&quot;MODULES_RUNENV_${_mlv}&quot;;
+ _mlre=&quot;${_mlre:-}${_mlv}=&apos;`eval &apos;echo ${&apos;$_mlrv&apos;:-}&apos;`&apos; &quot;;
+ fi;
+ done;
+ if [ -n &quot;${_mlre:-}&quot; ]; then
+ eval `eval ${_mlre} /usr/bin/tclsh /usr/share/Modules/libexec/modulecmd.tcl bash &apos;&quot;$@&quot;&apos;`;
+ else
+ eval `/usr/bin/tclsh /usr/share/Modules/libexec/modulecmd.tcl bash &quot;$@&quot;`;
+ fi;
+ _mlstatus=$?;
+ if [ -n &quot;${_mlIFS+x}&quot; ]; then
+ IFS=$_mlIFS;
+ else
+ unset IFS;
+ fi;
+ unset _mlre _mlv _mlrv _mlIFS;
+ if [ -n &quot;${_mlshdbg:-}&quot; ]; then
+ set -$_mlshdbg;
+ fi;
+ unset _mlshdbg;
+ return $_mlstatus
+}</value>
+	</env>
+	<env name="BASH_FUNC_switchml%%">
+		<value>() {  typeset swfound=1;
+ if [ &quot;${MODULES_USE_COMPAT_VERSION:-0}&quot; = &apos;1&apos; ]; then
+ typeset swname=&apos;main&apos;;
+ if [ -e /usr/share/Modules/libexec/modulecmd.tcl ]; then
+ typeset swfound=0;
+ unset MODULES_USE_COMPAT_VERSION;
+ fi;
+ else
+ typeset swname=&apos;compatibility&apos;;
+ if [ -e /usr/share/Modules/libexec/modulecmd-compat ]; then
+ typeset swfound=0;
+ MODULES_USE_COMPAT_VERSION=1;
+ export MODULES_USE_COMPAT_VERSION;
+ fi;
+ fi;
+ if [ $swfound -eq 0 ]; then
+ echo &quot;Switching to Modules $swname version&quot;;
+ source /usr/share/Modules/init/bash;
+ else
+ echo &quot;Cannot switch to Modules $swname version, command not found&quot;;
+ return 1;
+ fi
+}</value>
+	</env>
+	<env name="BASH_FUNC_scl%%">
+		<value>() {  if [ &quot;$1&quot; = &quot;load&quot; -o &quot;$1&quot; = &quot;unload&quot; ]; then
+ eval &quot;module $@&quot;;
+ else
+ /usr/bin/scl &quot;$@&quot;;
+ fi
+}</value>
+	</env>
+	<env name="BASH_FUNC_ml%%">
+		<value>() {  module ml &quot;$@&quot;
+}</value>
+	</env>
+	<env name="_">
+		<value>/home/synopsys/spyglass/W-2024.09-SP2/SPYGLASS_HOME/obj/check.Linux4</value>
+	</env>
+	<env name="CONCORDE_HOME">
+		<value>DUMMY_CONCORDE_HOME</value>
+	</env>
+	<env name="FLEXLM_BORROWFILE">
+		<value>/home/user16/.psdc-eda04.psdc.org.my-borrow.txt</value>
+	</env>
+	<env name="METHODOLOGY_HOME">
+		<value>/home/synopsys/spyglass/W-2024.09-SP2/SPYGLASS_HOME/GuideWare/latest/block/rtl_handoff</value>
+	</env>
+</ENVVAR>
+<ENVFILE>/home/user16/work/klngan/hdl_labs/lab1/lint/sg_linting/sg_linting/mux2to1/lint/lint_rtl//.sg.env</ENVFILE>
+<SPG_VERSION>SpyGlass_vW-2024.09-SP2</SPG_VERSION>
+<MACHINE name="psdc-eda04.psdc.org.my" version="#1 SMP Wed May 14 09:36:12 EDT 2025"/>
+<Options>
+	<Opt name="--template_info">
+		<value>lint/lint_rtl</value>
+	</Opt>
+	<Opt name="-lib">
+		<value>WORK=&gt;/home/user16/work/klngan/hdl_labs/lab1/lint/sg_linting/sg_linting/mux2to1/WORK</value>
+		<value>SYNOPSYS=&gt;/home/synopsys/spyglass/W-2024.09-SP2/SPYGLASS_HOME/vhdl_libs/Linux4/SYNOPSYS</value>
+	</Opt>
+	<Opt name="-m">
+		<value>SpyGlass::Compatibility::v2_7_3</value>
+		<value>SpyGlass::Compatibility::v2_7_3</value>
+		<value>SpyGlass::Compatibility::v2_7_3</value>
+	</Opt>
+	<Opt name="-overloadrules">
+		<value>STARC05-2.1.6.5+severity=Warning</value>
+		<value>STARC05-2.3.1.2c+severity=Error</value>
+		<value>W421+severity=Error</value>
+		<value>sim_race02+severity=Warning</value>
+		<value>W416+severity=Error</value>
+		<value>PragmaComments-ML+severity=Data</value>
+		<value>STARC05-2.10.2.3+severity=Warning</value>
+		<value>STARC05-2.11.3.1+severity=Warning</value>
+		<value>STARC05-2.3.1.5b+severity=Error</value>
+		<value>W289+severity=Error</value>
+		<value>W293+severity=Error</value>
+		<value>W352+severity=Error</value>
+		<value>W398+severity=Error</value>
+		<value>W422+severity=Error</value>
+		<value>W71+severity=Error</value>
+		<value>ParamWidthMismatch-ML+severity=Warning</value>
+		<value>ReportPortInfo-ML+severity=Data</value>
+		<value>STARC05-2.1.3.1+severity=Warning</value>
+		<value>STARC05-2.1.5.3+severity=Warning</value>
+		<value>STARC05-2.2.3.3+severity=Warning</value>
+		<value>STARC05-2.3.1.6+severity=Warning</value>
+		<value>W110+severity=Error</value>
+		<value>W122+severity=Error</value>
+		<value>W123+severity=Error</value>
+		<value>W19+severity=Error</value>
+		<value>W218+severity=Error</value>
+		<value>W505+severity=Error</value>
+		<value>W66+severity=Error</value>
+		<value>InferLatch+severity=Error</value>
+		<value>RegInputOutput-ML+severity=Data</value>
+		<value>STARC05-2.3.4.1v+severity=Warning</value>
+		<value>STARC05-2.5.1.7+severity=Warning</value>
+		<value>STARC05-2.5.1.9+severity=Warning</value>
+		<value>W336+severity=Error</value>
+		<value>W414+severity=Error</value>
+		<value>W450L+severity=Warning</value>
+		<value>UndrivenInTerm-ML+severity=Error</value>
+		<value>BufClock+severity=Warning</value>
+		<value>checkPinConnectedToSupply+severity=Error</value>
+		<value>CombLoop+msgLabel=CombLoop+severity=Error</value>
+		<value>FlopClockConstant+msgLabel=FlopClockConstant+severity=Error</value>
+		<value>LatchFeedback+severity=Error</value>
+		<value>STARC05-1.2.1.2+severity=Error</value>
+		<value>STARC05-1.3.1.3+severity=Warning</value>
+		<value>STARC05-1.4.3.4+severity=Warning</value>
+		<value>STARC05-2.1.4.5+severity=Warning</value>
+		<value>STARC05-2.4.1.5+severity=Error</value>
+		<value>W415+msgLabel=W415+severity=Error</value>
+	</Opt>
+	<Opt name="-policy">
+		<value>openmore</value>
+		<value>starc</value>
+		<value>starc2005</value>
+		<value>erc</value>
+		<value>simulation</value>
+		<value>lint</value>
+		<value>latch</value>
+		<value>spyglass</value>
+		<value>morelint</value>
+		<value>timing</value>
+	</Opt>
+	<Opt name="-report">
+		<value>moresimple</value>
+		<value>runsummary</value>
+	</Opt>
+	<Opt name="-rules">
+		<value>badimplicitSM1</value>
+		<value>badimplicitSM2</value>
+		<value>badimplicitSM4</value>
+		<value>BlockHeader</value>
+		<value>bothedges</value>
+		<value>STARC05-2.1.6.5</value>
+		<value>STARC05-2.3.1.2c</value>
+		<value>W421</value>
+		<value>W442a</value>
+		<value>W442b</value>
+		<value>W442c</value>
+		<value>W442f</value>
+		<value>sim_race02</value>
+		<value>W110a</value>
+		<value>W416</value>
+		<value>CheckDelayTimescale-ML</value>
+		<value>PragmaComments-ML</value>
+		<value>STARC05-2.10.2.3</value>
+		<value>STARC05-2.11.3.1</value>
+		<value>STARC05-2.3.1.5b</value>
+		<value>W215</value>
+		<value>W216</value>
+		<value>W289</value>
+		<value>W292</value>
+		<value>W293</value>
+		<value>W317</value>
+		<value>W352</value>
+		<value>W398</value>
+		<value>W422</value>
+		<value>W424</value>
+		<value>W426</value>
+		<value>W467</value>
+		<value>W480</value>
+		<value>W481a</value>
+		<value>W481b</value>
+		<value>W496a</value>
+		<value>W496b</value>
+		<value>W71</value>
+		<value>NoAssignX-ML</value>
+		<value>NoXInCase-ML</value>
+		<value>ParamWidthMismatch-ML</value>
+		<value>ReportPortInfo-ML</value>
+		<value>STARC05-2.1.3.1</value>
+		<value>STARC05-2.1.5.3</value>
+		<value>STARC05-2.2.3.3</value>
+		<value>STARC05-2.3.1.6</value>
+		<value>W110</value>
+		<value>W116</value>
+		<value>W122</value>
+		<value>W123</value>
+		<value>W19</value>
+		<value>W218</value>
+		<value>W240</value>
+		<value>W263</value>
+		<value>W337</value>
+		<value>W362</value>
+		<value>W486</value>
+		<value>W499</value>
+		<value>W502</value>
+		<value>W505</value>
+		<value>W66</value>
+		<value>InferLatch</value>
+		<value>RegInputOutput-ML</value>
+		<value>STARC05-2.3.4.1v</value>
+		<value>STARC05-2.5.1.7</value>
+		<value>STARC05-2.5.1.9</value>
+		<value>STARC05-2.10.3.2a</value>
+		<value>W336</value>
+		<value>W414</value>
+		<value>W450L</value>
+		<value>UndrivenInTerm-ML</value>
+		<value>BufClock</value>
+		<value>checkPinConnectedToSupply</value>
+		<value>CombLoop</value>
+		<value>FlopClockConstant</value>
+		<value>FlopEConst</value>
+		<value>FlopSRConst</value>
+		<value>LatchFeedback</value>
+		<value>STARC05-1.2.1.2</value>
+		<value>STARC05-1.3.1.3</value>
+		<value>STARC05-1.4.3.4</value>
+		<value>STARC05-2.1.4.5</value>
+		<value>STARC05-2.4.1.5</value>
+		<value>STARC05-2.5.1.2</value>
+		<value>W392</value>
+		<value>W415</value>
+		<value>STARC05-2.10.1.4a</value>
+		<value>STARC05-2.10.1.4b</value>
+		<value>W156</value>
+		<value>STARC05-2.3.3.1</value>
+		<value>W415a</value>
+		<value>W287b</value>
+		<value>W224</value>
+		<value>W287a</value>
+		<value>W528</value>
+		<value>mixedsenselist</value>
+		<value>W339a</value>
+	</Opt>
+	<Opt name="-template">
+		<value>lint/lint_rtl</value>
+	</Opt>
+	<Opt name="-top">
+		<value>mux2to1</value>
+	</Opt>
+	<Opt name="-verilog_files">
+		<value>/home/user16/work/klngan/hdl_labs/lab1/design/mux2to1.v</value>
+		<value>/home/user16/work/klngan/hdl_labs/lab1/design/mux2to1_tb.v</value>
+	</Opt>
+	<Opt name="+vlogarg">
+		<value>+suppress+36</value>
+	</Opt>
+	<Opt name="--stime">
+		<value>10:33:03 AM on Jul 24 2025</value>
+	</Opt>
+	<Opt name="-blackboxdir">
+		<value>inout</value>
+	</Opt>
+	<Opt name="-dbdir">
+		<value>/home/user16/work/klngan/hdl_labs/lab1/lint/sg_linting/sg_linting/mux2to1/.SG_SaveRestoreDB</value>
+	</Opt>
+	<Opt name="-debuglevel">
+		<value>0</value>
+	</Opt>
+	<Opt name="-enable_save_restore_builtin">
+		<value>true</value>
+	</Opt>
+	<Opt name="-gateslibtype">
+		<value>0</value>
+	</Opt>
+	<Opt name="-logfile">
+		<value>/home/user16/work/klngan/hdl_labs/lab1/lint/sg_linting/sg_linting/mux2to1/lint/lint_rtl/spyglass.log</value>
+	</Opt>
+	<Opt name="-mthresh">
+		<value>4096</value>
+	</Opt>
+	<Opt name="-projectwdir">
+		<value>/home/user16/work/klngan/hdl_labs/lab1/lint/sg_linting/sg_linting</value>
+	</Opt>
+	<Opt name="-savedb">
+		<value>/home/user16/work/klngan/hdl_labs/lab1/lint/sg_linting/sg_linting/mux2to1/.SG_SaveRestoreDB</value>
+	</Opt>
+	<Opt name="-sortmethod">
+		<value>du</value>
+	</Opt>
+	<Opt name="-templatedir">
+		<value>/home/synopsys/spyglass/W-2024.09-SP2/SPYGLASS_HOME/GuideWare/latest/block/rtl_handoff</value>
+	</Opt>
+	<Opt name="-vdbfile">
+		<value>/home/user16/work/klngan/hdl_labs/lab1/lint/sg_linting/sg_linting/mux2to1/lint/lint_rtl/spyglass.vdb</value>
+	</Opt>
+	<Opt name="-wdir">
+		<value>/home/user16/work/klngan/hdl_labs/lab1/lint/sg_linting/sg_linting/mux2to1/lint/lint_rtl</value>
+	</Opt>
+	<Opt name="-work">
+		<value>WORK</value>
+	</Opt>
+	<Opt name="-64bit">
+		<value>yes</value>
+	</Opt>
+	<Opt name="--end_of_user_arg">
+		<value>yes</value>
+	</Opt>
+	<Opt name="-auto_save">
+		<value>yes</value>
+	</Opt>
+	<Opt name="-batch">
+		<value>yes</value>
+	</Opt>
+	<Opt name="-enable_fast_traversal">
+		<value>yes</value>
+	</Opt>
+	<Opt name="-enable_save_restore">
+		<value>yes</value>
+	</Opt>
+	<Opt name="-enableSV">
+		<value>yes</value>
+	</Opt>
+	<Opt name="-inferblackbox">
+		<value>yes</value>
+	</Opt>
+	<Opt name="-nl">
+		<value>yes</value>
+	</Opt>
+	<Opt name="-sdc2sgdc">
+		<value>yes</value>
+	</Opt>
+	<Opt name="-mixed">
+		<value>yes</value>
+	</Opt>
+</Options>
+<TOP_MODULE>mux2to1</TOP_MODULE>
+<GOAL_NAME>lint/lint_rtl</GOAL_NAME>
+<FILES/>
+<SPG_LOG>/home/user16/work/klngan/hdl_labs/lab1/lint/sg_linting/sg_linting/mux2to1/lint/lint_rtl/spyglass.log</SPG_LOG>
+<CMD_STRING> -batch -project sg_linting.prj -goal lint/lint_rtl -64bit</CMD_STRING>
+<Module_Perf>
+	<Module name="mux2to1">
+		<Memory>-134672</Memory>
+		<Time>0</Time>
+	</Module>
+</Module_Perf>
+<NOM_DESIGN>
+	<Modules>1</Modules>
+	<Instances>1</Instances>
+	<Nets>4</Nets>
+	<Terminals>4</Terminals>
+	<MAX>1</MAX>
+	<Avg>1</Avg>
+</NOM_DESIGN>
+<FLAT_DESIGN>
+	<Instances>1</Instances>
+	<Nets>4</Nets>
+	<Terminals>4</Terminals>
+	<Paths>1</Paths>
+	<Ports>4</Ports>
+	<BBOX_Inst>0</BBOX_Inst>
+	<LIB_Inst>0</LIB_Inst>
+	<ILM_Inst>0</ILM_Inst>
+</FLAT_DESIGN>
+<BlackBox/>
+<WAIVER_COUNT>
+	<Applied>0</Applied>
+	<Reduntant>0</Reduntant>
+	<Viol_Waived>0</Viol_Waived>
+</WAIVER_COUNT>
+<PEAK_MEMORY>1653432</PEAK_MEMORY>
+<Parameters>
+	<Param name="-W116_vhdl_only">
+		<DefaultValue>no</DefaultValue>
+		<Value>no</Value>
+	</Param>
+	<Param name="-W416_vhdl_only">
+		<DefaultValue>no</DefaultValue>
+		<Value>no</Value>
+	</Param>
+	<Param name="-add_signature_expression">
+		<DefaultValue>no</DefaultValue>
+		<Value>no</Value>
+	</Param>
+	<Param name="-allow_cascaded_cgc">
+		<DefaultValue>UNDEFINED</DefaultValue>
+		<Value>no</Value>
+	</Param>
+	<Param name="-allow_clk_in_condition">
+		<DefaultValue>no</DefaultValue>
+		<Value>no</Value>
+	</Param>
+	<Param name="-allow_clock_on_output_port">
+		<DefaultValue>no</DefaultValue>
+		<Value>no</Value>
+	</Param>
+	<Param name="-allow_combo_logic_base">
+		<DefaultValue>no</DefaultValue>
+		<Value>no</Value>
+	</Param>
+	<Param name="-allviol">
+		<DefaultValue>no</DefaultValue>
+		<Value>no</Value>
+	</Param>
+	<Param name="-assume_driver_load">
+		<DefaultValue>no</DefaultValue>
+		<Value>yes</Value>
+	</Param>
+	<Param name="-attach_violation_tag">
+		<DefaultValue>no</DefaultValue>
+		<Value>no</Value>
+	</Param>
+	<Param name="-buf_count">
+		<DefaultValue>-1</DefaultValue>
+		<Value>-1</Value>
+	</Param>
+	<Param name="-checkInHierarchy">
+		<DefaultValue>yes</DefaultValue>
+		<Value>yes</Value>
+	</Param>
+	<Param name="-checkOperatorOverload">
+		<DefaultValue>yes</DefaultValue>
+		<Value>yes</Value>
+	</Param>
+	<Param name="-checkRTLCInst">
+		<DefaultValue>no</DefaultValue>
+		<Value>yes</Value>
+	</Param>
+	<Param name="-check_any_bit_for_xz">
+		<DefaultValue>no</DefaultValue>
+		<Value>no</Value>
+	</Param>
+	<Param name="-check_assert">
+		<DefaultValue>no</DefaultValue>
+		<Value>no</Value>
+	</Param>
+	<Param name="-check_assign_pattern">
+		<DefaultValue>no</DefaultValue>
+		<Value>no</Value>
+	</Param>
+	<Param name="-check_bbox_driver">
+		<DefaultValue>no</DefaultValue>
+		<Value>no</Value>
+	</Param>
+	<Param name="-check_block_comments">
+		<DefaultValue>no</DefaultValue>
+		<Value>no</Value>
+	</Param>
+	<Param name="-check_clock_cell">
+		<DefaultValue>0</DefaultValue>
+		<Value>0</Value>
+	</Param>
+	<Param name="-check_clock_group_violations">
+		<DefaultValue>no</DefaultValue>
+		<Value>no</Value>
+	</Param>
+	<Param name="-check_complete_design">
+		<DefaultValue>no</DefaultValue>
+		<Value>no</Value>
+	</Param>
+	<Param name="-check_concat_max_width">
+		<DefaultValue>no</DefaultValue>
+		<Value>no</Value>
+	</Param>
+	<Param name="-check_counter_assignment">
+		<DefaultValue>no</DefaultValue>
+		<Value>no</Value>
+	</Param>
+	<Param name="-check_default_value">
+		<DefaultValue>yes</DefaultValue>
+		<Value>yes</Value>
+	</Param>
+	<Param name="-check_enum_decl">
+		<DefaultValue>no</DefaultValue>
+		<Value>no</Value>
+	</Param>
+	<Param name="-check_explicit_width">
+		<DefaultValue>no</DefaultValue>
+		<Value>no</Value>
+	</Param>
+	<Param name="-check_gate_primitives">
+		<DefaultValue>no</DefaultValue>
+		<Value>no</Value>
+	</Param>
+	<Param name="-check_genvar">
+		<DefaultValue>no</DefaultValue>
+		<Value>no</Value>
+	</Param>
+	<Param name="-check_implicit_senselist">
+		<DefaultValue>no</DefaultValue>
+		<Value>no</Value>
+	</Param>
+	<Param name="-check_initialization_assignment">
+		<DefaultValue>no</DefaultValue>
+		<Value>no</Value>
+	</Param>
+	<Param name="-check_inst_connections">
+		<DefaultValue>no</DefaultValue>
+		<Value>no</Value>
+	</Param>
+	<Param name="-check_latch">
+		<DefaultValue>no</DefaultValue>
+		<Value>no</Value>
+	</Param>
+	<Param name="-check_loop_breakers">
+		<DefaultValue>no</DefaultValue>
+		<Value>no</Value>
+	</Param>
+	<Param name="-check_only_cell_attr">
+		<DefaultValue>no</DefaultValue>
+		<Value>no</Value>
+	</Param>
+	<Param name="-check_pad_concat">
+		<DefaultValue>no</DefaultValue>
+		<Value>no</Value>
+	</Param>
+	<Param name="-check_parameter">
+		<DefaultValue>no</DefaultValue>
+		<Value>no</Value>
+	</Param>
+	<Param name="-check_sequential">
+		<DefaultValue>no</DefaultValue>
+		<Value>no</Value>
+	</Param>
+	<Param name="-check_shifted_only">
+		<DefaultValue>no</DefaultValue>
+		<Value>no</Value>
+	</Param>
+	<Param name="-check_shifted_width">
+		<DefaultValue>no</DefaultValue>
+		<Value>no</Value>
+	</Param>
+	<Param name="-check_sign_extend">
+		<DefaultValue>no</DefaultValue>
+		<Value>no</Value>
+	</Param>
+	<Param name="-check_static_value">
+		<DefaultValue>no</DefaultValue>
+		<Value>no</Value>
+	</Param>
+	<Param name="-check_task_calls">
+		<DefaultValue>no</DefaultValue>
+		<Value>no</Value>
+	</Param>
+	<Param name="-check_temporary_flop">
+		<DefaultValue>no</DefaultValue>
+		<Value>no</Value>
+	</Param>
+	<Param name="-check_xassign_casedefault">
+		<DefaultValue>no</DefaultValue>
+		<Value>no</Value>
+	</Param>
+	<Param name="-checkblocking">
+		<DefaultValue>no</DefaultValue>
+		<Value>no</Value>
+	</Param>
+	<Param name="-checkconstassign">
+		<DefaultValue>no</DefaultValue>
+		<Value>yes</Value>
+	</Param>
+	<Param name="-checkfullbus">
+		<DefaultValue>no</DefaultValue>
+		<Value>yes</Value>
+	</Param>
+	<Param name="-checkfullrecord">
+		<DefaultValue>no</DefaultValue>
+		<Value>yes</Value>
+	</Param>
+	<Param name="-checkfullstruct">
+		<DefaultValue>no</DefaultValue>
+		<Value>no</Value>
+	</Param>
+	<Param name="-checknonblocking">
+		<DefaultValue>no</DefaultValue>
+		<Value>no</Value>
+	</Param>
+	<Param name="-checksyncreset">
+		<DefaultValue>yes</DefaultValue>
+		<Value>yes</Value>
+	</Param>
+	<Param name="-chkTopModule">
+		<DefaultValue>no</DefaultValue>
+		<Value>yes</Value>
+	</Param>
+	<Param name="-clk_EnableLatch">
+		<DefaultValue>yes</DefaultValue>
+		<Value>yes</Value>
+	</Param>
+	<Param name="-combloop_waiver_compat">
+		<DefaultValue>no</DefaultValue>
+		<Value>no</Value>
+	</Param>
+	<Param name="-considerInoutAsOutput">
+		<DefaultValue>no</DefaultValue>
+		<Value>no</Value>
+	</Param>
+	<Param name="-consider_sub_as_add">
+		<DefaultValue>no</DefaultValue>
+		<Value>no</Value>
+	</Param>
+	<Param name="-debug_proc">
+		<DefaultValue>no</DefaultValue>
+		<Value>no</Value>
+	</Param>
+	<Param name="-depth_ml">
+		<DefaultValue>-1</DefaultValue>
+		<Value>-1</Value>
+	</Param>
+	<Param name="-disable_flattened_net">
+		<DefaultValue>no</DefaultValue>
+		<Value>no</Value>
+	</Param>
+	<Param name="-disable_rtl_deadcode">
+		<DefaultValue>no</DefaultValue>
+		<Value>no</Value>
+	</Param>
+	<Param name="-disable_signal_usage_report">
+		<DefaultValue>no</DefaultValue>
+		<Value>no</Value>
+	</Param>
+	<Param name="-do_not_run_W71">
+		<DefaultValue>no</DefaultValue>
+		<Value>no</Value>
+	</Param>
+	<Param name="-dump_array_bits">
+		<DefaultValue>no</DefaultValue>
+		<Value>no</Value>
+	</Param>
+	<Param name="-effort_level">
+		<DefaultValue>100</DefaultValue>
+		<Value>100</Value>
+	</Param>
+	<Param name="-enableE2Q">
+		<DefaultValue>no</DefaultValue>
+		<Value>yes</Value>
+	</Param>
+	<Param name="-enable_busmerging">
+		<DefaultValue>no</DefaultValue>
+		<Value>no</Value>
+	</Param>
+	<Param name="-enable_csv">
+		<DefaultValue>no</DefaultValue>
+		<Value>no</Value>
+	</Param>
+	<Param name="-enable_latch_based_clusters">
+		<DefaultValue>no</DefaultValue>
+		<Value>no</Value>
+	</Param>
+	<Param name="-enable_rtl_deadcode">
+		<DefaultValue>no</DefaultValue>
+		<Value>no</Value>
+	</Param>
+	<Param name="-evaluate_for_loops">
+		<DefaultValue>no</DefaultValue>
+		<Value>no</Value>
+	</Param>
+	<Param name="-fast">
+		<DefaultValue>no</DefaultValue>
+		<Value>no</Value>
+	</Param>
+	<Param name="-filter_mark_open">
+		<DefaultValue>no</DefaultValue>
+		<Value>no</Value>
+	</Param>
+	<Param name="-force_genclk_for_txv">
+		<DefaultValue>no</DefaultValue>
+		<Value>no</Value>
+	</Param>
+	<Param name="-generate_connpoint_report">
+		<DefaultValue>no</DefaultValue>
+		<Value>no</Value>
+	</Param>
+	<Param name="-handle_case_select">
+		<DefaultValue>64</DefaultValue>
+		<Value>64</Value>
+	</Param>
+	<Param name="-handle_equivalent_drivers">
+		<DefaultValue>no</DefaultValue>
+		<Value>no</Value>
+	</Param>
+	<Param name="-handle_greybox">
+		<DefaultValue>yes</DefaultValue>
+		<Value>yes</Value>
+	</Param>
+	<Param name="-handle_hier_clock_reset">
+		<DefaultValue>no</DefaultValue>
+		<Value>no</Value>
+	</Param>
+	<Param name="-handle_large_bus">
+		<DefaultValue>no</DefaultValue>
+		<Value>no</Value>
+	</Param>
+	<Param name="-handle_latch_setreset">
+		<DefaultValue>no</DefaultValue>
+		<Value>no</Value>
+	</Param>
+	<Param name="-handle_mux_select">
+		<DefaultValue>no</DefaultValue>
+		<Value>no</Value>
+	</Param>
+	<Param name="-handle_negation_semantics">
+		<DefaultValue>no</DefaultValue>
+		<Value>no</Value>
+	</Param>
+	<Param name="-handle_shift_op">
+		<DefaultValue>no</DefaultValue>
+		<Value>no</Value>
+	</Param>
+	<Param name="-handle_static_caselabels">
+		<DefaultValue>no</DefaultValue>
+		<Value>no</Value>
+	</Param>
+	<Param name="-handle_zero_padding">
+		<DefaultValue>no</DefaultValue>
+		<Value>no</Value>
+	</Param>
+	<Param name="-ignoreCellName">
+		<DefaultValue>UNDEFINED</DefaultValue>
+		<Value>UNDEFINED</Value>
+	</Param>
+	<Param name="-ignoreLatchHierarchy">
+		<DefaultValue>UNDEFINED</DefaultValue>
+		<Value>UNDEFINED</Value>
+	</Param>
+	<Param name="-ignoreModuleInstance">
+		<DefaultValue>no</DefaultValue>
+		<Value>yes</Value>
+	</Param>
+	<Param name="-ignoreRealLatch">
+		<DefaultValue>no</DefaultValue>
+		<Value>no</Value>
+	</Param>
+	<Param name="-ignoreRtlBuffer">
+		<DefaultValue>no</DefaultValue>
+		<Value>no</Value>
+	</Param>
+	<Param name="-ignoreSRlatch">
+		<DefaultValue>no</DefaultValue>
+		<Value>no</Value>
+	</Param>
+	<Param name="-ignoreSeqProcess">
+		<DefaultValue>no</DefaultValue>
+		<Value>no</Value>
+	</Param>
+	<Param name="-ignore_auto_function_return">
+		<DefaultValue>no</DefaultValue>
+		<Value>no</Value>
+	</Param>
+	<Param name="-ignore_bitwise_assign_in_forloop">
+		<DefaultValue>no</DefaultValue>
+		<Value>no</Value>
+	</Param>
+	<Param name="-ignore_bitwiseor_assignment">
+		<DefaultValue>no</DefaultValue>
+		<Value>no</Value>
+	</Param>
+	<Param name="-ignore_case_compare_op">
+		<DefaultValue>no</DefaultValue>
+		<Value>no</Value>
+	</Param>
+	<Param name="-ignore_case_inside">
+		<DefaultValue>no</DefaultValue>
+		<Value>no</Value>
+	</Param>
+	<Param name="-ignore_cell">
+		<DefaultValue>0</DefaultValue>
+		<Value>0</Value>
+	</Param>
+	<Param name="-ignore_concat_expr">
+		<DefaultValue>no</DefaultValue>
+		<Value>no</Value>
+	</Param>
+	<Param name="-ignore_const_outport">
+		<DefaultValue>no</DefaultValue>
+		<Value>no</Value>
+	</Param>
+	<Param name="-ignore_default_supply">
+		<DefaultValue>no</DefaultValue>
+		<Value>no</Value>
+	</Param>
+	<Param name="-ignore_deliberately_unconnected">
+		<DefaultValue>no</DefaultValue>
+		<Value>no</Value>
+	</Param>
+	<Param name="-ignore_explicit_ports">
+		<DefaultValue>no</DefaultValue>
+		<Value>no</Value>
+	</Param>
+	<Param name="-ignore_flops">
+		<DefaultValue>no</DefaultValue>
+		<Value>no</Value>
+	</Param>
+	<Param name="-ignore_forloop_indexes">
+		<DefaultValue>no</DefaultValue>
+		<Value>no</Value>
+	</Param>
+	<Param name="-ignore_fsm_counter">
+		<DefaultValue>no</DefaultValue>
+		<Value>no</Value>
+	</Param>
+	<Param name="-ignore_fullcase_default">
+		<DefaultValue>no</DefaultValue>
+		<Value>no</Value>
+	</Param>
+	<Param name="-ignore_greybox_driver">
+		<DefaultValue>no</DefaultValue>
+		<Value>no</Value>
+	</Param>
+	<Param name="-ignore_hanging_flop">
+		<DefaultValue>no</DefaultValue>
+		<Value>no</Value>
+	</Param>
+	<Param name="-ignore_hier_scope_var">
+		<DefaultValue>no</DefaultValue>
+		<Value>no</Value>
+	</Param>
+	<Param name="-ignore_if_case_statement">
+		<DefaultValue>no</DefaultValue>
+		<Value>no</Value>
+	</Param>
+	<Param name="-ignore_inout">
+		<DefaultValue>no</DefaultValue>
+		<Value>no</Value>
+	</Param>
+	<Param name="-ignore_integer">
+		<DefaultValue>no</DefaultValue>
+		<Value>no</Value>
+	</Param>
+	<Param name="-ignore_integer_constant_labels">
+		<DefaultValue>no</DefaultValue>
+		<Value>no</Value>
+	</Param>
+	<Param name="-ignore_interface_locals">
+		<DefaultValue>no</DefaultValue>
+		<Value>no</Value>
+	</Param>
+	<Param name="-ignore_internal_loops">
+		<DefaultValue>no</DefaultValue>
+		<Value>no</Value>
+	</Param>
+	<Param name="-ignore_internal_nets">
+		<DefaultValue>no</DefaultValue>
+		<Value>no</Value>
+	</Param>
+	<Param name="-ignore_iopad">
+		<DefaultValue>no</DefaultValue>
+		<Value>no</Value>
+	</Param>
+	<Param name="-ignore_libcell_traversal">
+		<DefaultValue>no</DefaultValue>
+		<Value>no</Value>
+	</Param>
+	<Param name="-ignore_local_variables">
+		<DefaultValue>no</DefaultValue>
+		<Value>no</Value>
+	</Param>
+	<Param name="-ignore_memory">
+		<DefaultValue>no</DefaultValue>
+		<Value>no</Value>
+	</Param>
+	<Param name="-ignore_mult_and_div">
+		<DefaultValue>no</DefaultValue>
+		<Value>no</Value>
+	</Param>
+	<Param name="-ignore_multi_assign_in_forloop">
+		<DefaultValue>no</DefaultValue>
+		<Value>no</Value>
+	</Param>
+	<Param name="-ignore_multi_assign_in_genforblock">
+		<DefaultValue>no</DefaultValue>
+		<Value>no</Value>
+	</Param>
+	<Param name="-ignore_nonBlockCondition">
+		<DefaultValue>no</DefaultValue>
+		<Value>no</Value>
+	</Param>
+	<Param name="-ignore_non_reset">
+		<DefaultValue>no</DefaultValue>
+		<Value>no</Value>
+	</Param>
+	<Param name="-ignore_nonstatic_counter">
+		<DefaultValue>no</DefaultValue>
+		<Value>no</Value>
+	</Param>
+	<Param name="-ignore_padding">
+		<DefaultValue>no</DefaultValue>
+		<Value>no</Value>
+	</Param>
+	<Param name="-ignore_param_case_condition">
+		<DefaultValue>no</DefaultValue>
+		<Value>no</Value>
+	</Param>
+	<Param name="-ignore_param_type">
+		<DefaultValue>no</DefaultValue>
+		<Value>no</Value>
+	</Param>
+	<Param name="-ignore_parameter">
+		<DefaultValue>no</DefaultValue>
+		<Value>no</Value>
+	</Param>
+	<Param name="-ignore_qmark">
+		<DefaultValue>no</DefaultValue>
+		<Value>no</Value>
+	</Param>
+	<Param name="-ignore_reinitialization">
+		<DefaultValue>no</DefaultValue>
+		<Value>no</Value>
+	</Param>
+	<Param name="-ignore_sca_constant">
+		<DefaultValue>no</DefaultValue>
+		<Value>no</Value>
+	</Param>
+	<Param name="-ignore_signed_expressions">
+		<DefaultValue>no</DefaultValue>
+		<Value>no</Value>
+	</Param>
+	<Param name="-ignore_sync_reset">
+		<DefaultValue>no</DefaultValue>
+		<Value>no</Value>
+	</Param>
+	<Param name="-ignore_truncation">
+		<DefaultValue>no</DefaultValue>
+		<Value>no</Value>
+	</Param>
+	<Param name="-ignore_typedefs_enum">
+		<DefaultValue>no</DefaultValue>
+		<Value>no</Value>
+	</Param>
+	<Param name="-ignore_unique_and_priority">
+		<DefaultValue>no</DefaultValue>
+		<Value>no</Value>
+	</Param>
+	<Param name="-ignore_unloaded_inst">
+		<DefaultValue>no</DefaultValue>
+		<Value>no</Value>
+	</Param>
+	<Param name="-ignore_unloaded_port">
+		<DefaultValue>no</DefaultValue>
+		<Value>no</Value>
+	</Param>
+	<Param name="-ignore_unused_flop">
+		<DefaultValue>no</DefaultValue>
+		<Value>no</Value>
+	</Param>
+	<Param name="-ignore_wildcard_operators">
+		<DefaultValue>no</DefaultValue>
+		<Value>no</Value>
+	</Param>
+	<Param name="-ignore_within_range_labels">
+		<DefaultValue>no</DefaultValue>
+		<Value>no</Value>
+	</Param>
+	<Param name="-inv_count">
+		<DefaultValue>1</DefaultValue>
+		<Value>1</Value>
+	</Param>
+	<Param name="-latch_chain_max_length">
+		<DefaultValue>2</DefaultValue>
+		<Value>2</Value>
+	</Param>
+	<Param name="-library_gen_clock_naming">
+		<DefaultValue>yes</DefaultValue>
+		<Value>yes</Value>
+	</Param>
+	<Param name="-loop_unroll_effort">
+		<DefaultValue>1</DefaultValue>
+		<Value>1</Value>
+	</Param>
+	<Param name="-lp_ignore_SGDC_rules">
+		<DefaultValue>UNDEFINED</DefaultValue>
+		<Value>UNDEFINED</Value>
+	</Param>
+	<Param name="-lp_instr_disable_isolation">
+		<DefaultValue>UNDEFINED</DefaultValue>
+		<Value>UNDEFINED</Value>
+	</Param>
+	<Param name="-lp_instr_disable_level_shift">
+		<DefaultValue>UNDEFINED</DefaultValue>
+		<Value>UNDEFINED</Value>
+	</Param>
+	<Param name="-lp_instr_disable_retention">
+		<DefaultValue>UNDEFINED</DefaultValue>
+		<Value>UNDEFINED</Value>
+	</Param>
+	<Param name="-max_flop_count">
+		<DefaultValue>3</DefaultValue>
+		<Value>3</Value>
+	</Param>
+	<Param name="-net_count">
+		<DefaultValue>10</DefaultValue>
+		<Value>10</Value>
+	</Param>
+	<Param name="-netlist_clock_polarity">
+		<DefaultValue>yes</DefaultValue>
+		<Value>yes</Value>
+	</Param>
+	<Param name="-new_flow_width">
+		<DefaultValue>yes</DefaultValue>
+		<Value>yes</Value>
+	</Param>
+	<Param name="-no_strict">
+		<DefaultValue>UNDEFINED</DefaultValue>
+		<Value>UNDEFINED</Value>
+	</Param>
+	<Param name="-nocheck_always_init">
+		<DefaultValue>no</DefaultValue>
+		<Value>no</Value>
+	</Param>
+	<Param name="-nocheckoverflow">
+		<DefaultValue>ImproperRangeIndex-ML,LINT_IMPROPER_RANGE_INDEX,MTK_ImproperRangeIndex</DefaultValue>
+		<Value>yes</Value>
+	</Param>
+	<Param name="-not_used_signal">
+		<DefaultValue>nil</DefaultValue>
+		<Value>nil</Value>
+	</Param>
+	<Param name="-overlappingLatchLoops">
+		<DefaultValue>yes</DefaultValue>
+		<Value>yes</Value>
+	</Param>
+	<Param name="-overlappingLoops">
+		<DefaultValue>yes</DefaultValue>
+		<Value>yes</Value>
+	</Param>
+	<Param name="-pe_calibration_data_dir">
+		<DefaultValue>UNDEFINED</DefaultValue>
+		<Value>UNDEFINED</Value>
+	</Param>
+	<Param name="-pe_ignore_SGDC_rules">
+		<DefaultValue>UNDEFINED</DefaultValue>
+		<Value>UNDEFINED</Value>
+	</Param>
+	<Param name="-pe_use_calibration_data">
+		<DefaultValue>UNDEFINED</DefaultValue>
+		<Value>UNDEFINED</Value>
+	</Param>
+	<Param name="-populate_comboelements_for_minmax_in_fromto">
+		<DefaultValue>no</DefaultValue>
+		<Value>no</Value>
+	</Param>
+	<Param name="-post_clock_group_population">
+		<DefaultValue>no</DefaultValue>
+		<Value>no</Value>
+	</Param>
+	<Param name="-pragma_list_ml">
+		<DefaultValue>synopsys</DefaultValue>
+		<Value>synopsys</Value>
+	</Param>
+	<Param name="-preserve_path">
+		<DefaultValue>no</DefaultValue>
+		<Value>no</Value>
+	</Param>
+	<Param name="-process_complete_condop">
+		<DefaultValue>no</DefaultValue>
+		<Value>no</Value>
+	</Param>
+	<Param name="-pt">
+		<DefaultValue>yes</DefaultValue>
+		<Value>yes</Value>
+	</Param>
+	<Param name="-qual_prop_beyond_quasi_dest">
+		<DefaultValue>UNDEFINED</DefaultValue>
+		<Value>no</Value>
+	</Param>
+	<Param name="-reportHangingLatch">
+		<DefaultValue>no</DefaultValue>
+		<Value>no</Value>
+	</Param>
+	<Param name="-reportLatchHierarchy">
+		<DefaultValue>no</DefaultValue>
+		<Value>no</Value>
+	</Param>
+	<Param name="-reportLibLatch">
+		<DefaultValue>no</DefaultValue>
+		<Value>no</Value>
+	</Param>
+	<Param name="-report_all_connections">
+		<DefaultValue>no</DefaultValue>
+		<Value>no</Value>
+	</Param>
+	<Param name="-report_all_messages">
+		<DefaultValue>no</DefaultValue>
+		<Value>no</Value>
+	</Param>
+	<Param name="-report_all_pins">
+		<DefaultValue>no</DefaultValue>
+		<Value>no</Value>
+	</Param>
+	<Param name="-report_all_rst">
+		<DefaultValue>no</DefaultValue>
+		<Value>no</Value>
+	</Param>
+	<Param name="-report_all_rst_count">
+		<DefaultValue>999999</DefaultValue>
+		<Value>999999</Value>
+	</Param>
+	<Param name="-report_allclk">
+		<DefaultValue>no</DefaultValue>
+		<Value>no</Value>
+	</Param>
+	<Param name="-report_allclk_optimized">
+		<DefaultValue>no</DefaultValue>
+		<Value>no</Value>
+	</Param>
+	<Param name="-report_assignment">
+		<DefaultValue>default</DefaultValue>
+		<Value>default</Value>
+	</Param>
+	<Param name="-report_blackbox_inst">
+		<DefaultValue>no</DefaultValue>
+		<Value>no</Value>
+	</Param>
+	<Param name="-report_boundary_nets">
+		<DefaultValue>no</DefaultValue>
+		<Value>no</Value>
+	</Param>
+	<Param name="-report_clock_reset_loops">
+		<DefaultValue>no</DefaultValue>
+		<Value>no</Value>
+	</Param>
+	<Param name="-report_clock_use">
+		<DefaultValue>no</DefaultValue>
+		<Value>no</Value>
+	</Param>
+	<Param name="-report_const_connect">
+		<DefaultValue>no</DefaultValue>
+		<Value>no</Value>
+	</Param>
+	<Param name="-report_declare_line">
+		<DefaultValue>no</DefaultValue>
+		<Value>no</Value>
+	</Param>
+	<Param name="-report_expr_type">
+		<DefaultValue>no</DefaultValue>
+		<Value>no</Value>
+	</Param>
+	<Param name="-report_floating_source">
+		<DefaultValue>no</DefaultValue>
+		<Value>no</Value>
+	</Param>
+	<Param name="-report_flop_clock_loop">
+		<DefaultValue>no</DefaultValue>
+		<Value>no</Value>
+	</Param>
+	<Param name="-report_flop_reset_loop">
+		<DefaultValue>no</DefaultValue>
+		<Value>no</Value>
+	</Param>
+	<Param name="-report_hierarchy">
+		<DefaultValue>no</DefaultValue>
+		<Value>no</Value>
+	</Param>
+	<Param name="-report_inferred_cell">
+		<DefaultValue>no</DefaultValue>
+		<Value>yes</Value>
+	</Param>
+	<Param name="-report_module_configuration">
+		<DefaultValue>no</DefaultValue>
+		<Value>no</Value>
+	</Param>
+	<Param name="-report_mux_select">
+		<DefaultValue>yes</DefaultValue>
+		<Value>yes</Value>
+	</Param>
+	<Param name="-report_only_bitwise">
+		<DefaultValue>no</DefaultValue>
+		<Value>no</Value>
+	</Param>
+	<Param name="-report_only_from_one_hierarchy">
+		<DefaultValue>no</DefaultValue>
+		<Value>no</Value>
+	</Param>
+	<Param name="-report_reason">
+		<DefaultValue>no</DefaultValue>
+		<Value>no</Value>
+	</Param>
+	<Param name="-report_single_violation">
+		<DefaultValue>no</DefaultValue>
+		<Value>no</Value>
+	</Param>
+	<Param name="-report_sorted_order">
+		<DefaultValue>yes</DefaultValue>
+		<Value>yes</Value>
+	</Param>
+	<Param name="-report_static_assign">
+		<DefaultValue>no</DefaultValue>
+		<Value>no</Value>
+	</Param>
+	<Param name="-report_struct_name_only">
+		<DefaultValue>no</DefaultValue>
+		<Value>no</Value>
+	</Param>
+	<Param name="-report_through_mux">
+		<DefaultValue>no</DefaultValue>
+		<Value>no</Value>
+	</Param>
+	<Param name="-report_violation_type">
+		<DefaultValue>both</DefaultValue>
+		<Value>both</Value>
+	</Param>
+	<Param name="-reportalwayslatch">
+		<DefaultValue>no</DefaultValue>
+		<Value>no</Value>
+	</Param>
+	<Param name="-reportconstassign">
+		<DefaultValue>no</DefaultValue>
+		<Value>no</Value>
+	</Param>
+	<Param name="-reportsimilarassgn">
+		<DefaultValue>no</DefaultValue>
+		<Value>no</Value>
+	</Param>
+	<Param name="-reset_synchronizer_modname">
+		<DefaultValue>sgdummy1,sgdummy2</DefaultValue>
+		<Value>sgdummy1,sgdummy2</Value>
+	</Param>
+	<Param name="-search_const_net_extended">
+		<DefaultValue>yes</DefaultValue>
+		<Value>yes</Value>
+	</Param>
+	<Param name="-show_all_sdc_violations">
+		<DefaultValue>no</DefaultValue>
+		<Value>no</Value>
+	</Param>
+	<Param name="-show_connected_net">
+		<DefaultValue>no</DefaultValue>
+		<Value>no</Value>
+	</Param>
+	<Param name="-show_sdc_progress">
+		<DefaultValue>no</DefaultValue>
+		<Value>no</Value>
+	</Param>
+	<Param name="-sign_extend_func_names">
+		<DefaultValue>EXTEND,resize</DefaultValue>
+		<Value>EXTEND,resize</Value>
+	</Param>
+	<Param name="-simplesense">
+		<DefaultValue>no</DefaultValue>
+		<Value>no</Value>
+	</Param>
+	<Param name="-skip_fl_check_on_constant">
+		<DefaultValue>no</DefaultValue>
+		<Value>no</Value>
+	</Param>
+	<Param name="-skip_lib_cell_checking">
+		<DefaultValue>no</DefaultValue>
+		<Value>no</Value>
+	</Param>
+	<Param name="-stop_at_no_func_view">
+		<DefaultValue>no</DefaultValue>
+		<Value>no</Value>
+	</Param>
+	<Param name="-strict">
+		<DefaultValue>no</DefaultValue>
+		<Value>W342,W343</Value>
+	</Param>
+	<Param name="-supplyHigh">
+		<DefaultValue>__null__</DefaultValue>
+		<Value>__null__</Value>
+	</Param>
+	<Param name="-supplyLow">
+		<DefaultValue>__null__</DefaultValue>
+		<Value>__null__</Value>
+	</Param>
+	<Param name="-suppress_sdc_violation_in_abstract">
+		<DefaultValue>no</DefaultValue>
+		<Value>no</Value>
+	</Param>
+	<Param name="-tc_cache_empty_collections">
+		<DefaultValue>no</DefaultValue>
+		<Value>no</Value>
+	</Param>
+	<Param name="-tc_disable_caching">
+		<DefaultValue>no</DefaultValue>
+		<Value>no</Value>
+	</Param>
+	<Param name="-tc_disable_ignored_command_dump">
+		<DefaultValue>yes</DefaultValue>
+		<Value>yes</Value>
+	</Param>
+	<Param name="-tc_enable_sdc_393">
+		<DefaultValue>no</DefaultValue>
+		<Value>no</Value>
+	</Param>
+	<Param name="-tc_ignored_commands">
+		<DefaultValue>unspecified</DefaultValue>
+		<Value>unspecified</Value>
+	</Param>
+	<Param name="-tc_stop_parsing_ignored_commands">
+		<DefaultValue>yes</DefaultValue>
+		<Value>yes</Value>
+	</Param>
+	<Param name="-traverse_function">
+		<DefaultValue>no</DefaultValue>
+		<Value>no</Value>
+	</Param>
+	<Param name="-traverse_through_mux">
+		<DefaultValue>no</DefaultValue>
+		<Value>no</Value>
+	</Param>
+	<Param name="-treat_latch_as_combinational">
+		<DefaultValue>no</DefaultValue>
+		<Value>yes</Value>
+	</Param>
+	<Param name="-truncate_through">
+		<DefaultValue>yes</DefaultValue>
+		<Value>yes</Value>
+	</Param>
+	<Param name="-use_carry_bit">
+		<DefaultValue>W164a,W164b</DefaultValue>
+		<Value>W164a,W164b</Value>
+	</Param>
+	<Param name="-use_lrm_width">
+		<DefaultValue>no</DefaultValue>
+		<Value>no</Value>
+	</Param>
+	<Param name="-use_natural_width">
+		<DefaultValue>no</DefaultValue>
+		<Value>no</Value>
+	</Param>
+	<Param name="-use_secondary_message">
+		<DefaultValue>no</DefaultValue>
+		<Value>no</Value>
+	</Param>
+	<Param name="-waiver_compat">
+		<DefaultValue>no</DefaultValue>
+		<Value>no</Value>
+	</Param>
+	<Param name="-write_sdc">
+		<DefaultValue>no</DefaultValue>
+		<Value>no</Value>
+	</Param>
+</Parameters>
+<RULES>
+	<Rule name="Ac_svasetup01">
+		<Time>0</Time>
+		<Memory>0</Memory>
+		<Count>0</Count>
+	</Rule>
+	<Rule name="AcOvlRtl">
+		<Time>0</Time>
+		<Memory>0</Memory>
+		<Count>0</Count>
+	</Rule>
+	<Rule name="AcOvlRtl">
+		<Time>0</Time>
+		<Memory>0</Memory>
+		<Count>0</Count>
+	</Rule>
+	<Rule name="_meta_delay01">
+		<Time>0</Time>
+		<Memory>0</Memory>
+		<Count>0</Count>
+	</Rule>
+	<Rule name="_vhMeta01">
+		<Time>0</Time>
+		<Memory>0</Memory>
+		<Count>0</Count>
+	</Rule>
+	<Rule name="SGDC_meta_design_hier01">
+		<Time>0</Time>
+		<Memory>0</Memory>
+		<Count>0</Count>
+	</Rule>
+	<Rule name="Ac_multitop01">
+		<Time>0</Time>
+		<Memory>0</Memory>
+		<Count>0</Count>
+	</Rule>
+	<Rule name="_deltaDelay">
+		<Time>0</Time>
+		<Memory>0</Memory>
+		<Count>0</Count>
+	</Rule>
+	<Rule name="_deltaDelay">
+		<Time>0</Time>
+		<Memory>0</Memory>
+		<Count>0</Count>
+	</Rule>
+	<Rule name="_syncResetStyleRTL">
+		<Time>0</Time>
+		<Memory>0</Memory>
+		<Count>0</Count>
+	</Rule>
+	<Rule name="Ac_classify_param01">
+		<Time>0</Time>
+		<Memory>0</Memory>
+		<Count>0</Count>
+	</Rule>
+	<Rule name="Pragma_setupa">
+		<Time>0</Time>
+		<Memory>0</Memory>
+		<Count>0</Count>
+	</Rule>
+	<Rule name="_cdc_save_license01">
+		<Time>0</Time>
+		<Memory>0</Memory>
+		<Count>0</Count>
+	</Rule>
+	<Rule name="PEMVDD01">
+		<Time>0</Time>
+		<Memory>0</Memory>
+		<Count>0</Count>
+	</Rule>
+	<Rule name="PECHECK56">
+		<Time>0</Time>
+		<Memory>0</Memory>
+		<Count>0</Count>
+	</Rule>
+	<Rule name="PECHECK43">
+		<Time>0</Time>
+		<Memory>0</Memory>
+		<Count>0</Count>
+	</Rule>
+	<Rule name="PECHECK18">
+		<Time>0</Time>
+		<Memory>0</Memory>
+		<Count>0</Count>
+	</Rule>
+	<Rule name="PECHECK09">
+		<Time>0</Time>
+		<Memory>0</Memory>
+		<Count>0</Count>
+	</Rule>
+	<Rule name="PESVASETUP01">
+		<Time>0</Time>
+		<Memory>0</Memory>
+		<Count>0</Count>
+	</Rule>
+	<Rule name="PECHECK04">
+		<Time>0</Time>
+		<Memory>0</Memory>
+		<Count>0</Count>
+	</Rule>
+	<Rule name="SGDC_power_est29">
+		<Time>0</Time>
+		<Memory>0</Memory>
+		<Count>0</Count>
+	</Rule>
+	<Rule name="STARC05-2.5.1.9">
+		<Time>0</Time>
+		<Memory>0</Memory>
+		<Count>0</Count>
+	</Rule>
+	<Rule name="STARC05-2.1.6.5">
+		<Time>0</Time>
+		<Memory>0</Memory>
+		<Count>0</Count>
+	</Rule>
+	<Rule name="STARC05-1.2.1.2">
+		<Time>0</Time>
+		<Memory>0</Memory>
+		<Count>0</Count>
+	</Rule>
+	<Rule name="STARC05-2.4.1.5">
+		<Time>0</Time>
+		<Memory>0</Memory>
+		<Count>0</Count>
+	</Rule>
+	<Rule name="STARC05-2.5.1.7">
+		<Time>0</Time>
+		<Memory>0</Memory>
+		<Count>0</Count>
+	</Rule>
+	<Rule name="STARC05-2.5.1.7">
+		<Time>0</Time>
+		<Memory>0</Memory>
+		<Count>0</Count>
+	</Rule>
+	<Rule name="NoXInCase-ML">
+		<Time>0</Time>
+		<Memory>0</Memory>
+		<Count>0</Count>
+	</Rule>
+	<Rule name="Postreqs_Usage_ML">
+		<Time>0</Time>
+		<Memory>0</Memory>
+		<Count>0</Count>
+	</Rule>
+	<Rule name="Prereqs_CheckTimeUnitandPrecision-ML">
+		<Time>0</Time>
+		<Memory>0</Memory>
+		<Count>0</Count>
+	</Rule>
+	<Rule name="CheckDelayTimescale-ML">
+		<Time>0</Time>
+		<Memory>0</Memory>
+		<Count>0</Count>
+	</Rule>
+	<Rule name="ParamWidthMismatch-ML">
+		<Time>0</Time>
+		<Memory>0</Memory>
+		<Count>0</Count>
+	</Rule>
+	<Rule name="NoAssignX-ML">
+		<Time>0</Time>
+		<Memory>0</Memory>
+		<Count>0</Count>
+	</Rule>
+	<Rule name="Prereqs_Elab_Hier_Dialog">
+		<Time>0</Time>
+		<Memory>0</Memory>
+		<Count>0</Count>
+	</Rule>
+	<Rule name="PragmaComments-ML">
+		<Time>0</Time>
+		<Memory>-72</Memory>
+		<Count>0</Count>
+	</Rule>
+	<Rule name="PragmaComments-ML">
+		<Time>0</Time>
+		<Memory>200</Memory>
+		<Count>0</Count>
+	</Rule>
+	<Rule name="Prereqs_ReportPortInfo-ML">
+		<Time>0</Time>
+		<Memory>0</Memory>
+		<Count>0</Count>
+	</Rule>
+	<Rule name="Prereqs_ReportPortInfo-ML">
+		<Time>0</Time>
+		<Memory>0</Memory>
+		<Count>0</Count>
+	</Rule>
+	<Rule name="ReportPortInfo-ML">
+		<Time>0</Time>
+		<Memory>-32</Memory>
+		<Count>0</Count>
+	</Rule>
+	<Rule name="RegInputOutput-ML">
+		<RULE_PARAM name="-chkTopModule" value="yes"/>
+		<Time>0</Time>
+		<Memory>0</Memory>
+		<Count>0</Count>
+	</Rule>
+	<Rule name="Prereqs_RegInputOutputs">
+		<Time>0</Time>
+		<Memory>0</Memory>
+		<Count>0</Count>
+	</Rule>
+	<Rule name="CheckDelayFlopRacePreReq_2-ML">
+		<Time>0</Time>
+		<Memory>0</Memory>
+		<Count>0</Count>
+	</Rule>
+	<Rule name="Prereqs_ConstantInput-ML">
+		<Time>0</Time>
+		<Memory>0</Memory>
+		<Count>0</Count>
+	</Rule>
+	<Rule name="UndrivenInTerm-ML">
+		<RULE_PARAM name="-checkRTLCInst" value="yes"/>
+		<RULE_PARAM name="-checkfullbus" value="yes"/>
+		<Time>0</Time>
+		<Memory>0</Memory>
+		<Count>0</Count>
+	</Rule>
+	<Rule name="HangingNetPreReq-ML">
+		<Time>0</Time>
+		<Memory>0</Memory>
+		<Count>0</Count>
+	</Rule>
+	<Rule name="W450L">
+		<Time>0</Time>
+		<Memory>0</Memory>
+		<Count>0</Count>
+	</Rule>
+	<Rule name="LatchFeedback">
+		<Time>0</Time>
+		<Memory>0</Memory>
+		<Count>0</Count>
+	</Rule>
+	<Rule name="Prereqs_RTLSchematic">
+		<Time>0</Time>
+		<Memory>0</Memory>
+		<Count>0</Count>
+	</Rule>
+	<Rule name="LINT_portReten">
+		<Time>0</Time>
+		<Memory>0</Memory>
+		<Count>0</Count>
+	</Rule>
+	<Rule name="Prereqs_Usage">
+		<Time>0</Time>
+		<Memory>0</Memory>
+		<Count>0</Count>
+	</Rule>
+	<Rule name="W415">
+		<RULE_PARAM name="-assume_driver_load" value="yes"/>
+		<RULE_PARAM name="-checkconstassign" value="yes"/>
+		<RULE_PARAM name="-strict" value="W342,W343"/>
+		<Time>0</Time>
+		<Memory>0</Memory>
+		<Count>0</Count>
+	</Rule>
+	<Rule name="W392">
+		<Time>0</Time>
+		<Memory>0</Memory>
+		<Count>0</Count>
+	</Rule>
+	<Rule name="W528">
+		<RULE_PARAM name="-checkfullbus" value="yes"/>
+		<RULE_PARAM name="-checkfullrecord" value="yes"/>
+		<Time>0</Time>
+		<Memory>512</Memory>
+		<Count>0</Count>
+	</Rule>
+	<Rule name="W528">
+		<RULE_PARAM name="-checkfullbus" value="yes"/>
+		<RULE_PARAM name="-checkfullrecord" value="yes"/>
+		<Time>0</Time>
+		<Memory>48</Memory>
+		<Count>0</Count>
+	</Rule>
+	<Rule name="W505">
+		<Time>0</Time>
+		<Memory>0</Memory>
+		<Count>0</Count>
+	</Rule>
+	<Rule name="W505">
+		<Time>0</Time>
+		<Memory>0</Memory>
+		<Count>0</Count>
+	</Rule>
+	<Rule name="W467">
+		<Time>0</Time>
+		<Memory>0</Memory>
+		<Count>0</Count>
+	</Rule>
+	<Rule name="W467">
+		<Time>0</Time>
+		<Memory>0</Memory>
+		<Count>0</Count>
+	</Rule>
+	<Rule name="W424">
+		<Time>0</Time>
+		<Memory>0</Memory>
+		<Count>0</Count>
+	</Rule>
+	<Rule name="W424">
+		<Time>0</Time>
+		<Memory>0</Memory>
+		<Count>0</Count>
+	</Rule>
+	<Rule name="W421">
+		<Time>0</Time>
+		<Memory>0</Memory>
+		<Count>0</Count>
+	</Rule>
+	<Rule name="W421">
+		<Time>0</Time>
+		<Memory>0</Memory>
+		<Count>0</Count>
+	</Rule>
+	<Rule name="W398">
+		<RULE_PARAM name="-strict" value="W342,W343"/>
+		<Time>0</Time>
+		<Memory>0</Memory>
+		<Count>0</Count>
+	</Rule>
+	<Rule name="W398">
+		<RULE_PARAM name="-strict" value="W342,W343"/>
+		<Time>0</Time>
+		<Memory>0</Memory>
+		<Count>0</Count>
+	</Rule>
+	<Rule name="W293">
+		<Time>0</Time>
+		<Memory>0</Memory>
+		<Count>0</Count>
+	</Rule>
+	<Rule name="W293">
+		<Time>0</Time>
+		<Memory>0</Memory>
+		<Count>0</Count>
+	</Rule>
+	<Rule name="W287b">
+		<Time>0</Time>
+		<Memory>0</Memory>
+		<Count>0</Count>
+	</Rule>
+	<Rule name="W287b">
+		<Time>0</Time>
+		<Memory>0</Memory>
+		<Count>0</Count>
+	</Rule>
+	<Rule name="W287a">
+		<RULE_PARAM name="-strict" value="W342,W343"/>
+		<Time>0</Time>
+		<Memory>0</Memory>
+		<Count>0</Count>
+	</Rule>
+	<Rule name="W287a">
+		<RULE_PARAM name="-strict" value="W342,W343"/>
+		<Time>0</Time>
+		<Memory>0</Memory>
+		<Count>0</Count>
+	</Rule>
+	<Rule name="W240">
+		<RULE_PARAM name="-checkfullbus" value="yes"/>
+		<RULE_PARAM name="-checkfullrecord" value="yes"/>
+		<Time>0</Time>
+		<Memory>0</Memory>
+		<Count>0</Count>
+	</Rule>
+	<Rule name="W240">
+		<RULE_PARAM name="-checkfullbus" value="yes"/>
+		<RULE_PARAM name="-checkfullrecord" value="yes"/>
+		<Time>0</Time>
+		<Memory>0</Memory>
+		<Count>0</Count>
+	</Rule>
+	<Rule name="W71">
+		<RULE_PARAM name="-strict" value="W342,W343"/>
+		<Time>0</Time>
+		<Memory>0</Memory>
+		<Count>0</Count>
+	</Rule>
+	<Rule name="W71">
+		<RULE_PARAM name="-strict" value="W342,W343"/>
+		<Time>0</Time>
+		<Memory>0</Memory>
+		<Count>0</Count>
+	</Rule>
+	<Rule name="preReq_functional_lint">
+		<Time>0</Time>
+		<Memory>0</Memory>
+		<Count>0</Count>
+	</Rule>
+	<Rule name="W110a">
+		<Time>0</Time>
+		<Memory>0</Memory>
+		<Count>0</Count>
+	</Rule>
+	<Rule name="mixedsenselist">
+		<Time>0</Time>
+		<Memory>0</Memory>
+		<Count>0</Count>
+	</Rule>
+	<Rule name="W416">
+		<RULE_PARAM name="-nocheckoverflow" value="yes"/>
+		<Time>0</Time>
+		<Memory>0</Memory>
+		<Count>0</Count>
+	</Rule>
+	<Rule name="W292">
+		<Time>0</Time>
+		<Memory>0</Memory>
+		<Count>0</Count>
+	</Rule>
+	<Rule name="W156">
+		<RULE_PARAM name="-strict" value="W342,W343"/>
+		<Time>0</Time>
+		<Memory>0</Memory>
+		<Count>0</Count>
+	</Rule>
+	<Rule name="W123">
+		<RULE_PARAM name="-checkfullrecord" value="yes"/>
+		<RULE_PARAM name="-ignoreModuleInstance" value="yes"/>
+		<Time>0</Time>
+		<Memory>0</Memory>
+		<Count>0</Count>
+	</Rule>
+	<Rule name="W122">
+		<RULE_PARAM name="-strict" value="W342,W343"/>
+		<Time>0</Time>
+		<Memory>0</Memory>
+		<Count>0</Count>
+	</Rule>
+	<Rule name="W116">
+		<RULE_PARAM name="-nocheckoverflow" value="yes"/>
+		<RULE_PARAM name="-strict" value="W342,W343"/>
+		<Time>0</Time>
+		<Memory>0</Memory>
+		<Count>0</Count>
+	</Rule>
+	<Rule name="BlockHeader">
+		<Time>0</Time>
+		<Memory>0</Memory>
+		<Count>0</Count>
+	</Rule>
+	<Rule name="W422">
+		<Time>0</Time>
+		<Memory>0</Memory>
+		<Count>0</Count>
+	</Rule>
+	<Rule name="W414">
+		<RULE_PARAM name="-treat_latch_as_combinational" value="yes"/>
+		<Time>0</Time>
+		<Memory>0</Memory>
+		<Count>0</Count>
+	</Rule>
+	<Rule name="W336">
+		<RULE_PARAM name="-treat_latch_as_combinational" value="yes"/>
+		<Time>0</Time>
+		<Memory>0</Memory>
+		<Count>0</Count>
+	</Rule>
+	<Rule name="W502">
+		<Time>0</Time>
+		<Memory>0</Memory>
+		<Count>0</Count>
+	</Rule>
+	<Rule name="W499">
+		<Time>0</Time>
+		<Memory>0</Memory>
+		<Count>0</Count>
+	</Rule>
+	<Rule name="W486">
+		<RULE_PARAM name="-nocheckoverflow" value="yes"/>
+		<Time>0</Time>
+		<Memory>0</Memory>
+		<Count>0</Count>
+	</Rule>
+	<Rule name="W481b">
+		<Time>0</Time>
+		<Memory>0</Memory>
+		<Count>0</Count>
+	</Rule>
+	<Rule name="W481a">
+		<RULE_PARAM name="-strict" value="W342,W343"/>
+		<Time>0</Time>
+		<Memory>0</Memory>
+		<Count>0</Count>
+	</Rule>
+	<Rule name="W480">
+		<Time>0</Time>
+		<Memory>0</Memory>
+		<Count>0</Count>
+	</Rule>
+	<Rule name="W426">
+		<Time>0</Time>
+		<Memory>0</Memory>
+		<Count>0</Count>
+	</Rule>
+	<Rule name="W422">
+		<Time>0</Time>
+		<Memory>0</Memory>
+		<Count>0</Count>
+	</Rule>
+	<Rule name="W415a">
+		<Time>0</Time>
+		<Memory>0</Memory>
+		<Count>0</Count>
+	</Rule>
+	<Rule name="W362">
+		<RULE_PARAM name="-nocheckoverflow" value="yes"/>
+		<RULE_PARAM name="-strict" value="W342,W343"/>
+		<Time>0</Time>
+		<Memory>0</Memory>
+		<Count>0</Count>
+	</Rule>
+	<Rule name="W352">
+		<Time>0</Time>
+		<Memory>0</Memory>
+		<Count>0</Count>
+	</Rule>
+	<Rule name="W416">
+		<RULE_PARAM name="-nocheckoverflow" value="yes"/>
+		<Time>0</Time>
+		<Memory>0</Memory>
+		<Count>0</Count>
+	</Rule>
+	<Rule name="W337">
+		<RULE_PARAM name="-strict" value="W342,W343"/>
+		<Time>0</Time>
+		<Memory>0</Memory>
+		<Count>0</Count>
+	</Rule>
+	<Rule name="W317">
+		<Time>0</Time>
+		<Memory>0</Memory>
+		<Count>0</Count>
+	</Rule>
+	<Rule name="W289">
+		<Time>0</Time>
+		<Memory>0</Memory>
+		<Count>0</Count>
+	</Rule>
+	<Rule name="W263">
+		<RULE_PARAM name="-nocheckoverflow" value="yes"/>
+		<RULE_PARAM name="-strict" value="W342,W343"/>
+		<Time>0</Time>
+		<Memory>0</Memory>
+		<Count>0</Count>
+	</Rule>
+	<Rule name="W224">
+		<Time>0</Time>
+		<Memory>0</Memory>
+		<Count>0</Count>
+	</Rule>
+	<Rule name="W218">
+		<Time>0</Time>
+		<Memory>0</Memory>
+		<Count>0</Count>
+	</Rule>
+	<Rule name="W216">
+		<Time>0</Time>
+		<Memory>0</Memory>
+		<Count>0</Count>
+	</Rule>
+	<Rule name="W215">
+		<Time>0</Time>
+		<Memory>0</Memory>
+		<Count>0</Count>
+	</Rule>
+	<Rule name="W156">
+		<RULE_PARAM name="-strict" value="W342,W343"/>
+		<Time>0</Time>
+		<Memory>0</Memory>
+		<Count>0</Count>
+	</Rule>
+	<Rule name="W123">
+		<RULE_PARAM name="-checkfullrecord" value="yes"/>
+		<RULE_PARAM name="-ignoreModuleInstance" value="yes"/>
+		<Time>0</Time>
+		<Memory>0</Memory>
+		<Count>0</Count>
+	</Rule>
+	<Rule name="W116">
+		<RULE_PARAM name="-nocheckoverflow" value="yes"/>
+		<RULE_PARAM name="-strict" value="W342,W343"/>
+		<Time>0</Time>
+		<Memory>0</Memory>
+		<Count>0</Count>
+	</Rule>
+	<Rule name="W66">
+		<Time>0</Time>
+		<Memory>0</Memory>
+		<Count>0</Count>
+	</Rule>
+	<Rule name="W19">
+		<RULE_PARAM name="-strict" value="W342,W343"/>
+		<Time>0</Time>
+		<Memory>0</Memory>
+		<Count>0</Count>
+	</Rule>
+	<Rule name="W496b">
+		<Time>0</Time>
+		<Memory>0</Memory>
+		<Count>0</Count>
+	</Rule>
+	<Rule name="W496a">
+		<Time>0</Time>
+		<Memory>0</Memory>
+		<Count>0</Count>
+	</Rule>
+	<Rule name="W122">
+		<RULE_PARAM name="-strict" value="W342,W343"/>
+		<Time>0</Time>
+		<Memory>0</Memory>
+		<Count>0</Count>
+	</Rule>
+	<Rule name="W110">
+		<RULE_PARAM name="-nocheckoverflow" value="yes"/>
+		<Time>0</Time>
+		<Memory>0</Memory>
+		<Count>0</Count>
+	</Rule>
+	<Rule name="bothedges">
+		<Time>0</Time>
+		<Memory>0</Memory>
+		<Count>0</Count>
+	</Rule>
+	<Rule name="badimplicitSM4">
+		<Time>0</Time>
+		<Memory>0</Memory>
+		<Count>0</Count>
+	</Rule>
+	<Rule name="badimplicitSM2">
+		<Time>0</Time>
+		<Memory>0</Memory>
+		<Count>0</Count>
+	</Rule>
+	<Rule name="badimplicitSM1">
+		<Time>0</Time>
+		<Memory>0</Memory>
+		<Count>0</Count>
+	</Rule>
+	<Rule name="mixedsenselist">
+		<Time>0</Time>
+		<Memory>0</Memory>
+		<Count>0</Count>
+	</Rule>
+	<Rule name="W442f">
+		<Time>0</Time>
+		<Memory>0</Memory>
+		<Count>0</Count>
+	</Rule>
+	<Rule name="W442c">
+		<Time>0</Time>
+		<Memory>0</Memory>
+		<Count>0</Count>
+	</Rule>
+	<Rule name="W442b">
+		<Time>0</Time>
+		<Memory>0</Memory>
+		<Count>0</Count>
+	</Rule>
+	<Rule name="W442a">
+		<Time>0</Time>
+		<Memory>0</Memory>
+		<Count>0</Count>
+	</Rule>
+	<Rule name="W339a">
+		<Time>0</Time>
+		<Memory>0</Memory>
+		<Count>0</Count>
+	</Rule>
+	<Rule name="PrereqRCAUsage">
+		<Time>0</Time>
+		<Memory>0</Memory>
+		<Count>0</Count>
+	</Rule>
+	<Rule name="sim_race02">
+		<Time>0</Time>
+		<Memory>0</Memory>
+		<Count>0</Count>
+	</Rule>
+	<Rule name="checkPinConnectedToSupply">
+		<Time>0</Time>
+		<Memory>0</Memory>
+		<Count>0</Count>
+	</Rule>
+	<Rule name="FlopEConst">
+		<RULE_PARAM name="-report_inferred_cell" value="yes"/>
+		<Time>0</Time>
+		<Memory>0</Memory>
+		<Count>0</Count>
+	</Rule>
+	<Rule name="FlopSRConst">
+		<RULE_PARAM name="-report_inferred_cell" value="yes"/>
+		<Time>0</Time>
+		<Memory>0</Memory>
+		<Count>0</Count>
+	</Rule>
+	<Rule name="FlopClockConstant">
+		<RULE_PARAM name="-report_inferred_cell" value="yes"/>
+		<Time>0</Time>
+		<Memory>0</Memory>
+		<Count>0</Count>
+	</Rule>
+	<Rule name="STARC05-2.3.4.1v">
+		<Time>0</Time>
+		<Memory>0</Memory>
+		<Count>0</Count>
+	</Rule>
+	<Rule name="STARC05-2.10.1.4b">
+		<Time>0</Time>
+		<Memory>0</Memory>
+		<Count>0</Count>
+	</Rule>
+	<Rule name="STARC05-2.10.1.4a">
+		<Time>0</Time>
+		<Memory>0</Memory>
+		<Count>0</Count>
+	</Rule>
+	<Rule name="STARC05-2.3.1.2c">
+		<Time>0</Time>
+		<Memory>0</Memory>
+		<Count>0</Count>
+	</Rule>
+	<Rule name="STARC05-2.1.3.1">
+		<RULE_PARAM name="-nocheckoverflow" value="yes"/>
+		<Time>0</Time>
+		<Memory>0</Memory>
+		<Count>0</Count>
+	</Rule>
+	<Rule name="STARC05-1.4.3.4">
+		<Time>0</Time>
+		<Memory>0</Memory>
+		<Count>0</Count>
+	</Rule>
+	<Rule name="STARC05-1.3.1.3">
+		<Time>0</Time>
+		<Memory>0</Memory>
+		<Count>0</Count>
+	</Rule>
+	<Rule name="STARC05-2.5.1.2">
+		<RULE_PARAM name="-strict" value="W342,W343"/>
+		<Time>0</Time>
+		<Memory>0</Memory>
+		<Count>0</Count>
+	</Rule>
+	<Rule name="preReq_ConsCase">
+		<Time>0</Time>
+		<Memory>0</Memory>
+		<Count>0</Count>
+	</Rule>
+	<Rule name="STARC05-2.11.3.1">
+		<RULE_PARAM name="-strict" value="W342,W343"/>
+		<Time>0</Time>
+		<Memory>0</Memory>
+		<Count>0</Count>
+	</Rule>
+	<Rule name="STARC05-2.3.3.1">
+		<Time>0</Time>
+		<Memory>0</Memory>
+		<Count>0</Count>
+	</Rule>
+	<Rule name="STARC05-2.11.3.1">
+		<RULE_PARAM name="-strict" value="W342,W343"/>
+		<Time>0</Time>
+		<Memory>0</Memory>
+		<Count>0</Count>
+	</Rule>
+	<Rule name="STARC05-2.10.3.2a">
+		<RULE_PARAM name="-nocheckoverflow" value="yes"/>
+		<Time>0</Time>
+		<Memory>0</Memory>
+		<Count>0</Count>
+	</Rule>
+	<Rule name="STARC05-2.10.2.3">
+		<Time>0</Time>
+		<Memory>0</Memory>
+		<Count>0</Count>
+	</Rule>
+	<Rule name="STARC05-2.3.3.1">
+		<Time>0</Time>
+		<Memory>0</Memory>
+		<Count>0</Count>
+	</Rule>
+	<Rule name="STARC05-2.3.1.6">
+		<Time>0</Time>
+		<Memory>0</Memory>
+		<Count>0</Count>
+	</Rule>
+	<Rule name="STARC05-2.3.1.5b">
+		<Time>0</Time>
+		<Memory>0</Memory>
+		<Count>0</Count>
+	</Rule>
+	<Rule name="STARC05-2.2.3.3">
+		<RULE_PARAM name="-strict" value="W342,W343"/>
+		<Time>0</Time>
+		<Memory>128</Memory>
+		<Count>0</Count>
+	</Rule>
+	<Rule name="STARC05-2.1.5.3">
+		<Time>0</Time>
+		<Memory>0</Memory>
+		<Count>0</Count>
+	</Rule>
+	<Rule name="STARC05-2.1.4.5">
+		<Time>0</Time>
+		<Memory>0</Memory>
+		<Count>0</Count>
+	</Rule>
+	<Rule name="CombLoop">
+		<RULE_PARAM name="-enableE2Q" value="yes"/>
+		<RULE_PARAM name="-strict" value="W342,W343"/>
+		<Time>0</Time>
+		<Memory>608</Memory>
+		<Count>0</Count>
+	</Rule>
+	<Rule name="Prereq_IntClock">
+		<Time>0</Time>
+		<Memory>0</Memory>
+		<Count>0</Count>
+	</Rule>
+	<Rule name="BufClock">
+		<RULE_PARAM name="-strict" value="W342,W343"/>
+		<Time>0</Time>
+		<Memory>768</Memory>
+		<Count>0</Count>
+	</Rule>
+	<Rule name="InferLatch">
+		<RULE_PARAM name="-strict" value="W342,W343"/>
+		<Time>0</Time>
+		<Memory>0</Memory>
+		<Count>0</Count>
+	</Rule>
+	<Rule name="Prereqs_InferLatch">
+		<Time>0</Time>
+		<Memory>0</Memory>
+		<Count>0</Count>
+	</Rule>
+	<Rule name="ElabSummary">
+		<Time>0</Time>
+		<Memory>0</Memory>
+		<Count>1</Count>
+	</Rule>
+	<Rule name="DetectTopDesignUnits">
+		<Time>0</Time>
+		<Memory>0</Memory>
+		<Count>1</Count>
+	</Rule>
+</RULES>
+<RUN_MODE>
+	<Save>1</Save>
+</RUN_MODE>
+<REPORTS>
+	<Report name="moresimple">
+		<value>/home/user16/work/klngan/hdl_labs/lab1/lint/sg_linting/sg_linting/mux2to1/lint/lint_rtl/spyglass_reports/moresimple.rpt</value>
+	</Report>
+	<Report/>
+	<Report name="no_msg_reporting_rules">
+		<value>/home/user16/work/klngan/hdl_labs/lab1/lint/sg_linting/sg_linting/mux2to1/lint/lint_rtl/spyglass_reports/no_msg_reporting_rules.rpt</value>
+	</Report>
+	<Report name="W415_Report">
+		<value>/home/user16/work/klngan/hdl_labs/lab1/lint/sg_linting/sg_linting/mux2to1/lint/lint_rtl/spyglass_reports/lint/W415_Report.rpt</value>
+	</Report>
+	<Report name="CombLoopReport">
+		<value>/home/user16/work/klngan/hdl_labs/lab1/lint/sg_linting/sg_linting/mux2to1/lint/lint_rtl/spyglass_reports/openmore/CombLoopReport.rpt</value>
+	</Report>
+</REPORTS>
+<VIOL_SUMMARY>
+	<FATAL>0</FATAL>
+	<ERROR>0</ERROR>
+	<WARNING>0</WARNING>
+	<INFO>2</INFO>
+</VIOL_SUMMARY>
+<Exit_code>0</Exit_code>
+<Total_time>7</Total_time>

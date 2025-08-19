@@ -1,0 +1,230 @@
+The requirements are:
+Automated testbench
+Number of tests supplied at VCS command line, otherwise use the default=50
+Simulation result file supplied at VCS command line, otherwise use the default adder_sim.rpt
+Seed value supplied at VCS command line, otherwise use the default=200
+Randomized inputs
+Expected value calculator function
+
+Use the following code snippet to be the expected value calculator function, see below
+    function automatic void calculate_expected(
+        input logic a, b, cin,
+        output logic sum, cout
+    )
+        ...
+    endfunction
+Use the following code snippet to read the number of tests from VCS command line, see below
+int number_of_tests;
+        if (!$value$plusargs("number_of_tests=%d", number_of_tests)) begin
+            ...
+        end
+Use the following code snippet to read the result file from VCS command line, see below
+int report_file;
+        if (!$value$plusargs("report_file=%s", report_file)) begin
+            ...
+        end
+Use the following code snippet to read the seed value from VCS command line, see below
+int report_file;
+        if (!$value$plusargs("seed=%d", seed)) begin
+            ...
+        end
+
+% vim ../design/mux2to1_d_tb.sv
+Use this as the reference
+
+% vim ../design/adder.sv
+Review this
+
+% vim ../design/adder_tb.sv
+Use the following as the framwork, see below
+`timescale 1ns/1ps
+
+module ...
+    // Variables
+    localparam string MODULE = "adder";
+    int seed = 200;                                       // Need to get it from the command line
+    int number_of_tests = 50;                             // Need to get it from the command line
+    string report_file = "adder_sim.rpt";                 // Need to get it from the command line
+    string seed_source = "command line value";
+    string number_of_tests_source = "command line value";
+    string report_file_source = "command line value";
+
+    // Signals
+    logic ...
+    logic ...
+
+    // Test control
+    int error_count = 0;
+    int sum_error_count = 0;
+    int cout_error_count = 0;
+    int test_count = 0;
+    int file_handle;
+
+    // Instantiate DUT
+    adder uut (
+        .a(a_tb),
+        .b(b_tb),
+        .cin(cin_tb),
+        .sum(sum_tb),
+        .cout(cout_tb)
+    );
+
+    // Expected output calculator
+    function automatic void calculate_expected(
+        input logic a, b, cin,
+        output logic sum, cout
+    );
+        sum = a ^ b ^ cin;
+        cout = (a & b) | (cin & (a ^ b));
+    endfunction
+
+    initial ...
+        // Get number of tests from command line or use default value
+        if (!$value$plusargs("number_of_tests=%d", number_of_tests)) begin
+            number_of_tests_source = "default value";
+        end
+
+        // Get report file name from command line or use default value
+        if (!$value$plusargs("report_file=%s", report_file)) begin
+            report_file_source = "default value";
+        end
+
+        // Get seed from command line or use default
+        if (!$value$plusargs("seed=%d", seed)) begin
+            seed_source = "default value";
+        end
+        $srandom(seed);  // Set the seed value
+
+        // Open log file
+        file_handle = $fopen(report_file, "w");
+        if (!file_handle) begin
+            ...
+        end
+
+        $display("\n[INFO] Number of tests: %0d (%0s)", number_of_tests, number_of_tests_source);
+        ...
+
+        $fdisplay(file_handle, "\n[INFO] Number of tests: %0d (%0s)", number_of_tests, number_of_tests_source);
+        ...
+
+        // Main test loop
+        for (int i = 0; i < number_of_tests; i++) begin
+            // Randomize inputs
+            a_tb = $urandom;
+            b_tb = $urandom;
+            cin_tb = $urandom;
+            test_count++;
+
+            // Calculate expected outputs
+            calculate_expected(a_tb, b_tb, cin_tb, expected_sum, expected_cout);
+
+            // Wait for propagation
+            #10;
+
+            // Check results
+            if (sum_tb !== expected_sum) begin
+                ...
+                $fdisplay(file_handle, "[ERROR-S] Test %0d: %b + %b + %b = sum:%b (exp:%b), cout:%b (exp:%b)",
+                         i, a_tb, b_tb, cin_tb, sum_tb, expected_sum, cout_tb, expected_cout);
+            end
+            else if (cout_tb !== expected_cout) begin
+                ...
+                $fdisplay(file_handle, "[ERROR-C] Test %0d: %b + %b + %b = sum:%b (exp:%b), cout:%b (exp:%b)",
+
+                         i, a_tb, b_tb, cin_tb, sum_tb, expected_sum, cout_tb, expected_cout);
+            end
+            else begin
+                ...
+                $fdisplay(file_handle, "[PASS]    Test %0d: %b + %b + %b = sum:%b (exp:%b), cout:%b (exp:%b)",
+                         i, a_tb, b_tb, cin_tb, sum_tb, expected_sum, cout_tb, expected_cout);
+            end
+        end
+
+        // Summary
+        $display("[INFO] Testbench completed\n");
+        ...
+
+        $fdisplay(file_handle, "[INFO] Testbench completed\n");
+        ...
+
+        $fclose(file_handle);
+        $10 $finish;
+    end
+
+endmodule
+Check out diff1.orig for STDOUT, as well as in the log file e.g. adder_sim.log
+Check out diff2.orig for the report file contents e.g. adder_sim.rpt
+
+% make dv
+Observe STDOUT
+
+% vim ../design/adder.f
+
+% make dv
+Observe STDOUT
+
+% vim diff1.orig
+Please work on the formatting of $display and $fdisplay
+
+% vim diff2.orig
+Please work on the formatting of $display and $fdisplay
+
+% make dv
+Observe STDOUT
+
+% grep '\[' adder_sim.log  > diff1
+% diff diff1 diff1.orig
+Ensure your log file contents are matching diff1.orig
+There should be no discrepency
+
+% diff adder_sim.rpt diff2.orig
+Ensure your result file contents are matching diff2.orig
+There should be no discrepency
+
+% export NR=1
+% make dv
+Note that the simulation does not run, instead the two command lines are displayed, see below
+[==== INFO ====] vcs
+[==== INFO ====] adder\_simv
+
+% unset NR
+$ make dv
+
+% vcs ... if any change made to either the testbench or the adder module
+% adder\_simv -l adder\_sim.log +seed=333
+% diff adder_sim.rpt diff2.orig
+There should be many discrepencies because the seed value is different
+
+% vcs ... if any change made to either the testbench or the adder module
+% adder\_simv -l adder\_sim.log +number_of_tests=20
+% diff adder_sim.rpt diff2.orig
+There should be many discrepencies because the number of tests have been reduced
+
+% cp ../.design/adder1.sv ../design
+% vcs -l adder_comp.log -sverilog -debug_access+all -kdb -debug_report -top adder_tb -o adder_simv $ROOT/design/adder1.sv $ROOT/design/adder_tb.sv
+% adder\_simv -l adder\_sim.log
+
+% diff adder_sim.rpt diff2.orig
+There should be many discrepencies because there are issues in adder1.sv
+Some tests were passing but now failing
+
+% cp ../.design/adder2.sv ../design
+% vim ../design/adder2.sv
+Review adder2.sv
+
+% vcs -l adder_comp.log -sverilog -debug_access+all -kdb -debug_report -top adder_tb -o adder_simv $ROOT/design/adder2.sv $ROOT/design/adder_tb.sv
+% adder\_simv -l adder\_sim.log
+
+% diff adder_sim.rpt diff2.orig
+There should be no discrepency because adder2.sv is just the corresponding gate level
+
+% cp ../.design/adder3.sv ../design
+% vim ../design/adder3.sv
+Review adder3.sv
+
+% vcs -l adder_comp.log -sverilog -debug_access+all -kdb -debug_report -top adder_tb -o adder_simv $ROOT/design/adder3.sv $ROOT/design/adder_tb.sv
+% adder\_simv -l adder\_sim.log
+
+% diff adder_sim.rpt diff2.orig
+There should be many discrepencies because there are issues in adder3.sv
+Some tests were passing but now failing

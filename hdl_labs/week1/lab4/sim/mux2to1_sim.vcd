@@ -1,0 +1,64 @@
+$date
+	Thu Jul 24 13:49:15 2025
+$end
+
+$version
+	Synopsys VCS version W-2024.09-SP2_Full64
+$end
+
+$timescale
+	1ps
+$end
+
+$comment Csum: 1 d3bb4617610cca03 $end
+
+
+$scope module mux2to1_tb $end
+$var reg 1 ! a_tb $end
+$var reg 1 " b_tb $end
+$var reg 1 # sel_tb $end
+$var wire 1 $ y_tb $end
+
+$scope module uut $end
+$var wire 1 % a $end
+$var wire 1 & b $end
+$var wire 1 ' sel $end
+$var wire 1 $ y $end
+$upscope $end
+
+$upscope $end
+
+$enddefinitions $end
+
+#0
+$dumpvars
+0%
+0!
+0&
+0"
+0'
+0#
+0$
+$end
+#11000
+1"
+1&
+1#
+1'
+1$
+#22000
+0"
+0&
+0$
+#33000
+1!
+1%
+0#
+0'
+1$
+#44000
+0!
+0%
+1"
+1&
+0$

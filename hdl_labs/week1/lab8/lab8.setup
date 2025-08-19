@@ -1,0 +1,9 @@
+# For csh
+#setenv ROOT `pwd`
+
+# For bash
+export ROOT=`pwd`
+export TYPE="sv"
+export MODULE="top"
+export MODULE_TB="top_tb"
+export FLIST=1

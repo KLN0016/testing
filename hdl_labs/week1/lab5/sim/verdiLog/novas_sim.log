@@ -1,0 +1,40 @@
+Verdi>restart
+Chronologic VCS simulator copyright 1991-2024
+Contains Synopsys proprietary information.
+Compiler version W-2024.09-SP2_Full64; Runtime version W-2024.09-SP2_Full64;  Jul 24 14:12 2025
+*Verdi* Loading libsscore_vcs202409.so
+FSDB Dumper for VCS, Release Verdi_W-2024.09-SP2, Linux x86_64/64bit, 03/03/2025
+(C) 1996 - 2025 by Synopsys, Inc.
+*Verdi* FSDB WARNING: The FSDB file already exists. Overwriting the FSDB file may crash the programs that are using this file.
+*Verdi* : Create FSDB file '/home/user16/work/klngan/hdl_labs/lab5/sim/inter.fsdb'
+*Verdi* : Flush all FSDB Files at 0 ps.
+*Verdi* : Enable RPC Server(1652521)
+*Verdi* : Flush all FSDB Files at 0 ps.
+Information: Term was not able to be set up using xterm-256color. Using "xterm" by default instead. (CLE-10)
+Verdi>next
+mux3to1.v, 9 :     assign y = (sel == 2'b00) ? a :
+Verdi>run
+*Verdi* WARNING: Env/runtime option has specified fsdbfile name as "/home/user16/work/klngan/hdl_labs/lab5/sim/inter.fsdb". Fsdbfile name in task "mux3to1_sim.fsdb" is ignored.
+*Verdi* : Begin traversing the scope (mux3to1_tb), layer (0).
+*Verdi* : End of traversing.
+--------------------------------------------
+Simulation starts
+--------------------------------------------
+sel_tb	a_tb	b_tb	c_tb	|	y_tb
+--------------------------------|-----------
+00	1	0	1	|	1
+01	1	0	1	|	0
+10	1	0	1	|	1
+11	1	0	1	|	0
+--------------------------------------------
+Simulation finished
+--------------------------------------------
+$finish called from file "/home/user16/work/klngan/hdl_labs/lab5/design/mux3to1_tb.v", line 45.
+$finish at simulation time                91000
+Simulation complete, time is 91000 ps.
+mux3to1_tb.v, 45 :         #50 $finish;
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 91000 ps
+CPU Time:      0.050 seconds;       Data structure size:   0.0Mb
+Thu Jul 24 14:13:43 2025
+debExit

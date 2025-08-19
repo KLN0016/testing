@@ -1,0 +1,35 @@
+# run_lint.tcl - SpyGlass TCL script for linting
+
+# Get the first argument passed from makefile
+#set input [lindex $argv 0]
+#puts "Input from run_lint.csh: $input"
+
+# Create a project
+new_project $env(MODE) -projectwdir $env(ROOT)/lint/$env(MODE) -force
+
+# Add RTL files
+#set_option enableSV yes
+read_file -type verilog $env(ROOT)/design/mux3to1.v $env(ROOT)/design/mux3to1_tb.v
+#read_file -type verilog $env(ROOT)/.design/mux3to1.v $env(ROOT)/.design/mux3to1_tb.v
+set_option top mux3to1
+set_option auto_save yes
+set_option enableSV yes
+
+# Run basic Design Read check
+if { $env(MODE) eq "sg_design_read" || $env(MODE) eq "sg_both" } {
+    current_goal Design_Read
+    link_design -force
+}
+
+# Run Linting check
+if { $env(MODE) eq "sg_linting" || $env(MODE) eq "sg_both" } {
+    current_goal lint/lint_rtl
+    run_goal
+}
+
+# Generate summary report
+write_report summary > $env(MODE)_sum.rpt
+
+# Save the project
+save_project
+exit

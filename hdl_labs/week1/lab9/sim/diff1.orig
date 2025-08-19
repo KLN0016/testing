@@ -1,0 +1,12 @@
+[INFO] Number of tests: 50 (default value)
+[INFO] Report file    : adder_sim.rpt (default value)
+[INFO] Seed Value     : 200 (default value)
+[INFO] Testbench      : adder
+[INFO] Starting adder testbench with 50 random tests using seed 200
+[INFO] Testbench completed
+[INFO] Total tests completed    : 50
+[INFO] Total tests failed sum   : 0
+[INFO] Total tests failed cout  : 0
+[INFO] Total tests failed       : 0
+[INFO] Success rate             : 100.00%
+[INFO] Report file              : adder_sim.rpt (default value)

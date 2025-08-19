@@ -1,0 +1,23 @@
+UVM_INFO @ 0: reporter [RNTST] Running test bus_test...
+UVM_INFO lab7_2/design/bus_test.sv @ 0: uvm_test_top [BTOP/TEST] Launching the sequence
+UVM_INFO lab7_2/design/bus_vsequence.sv @ 0: reporter@@v_seq [V_SEQ] Starting virtual sequence
+UVM_INFO lab7_2/design/bus_vsequence.sv @ 0: reporter@@v_seq [V_SEQ] Starting normal sequence
+UVM_INFO lab7_2/design/bus_vsequence.sv @ 0: reporter@@v_seq [V_SEQ] Starting high priority sequence
+UVM_INFO lab7_2/design/bus_vsequence.sv @ 0: reporter@@v_seq [V_SEQ] Starting low priority sequence
+UVM_INFO lab7_2/design/bus_sequence.sv @ 0: uvm_test_top.sqr@@normal_seq [bus_sequence] Normal Priority Sequence
+UVM_INFO lab7_2/design/bus_sequence_prio.sv @ 0: uvm_test_top.sqr@@h_prio_seq [high_prio_seq] High Priority Sequence
+UVM_INFO lab7_2/design/bus_sequence_prio.sv @ 0: uvm_test_top.sqr@@l_prio_seq [low_prio_seq] Low Priority Sequence
+UVM_INFO lab7_2/design/bus_driver.sv @ 0: uvm_test_top.drv [DRIVER] Driving transaction: addr = 0xab, data = 0x5c45d065, write = 1
+UVM_INFO lab7_2/design/bus_driver.sv @ 10000: uvm_test_top.drv [DRIVER] Driving transaction: addr = 0xf1, data = 0xc64914bc, write = 0
+UVM_INFO lab7_2/design/bus_driver.sv @ 20000: uvm_test_top.drv [DRIVER] Driving transaction: addr = 0xe0, data = 0x8991b7c4, write = 0
+UVM_INFO lab7_2/design/bus_driver.sv @ 30000: uvm_test_top.drv [DRIVER] Driving transaction: addr = 0xad, data = 0xd3e882fd, write = 1
+UVM_INFO lab7_2/design/bus_driver.sv @ 40000: uvm_test_top.drv [DRIVER] Driving transaction: addr = 0xf5, data = 0x7e9e860a, write = 0
+UVM_INFO lab7_2/design/bus_driver.sv @ 50000: uvm_test_top.drv [DRIVER] Driving transaction: addr = 0xea, data = 0xd9878843, write = 0
+UVM_INFO lab7_2/design/bus_driver.sv @ 60000: uvm_test_top.drv [DRIVER] Driving transaction: addr = 0xa9, data = 0x808b5202, write = 1
+UVM_INFO lab7_2/design/bus_driver.sv @ 70000: uvm_test_top.drv [DRIVER] Driving transaction: addr = 0xf9, data = 0x95e6f794, write = 0
+UVM_INFO lab7_2/design/bus_driver.sv @ 80000: uvm_test_top.drv [DRIVER] Driving transaction: addr = 0xad, data = 0x209a8018, write = 1
+UVM_INFO lab7_2/design/bus_driver.sv @ 90000: uvm_test_top.drv [DRIVER] Driving transaction: addr = 0xa0, data = 0xed9e6f24, write = 1
+UVM_INFO lab7_2/design/bus_driver.sv @ 100000: uvm_test_top.drv [DRIVER] Driving transaction: addr = 0xaa, data = 0xc6841951, write = 1
+UVM_INFO lab7_2/design/bus_driver.sv @ 110000: uvm_test_top.drv [DRIVER] Driving transaction: addr = 0xa1, data = 0xb72354e4, write = 1
+UVM_INFO lab7_2/design/bus_vsequence.sv @ 120000: reporter@@v_seq [V_SEQ] Virtual sequence complete
+UVM_INFO /home/synopsys/vcs/W-2024.09-SP2/etc/uvm-ieee-2020-2.0/base/uvm_report_server.svh @ 120000: reporter [UVM/REPORT/SERVER] 

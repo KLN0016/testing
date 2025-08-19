@@ -1,0 +1,2 @@
+0 /home/user16/work/klngan/hdl_labs/lab2/design/mux3to1.v
+1 /home/user16/work/klngan/hdl_labs/lab2/design/mux3to1_tb.v

@@ -1,0 +1,5 @@
+# For csh
+#setenv ROOT `pwd`
+
+# For bash
+export ROOT=`pwd`

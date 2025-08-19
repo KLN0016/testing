@@ -1,0 +1,5 @@
+--VCS Setup File
+WORK > DEFAULT
+DEFAULT : ./worklib
+TIMEBASE = ps
+TIME_RESOLUTION = 1ps

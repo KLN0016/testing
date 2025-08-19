@@ -1,0 +1,9 @@
+{"vcs1":{"timestamp_begin":1753337277.350087147, "rt":0.20, "ut":0.10, "st":0.13}}
+{"vcselab":{"timestamp_begin":1753337277.617624307, "rt":0.15, "ut":0.12, "st":0.02}}
+{"link":{"timestamp_begin":1753337277.822222786, "rt":0.21, "ut":0.13, "st":0.08}}
+{"SNPS_VCS_INTERNAL_ROOT_START_TIME": 1753337276.883337414}
+{"VCS_COMP_START_TIME": 1753337276.883337414}
+{"VCS_COMP_END_TIME": 1753337278.149418332}
+{"VCS_USER_OPTIONS": "-l mux3to1_comp.log -sverilog -debug_access+all -kdb -debug_report -top mux3to1_tb -o mux3to1_simv /home/user16/work/klngan/hdl_labs/lab5/design/mux3to1.v /home/user16/work/klngan/hdl_labs/lab5/design/mux3to1_tb.v"}
+{"vcs1": {"peak_mem": 477616}}
+{"vcselab": {"peak_mem": 162436}}

@@ -1,0 +1,6 @@
+SCHEMA@@PName@@Dir@@Msb@@Lsb@@Desc@@DU@@DU_BBOX
+VALUE@@a@@INPUT@@0@@0@@-@@mux3to1@@No
+VALUE@@b@@INPUT@@0@@0@@-@@mux3to1@@No
+VALUE@@c@@INPUT@@0@@0@@-@@mux3to1@@No
+VALUE@@sel@@INPUT@@1@@0@@-@@mux3to1@@No
+VALUE@@y@@OUTPUT@@0@@0@@-@@mux3to1@@No

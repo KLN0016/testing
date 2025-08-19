@@ -1,0 +1,5 @@
+Module Name,Module Type,Port Name,Direction,Width,Index,Comment Source,Comment 
+mux2to1,Top_Level,a,INPUT,1,-,-,-
+mux2to1,Top_Level,b,INPUT,1,-,-,-
+mux2to1,Top_Level,sel,INPUT,1,-,-,-
+mux2to1,Top_Level,y,OUTPUT,1,-,-,-

@@ -1,0 +1,7 @@
+SCHEMA@@PName@@HierName
+VALUE@@a@@mux3to1
+VALUE@@b@@mux3to1
+VALUE@@c@@mux3to1
+VALUE@@sel[0]@@mux3to1
+VALUE@@sel[1]@@mux3to1
+VALUE@@y@@mux3to1

@@ -1,0 +1,261 @@
+bus/
+├── bus_transaction.sv      // Transaction class
+├── bus_sequence.sv         // Sequence class
+├── bus_sequence_prio.sv    // Additional Sequence class
+├── bus_sequencer.sv        // Sequencer class
+├── bus_driver.sv           // Driver class
+├── bus_test.sv             // Test class
+└── bus_tb.sv               // Testbench top
+
+Data Flow
+─────────
+1. bus_tb - Simulation begins and runs bus_test class
+2. bus_test::build_phase() - Instantiate bus_sequencer and bus_driver. Use UVM factory to create these components
+3. bus_test::connect_phase() - Driver’s seq_item_port connects to sequencer’s seq_item_export. This enables the sequencer to send transactions to the driver
+4. bus_test::run_phase() - Two extra sequence objects are created: high_prio_seq and low_prio_seq. Uses fork...join to run all 3 sequences in parallel. The test's objection is raised
+5. bus_sequence::body() - Transactions are created. Each transaction is randomized. There are three sequences: bus_sequence creates 7 transactions, high_prio_seq creates 3 transactions and prevents others from accessing sequencer while locked, low_prio_seq creates 3 transactions. All sequences are done using start_item() and finish_item()
+6. Sequencer Arbitration - Sequencer receives requests from all 3 sequences. Since high_prio_seq locks the sequencer, it gets exclusive access while locked. Normal and low priority sequences compete for access after lock is released
+7. bus_driver::run_phase() - The driver receives each transaction (get_next_item(tr)). Prints the transaction data. Waits for 10 time units (simulating DUT interaction). Acknowledges transaction completion (item_done())
+8. bus_test::run_phase() - Once the sequence is complete, the test’s objection is dropped. Simulation ends after all phases are completed
+
+% cp ../../lab6/design/* ../design
+% cp ../design/bus_sequence.sv ../design/bus_sequence_prio.sv
+% vim ../design/bus_sequence_prio.sv
+Use bus_sequence.sv as the reference
+Create two classes in bus_sequence_prio.sv: high_prio_seq & low_prio_seq
+Extends the two classes from bus_sequence
+For high_prio_seq class, remember to do these, see below
+      bus_transaction req;
+      `uvm_info(get_type_name(), "High Priority Sequence", UVM_MEDIUM)
+      repeat (3)
+      { addr[7:4] == 4'hF; write == 0; }
+For low_prio_seq class, remember to do these, see below
+      bus_transaction req;
+      `uvm_info(get_type_name(), "Low Priority Sequence", UVM_MEDIUM)
+      repeat (2)
+      { addr[7:4] == 4'hE; write == 0; }
+
+% vim ../design/bus_tb.sv
+Include the new bus_sequence_prio.sv right after bus_sequence.sv, see below
+   `include "bus_sequence_prio.sv"  // Lab 7
+
+% vim ../design/bus_test.sv
+Add in high_prio_seq & low_prio_seq sequences in the task run_phase, see below
+   high_prio_seq hseq;  // Lab 7
+   low_prio_seq lseq;   // Lab 7
+Use fork and join to have all the sequences running concurrently, see below
+      fork  // Lab 7
+        seq.start(sqr); // Launch the sequence
+        hseq.start(sqr); // Lab 7 Launch the sequence
+        lseq.start(sqr); // Lab 7 Launch the sequence
+      join  // Lab 7
+
+% make dv
+Observe STDOUT
+Observe the UVM messages
+
+% vim bus_sim.log or qgrep
+Note that there are 7 (bus_sequence), 3 (high_prio_seq), 2 (low_prio_seq) transactions
+
+% grep UVM_ bus_sim.log | grep ']' | sed 's/([0-9]*)//' | sed 's/\/home.*\/lab7/lab7/' > diff1
+% diff diff1 diff1.orig
+There should be no discrepency
+
+% vim ../design/bus_sequence_prio.sv
+Apply these to lock/unlock high_prio_seq sequence, see below
+      m_sequencer.lock(this);  // Lock
+      repeat...
+      end
+      m_sequencer.unlock(this);  // Unlock
+FYI, m_sequencer is a built-in handle inside uvm_sequence
+
+% make dv
+Observe STDOUT
+Observe the UVM messages
+
+% vim bus_sim.log or qgrep
+Note that there are 7 (bus_sequence), 3 (high_prio_seq), 2 (low_prio_seq) transactions
+This time, the 3 (high_prio_seq) transactions were completed first
+
+% grep UVM_ bus_sim.log | grep ']' | sed 's/([0-9]*)//' | sed 's/\/home.*\/lab7/lab7/' > diff2
+% diff diff2 diff2.orig
+There should be no discrepency
+
+% vim ../design/bus_sequence_prio.sv
+Apply these to grab/ungrab low_prio_seq sequence, see below
+      m_sequencer.grab(this);  // Grab
+      repeat...
+      end
+      m_sequencer.ungrab(this);  // Ungrab
+FYI, m_sequencer is a built-in handle inside uvm_sequence
+Note that there are 7 (bus_sequence), 3 (high_prio_seq), 2 (low_prio_seq) transactions
+This time, the 3 (high_prio_seq) transactions were completed first, then the 2 (low_prio_seq) transactions
+
+% grep UVM_ bus_sim.log | grep ']' | sed 's/([0-9]*)//' | sed 's/\/home.*\/lab7/lab7/' > diff3
+% diff diff3 diff3.orig
+There should be no discrepency
+
+% vim ../design/bus_sequence_prio.sv
+Comment out all the lock/unlock and grab/ungrab
+
+% vim ../design/bus_vsequence.sv
+Please copy the Content1 into it, see below
+
+Content1
+────────
+class bus_vsequence extends uvm_sequence;
+    `uvm_object_utils(bus_vsequence)
+
+    // Handles to sub-sequences
+    bus_sequence normal_seq;
+    high_prio_seq h_prio_seq;
+    low_prio_seq l_prio_seq;
+
+    // Sequencer handles
+    uvm_sequencer #(bus_transaction) main_sqr;
+
+    function new(string name="bus_vsequence");
+        super.new(name);
+    endfunction
+
+    task body();
+        // Create sub-sequences
+        normal_seq = bus_sequence::type_id::create("normal_seq");
+        h_prio_seq = high_prio_seq::type_id::create("h_prio_seq");
+        l_prio_seq = low_prio_seq::type_id::create("l_prio_seq");
+
+        `uvm_info("V_SEQ", "Starting virtual sequence", UVM_MEDIUM)
+
+        // Fork off all sequences in parallel
+        fork
+            begin
+                `uvm_info("V_SEQ", "Starting normal sequence", UVM_MEDIUM)
+                normal_seq.start(main_sqr);
+            end
+            begin
+                `uvm_info("V_SEQ", "Starting high priority sequence", UVM_MEDIUM)
+                h_prio_seq.start(main_sqr);
+            end
+            begin
+                `uvm_info("V_SEQ", "Starting low priority sequence", UVM_MEDIUM)
+                l_prio_seq.start(main_sqr);
+            end
+        join
+
+        `uvm_info("V_SEQ", "Virtual sequence complete", UVM_MEDIUM)
+    endtask
+endclass
+
+% cp ../design/bus_tb.sv ../design/bus_tb.sv.bak
+% vim ../design/bus_tb.sv
+Remember to include this right after bus_sequence_prio.sv, see below
+   `include "bus_vsequence.sv"  // Lab 7
+
+% cp ../design/bus_test.sv ../design/bus_test.sv.bak
+% vim ../design/bus_test.sv
+Comment out all these, see below
+   //bus_sequence seq;
+   //high_prio_seq hseq;  // Lab 7
+   //low_prio_seq lseq;   // Lab 7
+      //seq = bus_sequence::type_id::create("seq");
+      //hseq = high_prio_seq::type_id::create("hseq");  // Lab 7
+      //lseq = low_prio_seq::type_id::create("lseq");   // Lab 7
+      //fork  // Lab 7
+      //  seq.start(sqr); // Launch the sequence
+      //  hseq.start(sqr); // Lab 7 Launch the sequence
+      //  lseq.start(sqr); // Lab 7 Launch the sequence
+      //join  // Lab 7
+Add in this, see below
+   bus_vsequence v_seq;
+Add in these right after the 'task' line, see below
+      v_seq = bus_vsequence::type_id::create("v_seq");
+      v_seq.main_sqr = sqr; // Connect the sequencer
+Add in these right after the 'raise_objection' line, see below
+      v_seq.start(null); // Start on null (virtual sequence)
+
+% make dv
+Observe STDOUT
+Observe the UVM messages
+
+% vim bus_sim.log or qgrep
+Note that there are 7 (bus_sequence), 3 (high_prio_seq), 2 (low_prio_seq) transactions
+
+% grep UVM_ bus_sim.log | grep ']' | sed 's/([0-9]*)//' | sed 's/\/home.*\/lab7/lab7/' > diff4
+% diff diff4 diff4.orig
+There should be no discrepency
+
+% vim ../design/bus_sequence_prio.sv
+Apply lock/unlock and grab/ungrab to find out the different transaction scenarios
+
+% make dv
+Observe STDOUT
+Observe the UVM messages
+
+% vim ../design/bus_sequence_prio.sv
+Keep the lock/unlock only for high_prio_seq
+
+% cp ../design/bus_tb.sv ../design/bus_tb.sv.vs
+% cp ../design/bus_test.sv ../design/bus_test.sv.vs
+% mv ../design/bus_tb.sv.bak ../design/bus_tb.sv
+% mv ../design/bus_test.sv.bak ../design/bus_test.sv
+
+Data Flow Diagram
+─────────────────
++----------------------------------------------------+
+|                  bus_tb (Top Module)               |
+|  - run_test("bus_test")                            |
++----------------------------------------------------+
+                          |
+                          v
++----------------------------------------------------+
+|                  bus_test (UVM Test)               |
+|  - build_phase: creates sqr, drv                   |
+|  - connect_phase: connects drv <-> sqr             |
+|  - run_phase: raises objection                     |
+|  - run_phase: launches sequences in parallel:      |
+|      * bus_sequence (7 transactions)               |
+|      * high_prio_seq (3 transactions, locked)      |
+|      * low_prio_seq (2 transactions)               |
++----------------------------------------------------+
+                          |
+                          v
++----------------------------------------------------+
+|                bus_sequence (Sequence)             |
+|  - Creates the three sequences                     |
+|  - Randomizes: addr[7:4]=A, write=1 bus_sequence   |
+|  - Randomizes: addr[7:4]=F, write=0 high_prio_seq  |
+|  - Randomizes: addr[7:4]=E, write=0 low_prio_seq   |
+|  - start_item() / finish_item() for each sequence  |
++----------------------------------------------------+
+                         |
+                         v
++----------------------------------------------------+
+|                bus_sequencer (Sequencer)           |
+|  - Handles sequence priority:                      |
+|      * Processes high_prio_seq first (due to lock) |
+|      * Then processes bus_sequence and low_prio_seq|
+|  - Forwards transactions to driver via TLM port    |
++----------------------------------------------------+
+                          |
+                          v
++----------------------------------------------------+
+|                 bus_driver (Driver)                |
+|  - get_next_item(tr)                               |
+|  - Prints transaction info:                        |
+|     * High priority: addr[7:4]=F, write=0          |
+|     * Normal: addr[7:4]=A, write=1                 |
+|     * Low priority: addr[7:4]=E, write=0           |
+|  - Simulates DUT interaction (delay)               |
+|  - item_done()                                     |
++----------------------------------------------------+
+                          |
+                          v
++----------------------------------------------------+
+|      (DUT - Not present)                           |
++----------------------------------------------------+
+                          |
+                          v
++----------------------------------------------------+
+|                  bus_test (UVM Test)               |
+|  - run_phase: drops objection                      |
++----------------------------------------------------+

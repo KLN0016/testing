@@ -1,0 +1,3 @@
+Command Line: /home/synopsys/vcs/W-2024.09-SP2/linux64/bin/elabcom -simflow -KDBRESOLVER -simvdaidir /home/user16/work/klngan/hdl_labs/week3/uvm_labs/lab5/sim/ptop_simv.daidir -saveLevel -ssv -ssy -q -logdir /home/user16/work/klngan/hdl_labs/week3/uvm_labs/lab5/sim/ptop_simv.daidir/kdbresolverLog
+uname(Linux psdc-eda04.psdc.org.my 4.18.0-553.60.1.el8_10.x86_64 #1 SMP Thu Jul 10 04:01:16 EDT 2025 x86_64)
+au time 0.223048 0.197997 0.031494 delta 118857728 118857728 total 375734272 375734272

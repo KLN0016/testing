@@ -1,0 +1,15 @@
+Date Created     : 24-07-2025 10:33:44
+SpyGlass Version : SpyGlass_vW-2024.09-SP2
+Project Name     : sg_both
+Goal Name        : lint/lint_rtl
+Scenario Name    : default_scenario
+Top              : mux2to1
+
+Message Summary
+Severity   Non-Waived  Waived
+FATAL           0         0
+ERROR           0         0
+WARNING         0         0
+INFO            2         0
+
+-dashboard_data sync_crossings 

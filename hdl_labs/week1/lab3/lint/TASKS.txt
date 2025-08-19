@@ -1,0 +1,64 @@
+% make both
+Observe STDOUT
+
+% more sg_both_sum.rpt
+View report summary
+
+% more sg_both/sg_both/consolidated_reports/mux2to1_all_lint_lint_rtl/moresimple.rpt
+View report details
+
+% vim ../scripts/run_lint.tcl
+Uncomment "#" at line 11 to enable SV support
+
+% make both
+Observe STDOUT
+
+% more sg_both/sg_both/consolidated_reports/mux2to1_all_lint_lint_rtl/moresimple.rpt
+View report details
+
+% vim ../design/mux2to1.sv
+Add in the else y = a; statement to avoid inferring latch
+
+% make both
+Observe STDOUT
+
+% more sg_both_sum.rpt
+View report summary
+2 warnings reported
+
+% more sg_both/sg_both/consolidated_reports/mux2to1_all_lint_lint_rtl/moresimple.rpt
+View report details
+2 warnings reported
+
+% vim ../scripts/run_lint.tcl
+Uncomment "#" at line 30 and 31 to enable the waiver
+
+% make both
+Observe STDOUT
+
+% more sg_both/sg_both/consolidated_reports/mux2to1_all_lint_lint_rtl/moresimple.rpt
+View report details
+
+% more sg_both_sum.rpt
+View report summary
+The warnings have been waived
+
+
+Spyglass Explorer
+-----------------
+% make clean
+Clean up
+
+% vim ../scripts/run_lint.tcl
+Add a comment "#" to the last line to avoid exit
+
+% spyglass
+Launch the GUI
+
+sg_shell> set env(MODE) sg_both
+Set the MODE
+
+sg_shell> source ../scripts/run_lint.tcl
+Perform TCL interactively one shot
+Alternatively, you may perform TCL interactively line by line (copy and paste)
+Observe STDOUT

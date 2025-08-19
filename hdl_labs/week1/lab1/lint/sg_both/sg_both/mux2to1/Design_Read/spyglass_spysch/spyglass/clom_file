@@ -1,0 +1,44 @@
+##This file is genrated to have command line decompiled Info even in Console
+##(To generate SIGN_OFF report having command line decompiled)
+Run Setup Info
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+===============================================================================
+Option          Value             Origin  File                           LineNo
+===============================================================================
+--goal_info     Design_Read@      CmdLine -                              -
+--strict_sgdc_check <ON>              Config  $SPYGLASS_HOME/.spyglass.setup 40
+-auto_save      <ON>              CmdLine -                              -
+-batch          <ON>              CmdLine -                              -
+-enableSV       <ON>              CmdLine -                              -
+-inferblackbox  <ON>              Config  $SPYGLASS_HOME/.spyglass.setup 30
+-lib            WORK=>/home/user16/work/klngan/hdl_labs/lab1/lint/sg_both/sg_both/mux2to1/WORK CmdLine -                              -
+                SYNOPSYS=>$SPYGLASS_HOME/vhdl_libs/Linux4/SYNOPSYS Config  $SPYGLASS_HOME/.spyglass.setup 25
+-mixed          <ON>              CmdLine -                              -
+-nl             <ON>              CmdLine -                              -
+-policy         none              CmdFile $SPYGLASS_HOME/auxi/policy_data/spyglass/design_read/Design_Read-mixed.spq 1
+-projectwdir    /home/user16/work/klngan/hdl_labs/lab1/lint/sg_both/sg_both CmdLine -                              -
+-report         moresimple        Config  $SPYGLASS_HOME/.spyglass.setup 17
+-sortmethod     du                Config  $SPYGLASS_HOME/.spyglass.setup 27
+-template       Design_Read       CmdLine -                              -
+-templatedir    /home/synopsys/spyglass/W-2024.09-SP2/SPYGLASS_HOME/auxi/policy_data/spyglass/design_read CmdLine -                              -
+-top            mux2to1           CmdLine -                              -
+-wdir           /home/user16/work/klngan/hdl_labs/lab1/lint/sg_both/sg_both/mux2to1/Design_Read CmdLine -                              -
+<design_files>  /home/user16/work/klngan/hdl_labs/lab1/design/mux2to1.v APICall -                              -
+                /home/user16/work/klngan/hdl_labs/lab1/design/mux2to1_tb.v APICall -                              -
+
+
+Rules Parameter
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+===============================================================================
+Parameter       Origin  File                           LineNo
+===============================================================================
+
+
+Policy Info
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+===============================================================================
+NameOfPolicy    VersionNumber   Path (from where policy loaded)
+===============================================================================
+spyglass        SpyGlass_vW-2024.09-SP2 $SPYGLASS_HOME/policies/spyglass
+
+

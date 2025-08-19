@@ -1,0 +1,152 @@
+Command: /home/seanooi/TRAININGS/dv/uvm/spi/sim/./spi_simv -l spi_sim.log +UVM_NO_RELNOTES -cm line+tgl+cond+fsm+branch+assert -assert summary
+Chronologic VCS simulator copyright 1991-2024
+Contains Synopsys proprietary information.
+Compiler version W-2024.09-SP2_Full64; Runtime version W-2024.09-SP2_Full64;  Aug 12 10:13 2025
+>>>>>>>> SIM TIME START: 0
+[==Info==] Saving slave_reset_respons value = 185
+UVM_INFO @ 0: reporter [RNTST] Running test spi_test...
+*Verdi* Loading libsscore_vcs202409.so
+FSDB Dumper for VCS, Release Verdi_W-2024.09-SP2, Linux x86_64/64bit, 03/03/2025
+(C) 1996 - 2025 by Synopsys, Inc.
+*Verdi* : Create FSDB file 'spi_sim.fsdb'
+*Verdi* : Begin traversing the SVA assertions under scope (spi_tb), layer (0).
+*Verdi* : End of traversing the SVA assertions.
+*Verdi* : Begin traversing the scope (spi_tb), layer (0).
+*Verdi* : End of traversing.
+UVM_INFO /home/seanooi/TRAININGS/dv/uvm/spi/design/spi_drv.sv(26) @ 0: uvm_test_top.env.agt.drv [DRIVER] Asserting reset
+UVM_INFO /home/seanooi/TRAININGS/dv/uvm/spi/design/spi_scb.sv(44) @ 0: uvm_test_top.env.scb [SCOREBOARD] Retrieved slave_reset_response value = 185 from spi_tb
+UVM_INFO /home/seanooi/TRAININGS/dv/uvm/spi/design/spi_scb.sv(46) @ 0: uvm_test_top.env.scb [SCOREBOARD] Retrieved SLAVE_RESET_RESPONSE value = b9 from spi_tb
+UVM_INFO /home/seanooi/TRAININGS/dv/uvm/spi/design/spi_tb.sv(73) @ 5000: reporter [SLV-RLD] RX_REG=0xxx (xxxxxxxx), TX_REG=0xb9 (10111001)
+UVM_INFO /home/seanooi/TRAININGS/dv/uvm/spi/design/spi_drv.sv(31) @ 95000: uvm_test_top.env.agt.drv [DRIVER] Deasserting reset
+UVM_INFO /home/seanooi/TRAININGS/dv/uvm/spi/design/spi_drv.sv(59) @ 305000: uvm_test_top.env.agt.drv [DRIVER] Drive TX 1/3 tran to DUT: tx_data=0x7f (01111111)
+"/home/seanooi/TRAININGS/dv/uvm/spi/design/spi_if.sv", 72: spi_tb.spi_if0.ASSERT_HANDSHAKE_4: started at 315000ps failed at 315000ps
+	Offending 'busy'
+"/home/seanooi/TRAININGS/dv/uvm/spi/design/spi_if.sv", 73: spi_tb.spi_if0.ASSERT_HANDSHAKE_5: started at 315000ps failed at 315000ps
+	Offending '(!cs_n)'
+UVM_INFO /home/seanooi/TRAININGS/dv/uvm/spi/design/spi_tb.sv(84) @ 355000: reporter [SLV] RX_REG=0x00 (00000000), TX_REG=0xb9 (10111001)
+UVM_INFO /home/seanooi/TRAININGS/dv/uvm/spi/design/spi_mon.sv(72) @ 395000: uvm_test_top.env.agt.mon [MONITOR] Observe MOSI/MISO 7/7 tran mosi=0, miso=1
+UVM_INFO /home/seanooi/TRAININGS/dv/uvm/spi/design/spi_scb.sv(78) @ 395000: uvm_test_top.env.scb [SCOREBOARD] Analyze MOSI/MISO 7/7 tran mosi=0, miso=1
+UVM_INFO /home/seanooi/TRAININGS/dv/uvm/spi/design/spi_tb.sv(84) @ 435000: reporter [SLV] RX_REG=0x00 (00000000), TX_REG=0x72 (01110010)
+UVM_INFO /home/seanooi/TRAININGS/dv/uvm/spi/design/spi_mon.sv(72) @ 475000: uvm_test_top.env.agt.mon [MONITOR] Observe MOSI/MISO 6/7 tran mosi=1, miso=0
+UVM_INFO /home/seanooi/TRAININGS/dv/uvm/spi/design/spi_scb.sv(78) @ 475000: uvm_test_top.env.scb [SCOREBOARD] Analyze MOSI/MISO 6/7 tran mosi=1, miso=0
+UVM_INFO /home/seanooi/TRAININGS/dv/uvm/spi/design/spi_tb.sv(84) @ 515000: reporter [SLV] RX_REG=0x01 (00000001), TX_REG=0xe4 (11100100)
+UVM_INFO /home/seanooi/TRAININGS/dv/uvm/spi/design/spi_mon.sv(52) @ 520000: uvm_test_top.env.agt.mon [MONITOR] Reset detected, stopping monitor
+UVM_INFO /home/seanooi/TRAININGS/dv/uvm/spi/design/spi_scb.sv(59) @ 520000: uvm_test_top.env.scb [SCOREBOARD] Reset detected, stopping scoreboard
+"/home/seanooi/TRAININGS/dv/uvm/spi/design/spi_if.sv", 70: spi_tb.spi_if0.ASSERT_HANDSHAKE_2: started at 315000ps failed at 525000ps
+	Offending 'busy'
+"/home/seanooi/TRAININGS/dv/uvm/spi/design/spi_if.sv", 74: spi_tb.spi_if0.ASSERT_HANDSHAKE_6: started at 315000ps failed at 525000ps
+	Offending '(!cs_n)'
+UVM_WARNING /home/seanooi/TRAININGS/dv/uvm/spi/design/spi_drv.sv(71) @ 525000: uvm_test_top.env.agt.drv [DRIVER] Reset detected during transaction: abort tx_data=0x7f (01111111)
+UVM_INFO /home/seanooi/TRAININGS/dv/uvm/spi/design/spi_drv.sv(59) @ 625000: uvm_test_top.env.agt.drv [DRIVER] Drive TX 2/3 tran to DUT: tx_data=0x1d (00011101)
+"/home/seanooi/TRAININGS/dv/uvm/spi/design/spi_if.sv", 72: spi_tb.spi_if0.ASSERT_HANDSHAKE_4: started at 635000ps failed at 635000ps
+	Offending 'busy'
+"/home/seanooi/TRAININGS/dv/uvm/spi/design/spi_if.sv", 73: spi_tb.spi_if0.ASSERT_HANDSHAKE_5: started at 635000ps failed at 635000ps
+	Offending '(!cs_n)'
+UVM_INFO /home/seanooi/TRAININGS/dv/uvm/spi/design/spi_tb.sv(84) @ 675000: reporter [SLV] RX_REG=0x00 (00000000), TX_REG=0xb9 (10111001)
+UVM_INFO /home/seanooi/TRAININGS/dv/uvm/spi/design/spi_mon.sv(59) @ 715000: uvm_test_top.env.agt.mon [MONITOR] Reset released, resuming monitor
+UVM_INFO /home/seanooi/TRAININGS/dv/uvm/spi/design/spi_mon.sv(72) @ 715000: uvm_test_top.env.agt.mon [MONITOR] Observe MOSI/MISO 7/7 tran mosi=0, miso=1
+UVM_INFO /home/seanooi/TRAININGS/dv/uvm/spi/design/spi_scb.sv(69) @ 715000: uvm_test_top.env.scb [SCOREBOARD] Reset released, resuming scoreboard
+UVM_INFO /home/seanooi/TRAININGS/dv/uvm/spi/design/spi_scb.sv(78) @ 715000: uvm_test_top.env.scb [SCOREBOARD] Analyze MOSI/MISO 7/7 tran mosi=0, miso=1
+UVM_INFO /home/seanooi/TRAININGS/dv/uvm/spi/design/spi_tb.sv(84) @ 755000: reporter [SLV] RX_REG=0x00 (00000000), TX_REG=0x72 (01110010)
+UVM_INFO /home/seanooi/TRAININGS/dv/uvm/spi/design/spi_mon.sv(72) @ 795000: uvm_test_top.env.agt.mon [MONITOR] Observe MOSI/MISO 6/7 tran mosi=0, miso=0
+UVM_INFO /home/seanooi/TRAININGS/dv/uvm/spi/design/spi_scb.sv(78) @ 795000: uvm_test_top.env.scb [SCOREBOARD] Analyze MOSI/MISO 6/7 tran mosi=0, miso=0
+UVM_INFO /home/seanooi/TRAININGS/dv/uvm/spi/design/spi_tb.sv(84) @ 835000: reporter [SLV] RX_REG=0x00 (00000000), TX_REG=0xe4 (11100100)
+UVM_INFO /home/seanooi/TRAININGS/dv/uvm/spi/design/spi_mon.sv(72) @ 875000: uvm_test_top.env.agt.mon [MONITOR] Observe MOSI/MISO 5/7 tran mosi=0, miso=1
+UVM_INFO /home/seanooi/TRAININGS/dv/uvm/spi/design/spi_scb.sv(78) @ 875000: uvm_test_top.env.scb [SCOREBOARD] Analyze MOSI/MISO 5/7 tran mosi=0, miso=1
+UVM_INFO /home/seanooi/TRAININGS/dv/uvm/spi/design/spi_tb.sv(84) @ 915000: reporter [SLV] RX_REG=0x00 (00000000), TX_REG=0xc8 (11001000)
+UVM_INFO /home/seanooi/TRAININGS/dv/uvm/spi/design/spi_mon.sv(72) @ 955000: uvm_test_top.env.agt.mon [MONITOR] Observe MOSI/MISO 4/7 tran mosi=1, miso=1
+UVM_INFO /home/seanooi/TRAININGS/dv/uvm/spi/design/spi_scb.sv(78) @ 955000: uvm_test_top.env.scb [SCOREBOARD] Analyze MOSI/MISO 4/7 tran mosi=1, miso=1
+UVM_INFO /home/seanooi/TRAININGS/dv/uvm/spi/design/spi_tb.sv(84) @ 995000: reporter [SLV] RX_REG=0x01 (00000001), TX_REG=0x90 (10010000)
+UVM_INFO /home/seanooi/TRAININGS/dv/uvm/spi/design/spi_mon.sv(72) @ 1035000: uvm_test_top.env.agt.mon [MONITOR] Observe MOSI/MISO 3/7 tran mosi=1, miso=1
+UVM_INFO /home/seanooi/TRAININGS/dv/uvm/spi/design/spi_scb.sv(78) @ 1035000: uvm_test_top.env.scb [SCOREBOARD] Analyze MOSI/MISO 3/7 tran mosi=1, miso=1
+UVM_INFO /home/seanooi/TRAININGS/dv/uvm/spi/design/spi_tb.sv(84) @ 1075000: reporter [SLV] RX_REG=0x03 (00000011), TX_REG=0x20 (00100000)
+UVM_INFO /home/seanooi/TRAININGS/dv/uvm/spi/design/spi_mon.sv(72) @ 1115000: uvm_test_top.env.agt.mon [MONITOR] Observe MOSI/MISO 2/7 tran mosi=1, miso=0
+UVM_INFO /home/seanooi/TRAININGS/dv/uvm/spi/design/spi_scb.sv(78) @ 1115000: uvm_test_top.env.scb [SCOREBOARD] Analyze MOSI/MISO 2/7 tran mosi=1, miso=0
+UVM_INFO /home/seanooi/TRAININGS/dv/uvm/spi/design/spi_tb.sv(84) @ 1155000: reporter [SLV] RX_REG=0x07 (00000111), TX_REG=0x40 (01000000)
+UVM_INFO /home/seanooi/TRAININGS/dv/uvm/spi/design/spi_mon.sv(72) @ 1195000: uvm_test_top.env.agt.mon [MONITOR] Observe MOSI/MISO 1/7 tran mosi=0, miso=0
+UVM_INFO /home/seanooi/TRAININGS/dv/uvm/spi/design/spi_scb.sv(78) @ 1195000: uvm_test_top.env.scb [SCOREBOARD] Analyze MOSI/MISO 1/7 tran mosi=0, miso=0
+UVM_INFO /home/seanooi/TRAININGS/dv/uvm/spi/design/spi_tb.sv(84) @ 1235000: reporter [SLV] RX_REG=0x0e (00001110), TX_REG=0x80 (10000000)
+UVM_INFO /home/seanooi/TRAININGS/dv/uvm/spi/design/spi_mon.sv(72) @ 1275000: uvm_test_top.env.agt.mon [MONITOR] Observe MOSI/MISO 0/7 tran mosi=1, miso=1
+UVM_INFO /home/seanooi/TRAININGS/dv/uvm/spi/design/spi_mon.sv(78) @ 1275000: uvm_test_top.env.agt.mon [MONITOR] Observe TX 2/3 tran 0x1d (00011101), RX tran 0xb9 (10111001)
+UVM_INFO /home/seanooi/TRAININGS/dv/uvm/spi/design/spi_scb.sv(78) @ 1275000: uvm_test_top.env.scb [SCOREBOARD] Analyze MOSI/MISO 0/7 tran mosi=1, miso=1
+UVM_INFO /home/seanooi/TRAININGS/dv/uvm/spi/design/spi_scb.sv(83) @ 1275000: uvm_test_top.env.scb [SCOREBOARD] Analyze TX 2/3 tran 0x1d (00011101), RX tran 0xb9 (10111001)
+UVM_INFO /home/seanooi/TRAININGS/dv/uvm/spi/design/spi_tb.sv(73) @ 1275000: reporter [SLV-RLD] RX_REG=0x1d (00011101), TX_REG=0x00 (00000000)
+UVM_INFO /home/seanooi/TRAININGS/dv/uvm/spi/design/spi_drv.sv(59) @ 1385000: uvm_test_top.env.agt.drv [DRIVER] Drive TX 3/3 tran to DUT: tx_data=0xa2 (10100010)
+"/home/seanooi/TRAININGS/dv/uvm/spi/design/spi_if.sv", 72: spi_tb.spi_if0.ASSERT_HANDSHAKE_4: started at 1395000ps failed at 1395000ps
+	Offending 'busy'
+"/home/seanooi/TRAININGS/dv/uvm/spi/design/spi_if.sv", 73: spi_tb.spi_if0.ASSERT_HANDSHAKE_5: started at 1395000ps failed at 1395000ps
+	Offending '(!cs_n)'
+UVM_INFO /home/seanooi/TRAININGS/dv/uvm/spi/design/spi_tb.sv(84) @ 1435000: reporter [SLV] RX_REG=0x1d (00011101), TX_REG=0xb9 (10111001)
+UVM_INFO /home/seanooi/TRAININGS/dv/uvm/spi/design/spi_mon.sv(72) @ 1475000: uvm_test_top.env.agt.mon [MONITOR] Observe MOSI/MISO 7/7 tran mosi=1, miso=1
+UVM_INFO /home/seanooi/TRAININGS/dv/uvm/spi/design/spi_scb.sv(78) @ 1475000: uvm_test_top.env.scb [SCOREBOARD] Analyze MOSI/MISO 7/7 tran mosi=1, miso=1
+UVM_INFO /home/seanooi/TRAININGS/dv/uvm/spi/design/spi_tb.sv(84) @ 1515000: reporter [SLV] RX_REG=0x3b (00111011), TX_REG=0x72 (01110010)
+UVM_INFO /home/seanooi/TRAININGS/dv/uvm/spi/design/spi_mon.sv(72) @ 1555000: uvm_test_top.env.agt.mon [MONITOR] Observe MOSI/MISO 6/7 tran mosi=0, miso=0
+UVM_INFO /home/seanooi/TRAININGS/dv/uvm/spi/design/spi_scb.sv(78) @ 1555000: uvm_test_top.env.scb [SCOREBOARD] Analyze MOSI/MISO 6/7 tran mosi=0, miso=0
+UVM_INFO /home/seanooi/TRAININGS/dv/uvm/spi/design/spi_tb.sv(84) @ 1595000: reporter [SLV] RX_REG=0x76 (01110110), TX_REG=0xe4 (11100100)
+UVM_INFO /home/seanooi/TRAININGS/dv/uvm/spi/design/spi_mon.sv(72) @ 1635000: uvm_test_top.env.agt.mon [MONITOR] Observe MOSI/MISO 5/7 tran mosi=1, miso=1
+UVM_INFO /home/seanooi/TRAININGS/dv/uvm/spi/design/spi_scb.sv(78) @ 1635000: uvm_test_top.env.scb [SCOREBOARD] Analyze MOSI/MISO 5/7 tran mosi=1, miso=1
+UVM_INFO /home/seanooi/TRAININGS/dv/uvm/spi/design/spi_tb.sv(84) @ 1675000: reporter [SLV] RX_REG=0xed (11101101), TX_REG=0xc8 (11001000)
+UVM_INFO /home/seanooi/TRAININGS/dv/uvm/spi/design/spi_mon.sv(72) @ 1715000: uvm_test_top.env.agt.mon [MONITOR] Observe MOSI/MISO 4/7 tran mosi=0, miso=1
+UVM_INFO /home/seanooi/TRAININGS/dv/uvm/spi/design/spi_scb.sv(78) @ 1715000: uvm_test_top.env.scb [SCOREBOARD] Analyze MOSI/MISO 4/7 tran mosi=0, miso=1
+UVM_INFO /home/seanooi/TRAININGS/dv/uvm/spi/design/spi_tb.sv(84) @ 1755000: reporter [SLV] RX_REG=0xda (11011010), TX_REG=0x90 (10010000)
+UVM_INFO /home/seanooi/TRAININGS/dv/uvm/spi/design/spi_mon.sv(72) @ 1795000: uvm_test_top.env.agt.mon [MONITOR] Observe MOSI/MISO 3/7 tran mosi=0, miso=1
+UVM_INFO /home/seanooi/TRAININGS/dv/uvm/spi/design/spi_scb.sv(78) @ 1795000: uvm_test_top.env.scb [SCOREBOARD] Analyze MOSI/MISO 3/7 tran mosi=0, miso=1
+UVM_INFO /home/seanooi/TRAININGS/dv/uvm/spi/design/spi_tb.sv(84) @ 1835000: reporter [SLV] RX_REG=0xb4 (10110100), TX_REG=0x20 (00100000)
+UVM_INFO /home/seanooi/TRAININGS/dv/uvm/spi/design/spi_mon.sv(72) @ 1875000: uvm_test_top.env.agt.mon [MONITOR] Observe MOSI/MISO 2/7 tran mosi=0, miso=0
+UVM_INFO /home/seanooi/TRAININGS/dv/uvm/spi/design/spi_scb.sv(78) @ 1875000: uvm_test_top.env.scb [SCOREBOARD] Analyze MOSI/MISO 2/7 tran mosi=0, miso=0
+UVM_INFO /home/seanooi/TRAININGS/dv/uvm/spi/design/spi_tb.sv(84) @ 1915000: reporter [SLV] RX_REG=0x68 (01101000), TX_REG=0x40 (01000000)
+UVM_INFO /home/seanooi/TRAININGS/dv/uvm/spi/design/spi_mon.sv(72) @ 1955000: uvm_test_top.env.agt.mon [MONITOR] Observe MOSI/MISO 1/7 tran mosi=1, miso=0
+UVM_INFO /home/seanooi/TRAININGS/dv/uvm/spi/design/spi_scb.sv(78) @ 1955000: uvm_test_top.env.scb [SCOREBOARD] Analyze MOSI/MISO 1/7 tran mosi=1, miso=0
+UVM_INFO /home/seanooi/TRAININGS/dv/uvm/spi/design/spi_tb.sv(84) @ 1995000: reporter [SLV] RX_REG=0xd1 (11010001), TX_REG=0x80 (10000000)
+UVM_INFO /home/seanooi/TRAININGS/dv/uvm/spi/design/spi_mon.sv(72) @ 2035000: uvm_test_top.env.agt.mon [MONITOR] Observe MOSI/MISO 0/7 tran mosi=0, miso=1
+UVM_INFO /home/seanooi/TRAININGS/dv/uvm/spi/design/spi_mon.sv(78) @ 2035000: uvm_test_top.env.agt.mon [MONITOR] Observe TX 3/3 tran 0xa2 (10100010), RX tran 0xb9 (10111001)
+UVM_INFO /home/seanooi/TRAININGS/dv/uvm/spi/design/spi_scb.sv(78) @ 2035000: uvm_test_top.env.scb [SCOREBOARD] Analyze MOSI/MISO 0/7 tran mosi=0, miso=1
+UVM_INFO /home/seanooi/TRAININGS/dv/uvm/spi/design/spi_scb.sv(83) @ 2035000: uvm_test_top.env.scb [SCOREBOARD] Analyze TX 3/3 tran 0xa2 (10100010), RX tran 0xb9 (10111001)
+UVM_INFO /home/seanooi/TRAININGS/dv/uvm/spi/design/spi_tb.sv(73) @ 2035000: reporter [SLV-RLD] RX_REG=0xa2 (10100010), TX_REG=0x00 (00000000)
+UVM_INFO /home/seanooi/TRAININGS/dv/uvm/spi/design/spi_cov.sv(41) @ 2145000: uvm_test_top.env.cov [COVERAGE] Coverage spi_cg      : 66.67%
+UVM_INFO /home/seanooi/TRAININGS/dv/uvm/spi/design/spi_cov.sv(42) @ 2145000: uvm_test_top.env.cov [COVERAGE] Coverage tx_data_cp  : 66.67%
+UVM_INFO /home/seanooi/TRAININGS/dv/uvm/spi/design/spi_cov.sv(43) @ 2145000: uvm_test_top.env.cov [COVERAGE] Coverage rc_data_cp  : 66.67%
+UVM_INFO /home/seanooi/TRAININGS/dv/uvm/spi/design/spi_scb.sv(140) @ 2145000: uvm_test_top.env.scb [SCOREBOARD] Test Completed: 2 Transactions, 0 Errors
+UVM_INFO /home/synopsys/vcs/W-2024.09-SP2/etc/uvm-ieee-2020-2.0/base/uvm_report_server.svh(945) @ 2145000: reporter [UVM/REPORT/SERVER] 
+--- UVM Report Summary ---
+
+** Report counts by severity
+UVM_INFO :   78
+UVM_WARNING :    1
+UVM_ERROR :    0
+UVM_FATAL :    0
+** Report counts by id
+[COVERAGE]     3
+[DRIVER]     6
+[MONITOR]    22
+[RNTST]     1
+[SCOREBOARD]    25
+[SLV]    19
+[SLV-RLD]     3
+
+$finish called from file "/home/synopsys/vcs/W-2024.09-SP2/etc/uvm-ieee-2020-2.0/base/uvm_root.svh", line 599.
+>>>>>>>> SIM TIME END  : 2145000
+$finish at simulation time              2145000
+
+=========== Generating Assertion Summary ==========
+
+"spi_tb.\spi_seq::body .unnamed$$_0", 3 attempts, 3 successes, 0 failures, 0 incompletes
+"spi_tb.spi_if0.ASSERT_HANDSHAKE_1", 214 attempts, 214 successes, 0 failures, 0 incompletes
+"spi_tb.spi_if0.ASSERT_HANDSHAKE_2", 214 attempts, 213 successes, 1 failures, 0 incompletes
+"spi_tb.spi_if0.ASSERT_HANDSHAKE_3", 214 attempts, 214 successes, 0 failures, 0 incompletes
+"spi_tb.spi_if0.ASSERT_HANDSHAKE_4", 214 attempts, 211 successes, 3 failures, 0 incompletes
+"spi_tb.spi_if0.ASSERT_HANDSHAKE_5", 214 attempts, 211 successes, 3 failures, 0 incompletes
+"spi_tb.spi_if0.ASSERT_HANDSHAKE_6", 214 attempts, 213 successes, 1 failures, 0 incompletes
+"spi_tb.spi_if0.ASSERT_HANDSHAKE_7", 214 attempts, 214 successes, 0 failures, 0 incompletes
+Summary: 8 assertions, 8 with attempts, 4 with failures
+
+===========     End Assertion Summary    ==========
+
+
+---------------------------------------------------------------------------
+VCS Coverage Metrics: during simulation line, cond, FSM, branch, tgl was monitored
+---------------------------------------------------------------------------
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 2145000 ps
+CPU Time:      0.340 seconds;       Data structure size:   0.7Mb
+Tue Aug 12 10:13:23 2025

@@ -1,0 +1,9 @@
+# For csh
+#setenv ROOT `pwd`
+
+# For bash
+export ROOT=`pwd`
+export TYPE="sv"
+export MODULE="adder"
+export MODULE_TB="adder_tb"
+export FLIST=1

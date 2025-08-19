@@ -1,0 +1,56 @@
+% make both
+Observe STDOUT
+
+% more sg_both_sum.rpt
+View report summary
+
+% more sg_both/sg_both/consolidated_reports/mux2to1_tb_lint_lint_rtl/moresimple.rpt
+View report details
+
+% vim ../design/mux2to1.v
+Add in ports declaration
+
+% make both
+Observe STDOUT
+
+% more sg_both/sg_both/consolidated_reports/mux2to1_tb_lint_lint_rtl/moresimple.rpt
+View report details
+
+% vim ../scripts/run_lint.tcl
+Correct the top level module
+
+% make both
+Observe STDOUT
+
+% more sg_both/sg_both/consolidated_reports/mux2to1_lint_lint_rtl/moresimple.rpt
+View report details
+
+
+Spyglass Explorer
+-----------------
+% make clean
+Clean up
+
+% vim ../scripts/run_lint.tcl
+Add a comment "#" to the last line to avoid exit
+
+% spyglass
+Launch the GUI
+
+sg_shell> set env(MODE) sg_both
+Set the MODE
+
+sg_shell> source ../scripts/run_lint.tcl
+Perform TCL interactively one shot
+Alternatively, you may perform TCL interactively line by line (copy and paste)
+Observe STDOUT
+ 
+
+Stretch Goal
+------------
+% cp <your_mux2to1.v> ../design
+Copy your own mux2to1.v to replace the one in ../design
+Ensure all the ports are similar for proper connectivity
+
+% make both
+Observe STDOUT

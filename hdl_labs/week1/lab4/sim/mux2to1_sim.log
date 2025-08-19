@@ -1,0 +1,22 @@
+Command: /home/user16/work/klngan/hdl_labs/lab4/sim/./mux2to1_simv -l mux2to1_sim.log
+Chronologic VCS simulator copyright 1991-2024
+Contains Synopsys proprietary information.
+Compiler version W-2024.09-SP2_Full64; Runtime version W-2024.09-SP2_Full64;  Jul 24 13:49 2025
+----------------------------------
+Simulation starts
+----------------------------------
+Time	a	b	sel	y
+----------------------------------
+=12	0	1	1	1
+=23	0	0	1	0
+=34	1	0	0	1
+=45	0	1	0	0
+----------------------------------
+Simulation finished
+----------------------------------
+$finish called from file "/home/user16/work/klngan/hdl_labs/lab4/design/mux2to1_tb.v", line 34.
+$finish at simulation time                95000
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 95000 ps
+CPU Time:      0.160 seconds;       Data structure size:   0.0Mb
+Thu Jul 24 13:49:15 2025

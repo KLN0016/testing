@@ -1,0 +1,118 @@
+verdiWindowResize -win $_Verdi_1 "510" "153" "900" "700"
+verdiSetActWin -dock widgetDock_MTB_SOURCE_TAB_1
+verdiWindowResize -win $_Verdi_1 "510" "153" "900" "700"
+verdiWindowResize -win $_Verdi_1 "932" "27" "988" "1016"
+simSetSimulator "-vcssv" -exec \
+           "/home/user16/work/klngan/hdl_labs/lab5/sim/mux3to1_simv" -args
+debImport "-dbdir" \
+          "/home/user16/work/klngan/hdl_labs/lab5/sim/mux3to1_simv.daidir"
+debLoadSimResult /home/user16/work/klngan/hdl_labs/lab5/sim/mux3to1_sim.fsdb
+wvCreateWindow
+verdiSetActWin -win $_nWave2
+debLoadSimResult /home/user16/work/klngan/hdl_labs/lab5/sim/mux3to1_sim.fsdb
+wvGetSignalOpen -win $_nWave2
+wvGetSignalSetScope -win $_nWave2 "/mux3to1_tb"
+wvSetPosition -win $_nWave2 {("G1" 0)}
+wvSetPosition -win $_nWave2 {("G1" 0)}
+wvAddSignal -win $_nWave2 -clear
+wvAddSignal -win $_nWave2 -group {"G1" \
+}
+wvSetPosition -win $_nWave2 {("G1" 0)}
+wvGetSignalClose -win $_nWave2
+wvGetSignalOpen -win $_nWave2
+wvGetSignalSetScope -win $_nWave2 "/mux3to1_tb"
+wvGetSignalSetScope -win $_nWave2 "/mux3to1_tb"
+wvGetSignalSetScope -win $_nWave2 "/mux3to1_tb/uut"
+wvGetSignalSetScope -win $_nWave2 "/mux3to1_tb"
+wvSetPosition -win $_nWave2 {("G1" 5)}
+wvSetPosition -win $_nWave2 {("G1" 5)}
+wvAddSignal -win $_nWave2 -clear
+wvAddSignal -win $_nWave2 -group {"G1" \
+{/mux3to1_tb/a_tb} \
+{/mux3to1_tb/b_tb} \
+{/mux3to1_tb/c_tb} \
+{/mux3to1_tb/sel_tb\[1:0\]} \
+{/mux3to1_tb/y_tb} \
+}
+wvAddSignal -win $_nWave2 -group {"G2" \
+}
+wvSelectSignal -win $_nWave2 {( "G1" 1 2 3 4 5 )} 
+wvSetPosition -win $_nWave2 {("G1" 5)}
+wvGetSignalClose -win $_nWave2
+wvSetCursor -win $_nWave2 1507.278668 -snap {("G2" 0)}
+wvZoomAll -win $_nWave2
+wvCreateWindow
+verdiSetActWin -win $_nWave3
+wvCloseWindow -win $_nWave3
+verdiSetActWin -win $_nWave2
+wvSelectSignal -win $_nWave2 {( "G1" 4 )} 
+wvSetPosition -win $_nWave2 {("G1" 4)}
+wvExpandBus -win $_nWave2
+wvSetPosition -win $_nWave2 {("G1" 7)}
+wvSelectSignal -win $_nWave2 {( "G1" 4 )} 
+wvSetPosition -win $_nWave2 {("G1" 4)}
+wvCollapseBus -win $_nWave2
+wvSetPosition -win $_nWave2 {("G1" 4)}
+wvSetPosition -win $_nWave2 {("G1" 5)}
+wvSetCursor -win $_nWave2 10766.276202 -snap {("G2" 0)}
+wvZoomOut -win $_nWave2
+wvSetCursor -win $_nWave2 10539.617756 -snap {("G1" 5)}
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomIn -win $_nWave2
+wvZoomIn -win $_nWave2
+wvZoomIn -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvSelectSignal -win $_nWave2 {( "G1" 4 )} 
+wvSetPosition -win $_nWave2 {("G1" 4)}
+wvExpandBus -win $_nWave2
+wvSetPosition -win $_nWave2 {("G1" 7)}
+wvSelectSignal -win $_nWave2 {( "G1" 4 )} 
+wvSelectSignal -win $_nWave2 {( "G1" 4 )} 
+wvSetRadix -win $_nWave2 -format Bin
+wvSetCursor -win $_nWave2 4306.510481 -snap {("G1" 4)}
+wvSetOptions -win $_nWave2 -leadingZeros on
+wvVirtualFileEditorOpen -win $_nWave2
+wvVirtualFileEditorClose -win $_nWave2
+debExit

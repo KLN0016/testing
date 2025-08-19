@@ -1,0 +1,9 @@
+{"vcs1":{"timestamp_begin":1753924734.411179447, "rt":0.23, "ut":0.14, "st":0.13}}
+{"vcselab":{"timestamp_begin":1753924734.710362835, "rt":0.14, "ut":0.11, "st":0.02}}
+{"link":{"timestamp_begin":1753924734.898165909, "rt":0.23, "ut":0.15, "st":0.10}}
+{"SNPS_VCS_INTERNAL_ROOT_START_TIME": 1753924733.970292555}
+{"VCS_COMP_START_TIME": 1753924733.970292555}
+{"VCS_COMP_END_TIME": 1753924735.250056939}
+{"VCS_USER_OPTIONS": "assertion-sequence.sv -sverilog -kdb -debug_access+all -cm line+cond+tgl+fsm+branch+assert"}
+{"vcs1": {"peak_mem": 477656}}
+{"vcselab": {"peak_mem": 162432}}

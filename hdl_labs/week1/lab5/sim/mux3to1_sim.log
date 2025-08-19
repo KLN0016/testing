@@ -1,0 +1,28 @@
+Command: /home/user16/work/klngan/hdl_labs/lab5/sim/./mux3to1_simv -l mux3to1_sim.log
+Chronologic VCS simulator copyright 1991-2024
+Contains Synopsys proprietary information.
+Compiler version W-2024.09-SP2_Full64; Runtime version W-2024.09-SP2_Full64;  Jul 24 14:07 2025
+*Verdi* Loading libsscore_vcs202409.so
+FSDB Dumper for VCS, Release Verdi_W-2024.09-SP2, Linux x86_64/64bit, 03/03/2025
+(C) 1996 - 2025 by Synopsys, Inc.
+*Verdi* : Create FSDB file 'mux3to1_sim.fsdb'
+*Verdi* : Begin traversing the scope (mux3to1_tb), layer (0).
+*Verdi* : End of traversing.
+--------------------------------------------
+Simulation starts
+--------------------------------------------
+sel_tb	a_tb	b_tb	c_tb	|	y_tb
+--------------------------------|-----------
+00	1	0	1	|	1
+01	1	0	1	|	0
+10	1	0	1	|	1
+11	1	0	1	|	0
+--------------------------------------------
+Simulation finished
+--------------------------------------------
+$finish called from file "/home/user16/work/klngan/hdl_labs/lab5/design/mux3to1_tb.v", line 45.
+$finish at simulation time                91000
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 91000 ps
+CPU Time:      0.160 seconds;       Data structure size:   0.0Mb
+Thu Jul 24 14:07:58 2025

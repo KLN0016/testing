@@ -1,0 +1,9 @@
+{"vcs1":{"timestamp_begin":1753407212.563424035, "rt":0.22, "ut":0.12, "st":0.13}}
+{"vcselab":{"timestamp_begin":1753407212.848359625, "rt":0.21, "ut":0.16, "st":0.05}}
+{"link":{"timestamp_begin":1753407213.117895900, "rt":0.16, "ut":0.10, "st":0.06}}
+{"SNPS_VCS_INTERNAL_ROOT_START_TIME": 1753407212.099384938}
+{"VCS_COMP_START_TIME": 1753407212.099384938}
+{"VCS_COMP_END_TIME": 1753407213.394735408}
+{"VCS_USER_OPTIONS": "-l top_comp.log -sverilog -debug_access+all -kdb -debug_report -top top_tb -o top_simv -f /home/user16/work/klngan/hdl_labs/lab8/design/top.f"}
+{"vcs1": {"peak_mem": 477620}}
+{"vcselab": {"peak_mem": 178812}}

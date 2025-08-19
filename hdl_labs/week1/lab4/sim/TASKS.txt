@@ -1,0 +1,66 @@
+% make dv
+Observe STDOUT
+
+% vim mux2to1_sim.vcd
+The text format Value-Change-Dump waveform was created
+
+% more mux2to1_sim.log
+View log file
+Note that the table does not show the correct y values
+
+% vim ../design/mux2to1_tb.v
+Add below right after each of the existing $display from line 26 to 29, see below
+        #1  $display("=%0d\t%b\t%b\t%b\t%b", $time, a_tb, b_tb, sel_tb, y_tb);
+
+% make dv
+Observe STDOUT
+
+% dve &
+Launch dve at the background
+File > Open Databse > Select mux2to1_sim.vcd > Open
+Select uut > Select all signals > Right Click > Add To Waves > Check Create New Group > Select New Wave View
+Select mux2to1_tb > Select all signals > Right Click > Add To Waves > Check Create New Group > Select Wave.1
+Go to Wave.1 window
+There are two groups of signals: Group 1 & Group 2
+View > Zoom > Zoom Full [Shift F]
+View > Zoom > Zoom In [Shift +]
+View > Zoom > Zoom Out [Shift O]
+View > Increase Row Height
+File > Exit
+
+% cp ../design/mux2to1.v ../design/mux2to1_new.v
+% cp ../design/mux2to1_tb.v ../design/mux2to1_new_tb.v
+Make a copy of each of these files
+
+% vim ../design/mux2to1_new.v
+Update the module name accordingly to reflect mux2to1_new, see below
+:%s/mux2to1/mux2to1_new/g
+Change the functionality, see below
+assign y = sel ? a : b;
+
+% vim ../design/mux2to1_new_tb.v
+Update the module name according to reflect mux2to1_new, see below
+:%s/mux2to1/mux2to1_new/g
+
+% export MODULE=mux2to1_new
+% unset MODULE_TB
+Update the MODULE name
+
+% make dv
+Observe STDOUT
+
+% dve &
+Launch dve at the background
+File > Open Databse > Select mux2to1_sim.vcd > Open
+File > Open Databse > Select mux2to1_new_sim.vcd > Open
+There are two database loaded: V1 & V2
+For V1, see below
+Select mux2to1_tb > Select all signals > Right Click > Add To Waves > Check Create New Group > Select Wave.1
+For V2, see below
+Select mux2to1_new_tb > Select all signals > Right Click > Add To Waves > Check Create New Group > Select Wave.1
+Go to Wave.1 window
+Ther are two groups of signals: Group 1 & Group 2
+Select y_tb signal of Group 1 and Group 2
+Right Click > Compare > OK
+The two signals are compared and the result is displayed in the new Group 3
+File > Exit

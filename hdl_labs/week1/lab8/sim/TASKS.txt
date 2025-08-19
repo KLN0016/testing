@@ -1,0 +1,91 @@
+% make dv
+Observe STDOUT
+
+% more top_sim.rpt
+View report file
+Note that the test failed as count != expected_count i.e. 12 != 11
+
+% verdi &
+Launch verdi at the background
+File > Open Waveform File > top_sim.fsdb > Load
+Signal > Get Signals in the waveform window
+Select the signals of top_d i.e. clk, rst, count, prev_count, expected_count
+Select both count, prev_count, expected_count
+Waveform > Set Radix > Decimal
+Signal > Get Signals
+Select the signals of dut i.e. enable, state
+[Shift z] to zoom in
+[z] to zoom out
+[f] to zoom full
+Zoom in to the beginning part of the simulation, around the time ehn rst 1-->0
+Note that post rst, expected_count takes 2 clock cycles before starting to toggle
+However count only takes 1 clock cycle only
+
+Fix1: Assuming the bug is in the testbench (not bullet proof enough)
+
+% cp -r ../design/orig ../design/fix1
+% mkdir ../design/old
+% mv ../design/*.sv ../design/old
+% mv ../design/*.f ../design/old
+% ln -s ../design/fix1/* ../design
+% ls -l ../design
+% vim ../design/top_tb.sv
+Declare a new signal named enable_tb in the testbench after the initial block for rst
+Tap into DUT internal signal dut.enable by assigning it to enable_tb, see below
+    // FIX 1: Tap into the DUT internal signal
+    logic enable_tb;
+    assign enable_tb = dut.enable;
+Comment out the existing section: Monitor & check counter value
+Add in a new always_ff, see below
+    // FIX 1: Synchronize expected_count update based on DUT enable
+    always_ff @(posedge clk or posedge rst) begin
+        if (rst)
+            expected_count <= 0;
+        else if (enable_tb)
+            expected_count <= expected_count + 1;
+    end
+During rst, expected_count <= 0;
+Post rst, expected_count++; when enable_tb is set
+
+% make dv
+Observe STDOUT
+
+% more top_sim.rpt
+View report file
+Note that the test passed
+
+Fix2: Assuming the 1 clock cycle lag for expected_count is valid
+
+% cp -r ../design/orig ../design/fix2
+% rm ../design/*
+% ln -s ../design/fix2/* ../design
+% ls -l ../design
+% vim ../design/top_tb.sv
+Declare a comparison trigger called start_compare before the 'always_ff' line, see below
+    // FIX 2: Introduce a comparison trigger
+    logic start_compare;
+In this section: always_ff @(posedge clk or posedge rst) begin
+During rst, add this, see below
+            start_compare  <= 0;        // FIX 2: Reset the comparison trigger
+Post rst and when expected_count++, start_compare <= 1; else start_compare <= 0;
+                start_compare  <= 1;        // FIX 2: Set the comparison trigger
+            end else begin
+                start_compare  <= 0;        // FIX 2: Reset the comparison trigger
+Add these after the 'prev_count    <= count;' line, see below
+            // FIX 2: Compare whenever start_compare is set
+            if (start_compare && count == expected_count)
+                $display(">>>>>>>>>>>TEST PASSED: count = %0d matches expected_count = %0d", count, expected_count);
+            else if(start_compare)
+                $display(">>>>>>>>>>>TEST FAILED: count = %0d, expected_count = %0d", count, expected_count);
+Update the $monitor to below, see below
+        $monitor("clk=%d r=%d c=%d e=%d comp=%d", clk, rst, count, expected_count, start_compare); // FIX 2
+Comment out the old comparison if-else in the Scoreboard section
+
+% make dv
+Observe STDOUT
+
+% more top_sim.rpt
+View report file
+Note that the test passed
+
+There is no solid fix given the testbench is relying on the count for triggering toggle, this dependency adds 1 clock cycle

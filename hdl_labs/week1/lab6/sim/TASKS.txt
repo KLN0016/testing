@@ -1,0 +1,123 @@
+% make dv
+Observe STDOUT
+
+% more mux2to1_sim.fsdb
+The binary format Fast-Signal-Database waveform was created
+
+% vim mux2to1_sim.log
+View log file
+All the random tests are passed
+
+% more mux2to1_sim.rpt
+View report file
+Note that the table shows the signals values for each of the random tests
+
+% cp ../design/mux2to1_tb.sv ../design/mux3to1_tb.sv
+Make a copy of ../design/mux2to1_tb.sv, name it ../design/mux3to1_tb.sv
+
+% cp ../../lab5/design/mux3to1.v ../design/mux3to1.sv
+
+% vim ../design/mux3to1_tb.sv
+Modify ../design/mux3to1_tb.sv to test ../design/mux3to1.v
+Update the module name accordingly to reflect mux3to1, see below
+:%s/mux2to1/mux3to1/g
+Add in c_tb signal and make sel_tb a two bits bus, see below
+    logic [1:0] sel_tb;
+Connect c to c_tb
+Add in an extra column for $fdisplay on c signal
+Add $urandom_range for c_tb
+Add $urandom_range for sel_tb, note that the range is now different due to 2 bits
+For the expected output section, use case instead of the existing assignment
+Add in an extra column for $fdisplay on c_tb signal, in the repeat loop
+Alternatively you may use your own mux3to1_tb.sv in Exercise 6 of Part 2
+
+% export MODULE=mux3to1
+% unset MODULE_TB
+% echo $MODULE
+Ensure MODULE=mux3to1
+
+% make dv
+Observe STDOUT
+
+% more mux3to1_sim.log
+View log file
+All the random tests are passed
+
+% more mux3to1_sim.rpt
+View report file
+Note that the table shows the default y value when sel_tb == 2'b11
+
+% vim mux3to1_sim.fsdb
+The binary format Fast-Signal-Database waveform was created
+
+% cp ../design/mux2to1_tb.sv ../design/mux2to1_seed_tb.sv
+Make a copy of ../design/mux2to1_tb.sv, name it ../design/mux2to1_seed_tb.sv
+
+% vim ../design/mux2to1_seed_tb.sv
+Update the module name accordingly to reflect mux3to1, see below
+:%s/mux2to1/mux2to1_seed/g
+Add in this at line 6, see below
+    int seed_value, random_value;
+Replace the two $fdisplay lines with the following, see below
+        $fdisplay(fd_tb, "Seed | Test# | a | b | sel | y | expected | PASS/FAIL | RANDOM");
+        $fdisplay(fd_tb, "--------------------------------------------------------------");
+Add in the following right before the 'for' line, see below
+        #1;
+        //seed_value = 200;
+        //void'($urandom(seed_value));            // Set the seed value for reproducibility
+Add in the following right after the 'for' line, see below
+            random_value = $urandom();          // Testing purpose
+            //$display("%d", random_value);
+Replace the two $fdisplay lines with the following, see below
+                $fdisplay(fd_tb, "%4d | %5d | %b | %b | %3b | %b | %8b | PASS      | %6d",
+                          seed_value, i_tb, a_tb, b_tb, sel_tb, y_tb, expected_tb, random_value);
+                $fdisplay(fd_tb, "%4d | %5d | %b | %b | %3b | %b | %8b | FAIL--    | %6d",
+                          seed_value, i_tb, a_tb, b_tb, sel_tb, y_tb, expected_tb, random_value);
+
+% export MODULE=mux2to1_seed
+% unset MODULE_TB
+% echo $MODULE
+Ensure MODULE=mux2to1_seed
+
+% make dv
+Observe STDOUT
+
+% cp mux2to1_seed_sim.rpt simseed000
+% more simseed000
+Note the random column
+
+% vim ../design/mux2to1_seed_tb.sv
+Uncomment the line that starts with seed_value
+Uncomment the line that starts with void
+
+% make dv
+Observe STDOUT
+
+% cp mux2to1_seed_sim.rpt simseed200
+% more simseed200
+Note the random column
+
+% diff simseed000 simseed200
+Please note the differences
+
+% vim ../design/mux2to1_seed_tb.sv
+Change the seed_value to 300
+
+% make dv
+Observe STDOUT
+
+% cp mux2to1_seed_sim.rpt simseed300
+% more simseed300
+Note the random column
+
+% diff simseed200 simseed300
+Please note the differences
+
+% vim ../design/mux2to1_seed_tb.sv
+Change the seed_value back to 200
+
+% make dv
+Observe STDOUT
+
+% diff mux2to1_seed_sim.rpt simseed200
+Both files should be the same

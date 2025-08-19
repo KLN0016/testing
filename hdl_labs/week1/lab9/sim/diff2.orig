@@ -1,0 +1,66 @@
+
+[INFO] Number of tests: 50 (default value)
+[INFO] Report file    : adder_sim.rpt (default value)
+[INFO] Seed Value     : 200 (default value)
+[INFO] Testbench      : adder
+
+[INFO] Starting adder testbench with 50 random tests using seed 200
+[PASS]    Test 0: 0 + 0 + 1 = sum:1 (exp:1), cout:0 (exp:0)
+[PASS]    Test 1: 0 + 1 + 0 = sum:1 (exp:1), cout:0 (exp:0)
+[PASS]    Test 2: 0 + 0 + 1 = sum:1 (exp:1), cout:0 (exp:0)
+[PASS]    Test 3: 1 + 1 + 0 = sum:0 (exp:0), cout:1 (exp:1)
+[PASS]    Test 4: 1 + 1 + 0 = sum:0 (exp:0), cout:1 (exp:1)
+[PASS]    Test 5: 1 + 1 + 0 = sum:0 (exp:0), cout:1 (exp:1)
+[PASS]    Test 6: 1 + 1 + 0 = sum:0 (exp:0), cout:1 (exp:1)
+[PASS]    Test 7: 1 + 1 + 0 = sum:0 (exp:0), cout:1 (exp:1)
+[PASS]    Test 8: 1 + 1 + 1 = sum:1 (exp:1), cout:1 (exp:1)
+[PASS]    Test 9: 1 + 0 + 1 = sum:0 (exp:0), cout:1 (exp:1)
+[PASS]    Test 10: 1 + 0 + 1 = sum:0 (exp:0), cout:1 (exp:1)
+[PASS]    Test 11: 1 + 0 + 0 = sum:1 (exp:1), cout:0 (exp:0)
+[PASS]    Test 12: 0 + 0 + 1 = sum:1 (exp:1), cout:0 (exp:0)
+[PASS]    Test 13: 1 + 0 + 0 = sum:1 (exp:1), cout:0 (exp:0)
+[PASS]    Test 14: 0 + 1 + 1 = sum:0 (exp:0), cout:1 (exp:1)
+[PASS]    Test 15: 1 + 0 + 1 = sum:0 (exp:0), cout:1 (exp:1)
+[PASS]    Test 16: 1 + 0 + 0 = sum:1 (exp:1), cout:0 (exp:0)
+[PASS]    Test 17: 0 + 0 + 0 = sum:0 (exp:0), cout:0 (exp:0)
+[PASS]    Test 18: 1 + 1 + 0 = sum:0 (exp:0), cout:1 (exp:1)
+[PASS]    Test 19: 1 + 0 + 0 = sum:1 (exp:1), cout:0 (exp:0)
+[PASS]    Test 20: 1 + 0 + 0 = sum:1 (exp:1), cout:0 (exp:0)
+[PASS]    Test 21: 1 + 1 + 1 = sum:1 (exp:1), cout:1 (exp:1)
+[PASS]    Test 22: 0 + 1 + 0 = sum:1 (exp:1), cout:0 (exp:0)
+[PASS]    Test 23: 1 + 0 + 1 = sum:0 (exp:0), cout:1 (exp:1)
+[PASS]    Test 24: 1 + 1 + 1 = sum:1 (exp:1), cout:1 (exp:1)
+[PASS]    Test 25: 0 + 1 + 1 = sum:0 (exp:0), cout:1 (exp:1)
+[PASS]    Test 26: 1 + 1 + 1 = sum:1 (exp:1), cout:1 (exp:1)
+[PASS]    Test 27: 0 + 1 + 1 = sum:0 (exp:0), cout:1 (exp:1)
+[PASS]    Test 28: 0 + 0 + 0 = sum:0 (exp:0), cout:0 (exp:0)
+[PASS]    Test 29: 0 + 0 + 0 = sum:0 (exp:0), cout:0 (exp:0)
+[PASS]    Test 30: 1 + 0 + 0 = sum:1 (exp:1), cout:0 (exp:0)
+[PASS]    Test 31: 1 + 0 + 1 = sum:0 (exp:0), cout:1 (exp:1)
+[PASS]    Test 32: 1 + 0 + 1 = sum:0 (exp:0), cout:1 (exp:1)
+[PASS]    Test 33: 0 + 0 + 0 = sum:0 (exp:0), cout:0 (exp:0)
+[PASS]    Test 34: 0 + 1 + 0 = sum:1 (exp:1), cout:0 (exp:0)
+[PASS]    Test 35: 0 + 0 + 0 = sum:0 (exp:0), cout:0 (exp:0)
+[PASS]    Test 36: 1 + 0 + 0 = sum:1 (exp:1), cout:0 (exp:0)
+[PASS]    Test 37: 0 + 0 + 1 = sum:1 (exp:1), cout:0 (exp:0)
+[PASS]    Test 38: 0 + 0 + 0 = sum:0 (exp:0), cout:0 (exp:0)
+[PASS]    Test 39: 1 + 1 + 0 = sum:0 (exp:0), cout:1 (exp:1)
+[PASS]    Test 40: 0 + 1 + 1 = sum:0 (exp:0), cout:1 (exp:1)
+[PASS]    Test 41: 1 + 1 + 0 = sum:0 (exp:0), cout:1 (exp:1)
+[PASS]    Test 42: 0 + 0 + 1 = sum:1 (exp:1), cout:0 (exp:0)
+[PASS]    Test 43: 1 + 1 + 0 = sum:0 (exp:0), cout:1 (exp:1)
+[PASS]    Test 44: 1 + 1 + 1 = sum:1 (exp:1), cout:1 (exp:1)
+[PASS]    Test 45: 1 + 1 + 0 = sum:0 (exp:0), cout:1 (exp:1)
+[PASS]    Test 46: 1 + 1 + 0 = sum:0 (exp:0), cout:1 (exp:1)
+[PASS]    Test 47: 0 + 1 + 1 = sum:0 (exp:0), cout:1 (exp:1)
+[PASS]    Test 48: 1 + 1 + 1 = sum:1 (exp:1), cout:1 (exp:1)
+[PASS]    Test 49: 1 + 1 + 0 = sum:0 (exp:0), cout:1 (exp:1)
+[INFO] Testbench completed
+
+[INFO] Total tests completed   : 50
+[INFO] Total tests failed sum  : 0
+[INFO] Total tests failed cout : 0
+[INFO] Total tests failed      : 0
+[INFO] Success rate            : 100.00%
+[INFO] Report file             : adder_sim.rpt (default value)
+
